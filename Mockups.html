@@ -1,0 +1,204 @@
+<html>
+<head>
+
+
+<script>
+	function tryIt (){
+var selectedColor = document.getElementById("colorOptions").value;
+document.getElementById("image0_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+}
+
+function tryIt2 (){
+var selectedColor = document.getElementById("colorOptions2").value;
+document.getElementById("image1_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+}
+
+function tryIt3 (){
+var selectedColor = document.getElementById("colorOptions3").value;
+document.getElementById("image2_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+}
+
+function layers(type){
+	switch(type.value){
+	case "sm":
+		document.getElementById("large").style.display = "none";
+		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("medium").style.display = "none";
+		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("pattern2_8_3").style.display = "block";
+		break;
+	case "med":
+		document.getElementById("large").style.display = "none";
+		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
+		break;
+	case "lar":
+		document.getElementById("large").style.display = "block";
+		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("medium").style.display = "none";
+		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
+		break;
+	case "smallMedium":
+		document.getElementById("large").style.display = "none";
+		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("pattern2_8_3").style.display = "block";
+		break;
+	case "mediumLarge":
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		break;
+	case "triple":
+		document.getElementById("large").style.display = "block";
+		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("pattern2_8_3").style.display = "block";
+		break;
+	default:
+		document.getElementById("large").style.display = "block";
+		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("pattern2_8_3").style.display = "block";
+	}
+}
+
+</script>
+
+
+</head>
+<body>
+	<h1>Leaf Color Example</h1>
+	<input type="radio" id="sm" name="layers" value="sm" onChange="layers(this)">
+	<label for="sm">Small Leaf</label>
+	<input type="radio" id="med" name="layers" value="med" onChange="layers(this)">
+	<label for="med">Medium Leaf</label>
+	<input type="radio" id="lar" name="layers" value="lar" onChange="layers(this)">
+	<label for="lar">Large Leaf</label>
+	<br/>
+	<input type="radio" id="smallMedium" name="layers" value="smallMedium" onChange="layers(this)">
+	<label for="smallMedium">Small Medium Leaf</label>
+	<input type="radio" id="mediumLarge" name="layers" value="mediumLarge" onChange="layers(this)">
+	<label for="mediumLarge">Medium Large Leaf</label>
+	<input type="radio" id="triple" name="layers" value="triple" onChange="layers(this)">
+	<label for="triple">Triple Leaf</label>
+
+<div id="large">
+	<p>Large Layer</p>
+	<select id="colorOptions" onChange="tryIt()">
+		<option value="salmonBasketweave" selected>Salmon Basketweave</option>
+		<option value="whiteCork">White Cork</option>
+		<option value="distressedRaspberry">Distressed Raspberry</option>
+		<option value="spruceGreenCork">Spruce Green Cork</option>
+		<option value="blossom">Blossom</option>
+		<option value="leopard">Leopard</option>
+		<option value="gold">Gold</option>
+		<option value="aquaCork">Aqua Cork</option>
+		<option value="roseGoldBraid">Rose Gold Braid</option>
+		<option value="navyCorduroy">Navy Corduroy</option>
+		<option value="blackCork">Black Cork</option>
+		<option value="selenite">Selenite</option>
+		<option value="brandySaddle">Brandy Saddle</option>
+		<option value="blackAndWhiteStripes">Black and White Stripes</option>
+		<option value="lavenderFrost">Lavender Frost</option>
+		<option value="mustardChevron">Mustard Chevron</option>
+		<option value="emblem">Emblem - May Promo</option>
+		<option value="carmine">Carmine - May Promo</option>
+		<option value="bluesette">Bluesette - May Promo</option>
+	</select>
+</div>
+
+<div id="medium">
+	<p>Medium Layer</p>
+	<select id="colorOptions2" onChange="tryIt2()">
+		<option value="salmonBasketweave">Salmon Basketweave</option>
+		<option value="whiteCork" selected>White Cork</option>
+		<option value="distressedRaspberry">Distressed Raspberry</option>
+		<option value="spruceGreenCork">Spruce Green Cork</option>
+		<option value="blossom">Blossom</option>
+		<option value="leopard">Leopard</option>
+		<option value="gold">Gold</option>
+		<option value="aquaCork">Aqua Cork</option>
+		<option value="roseGoldBraid">Rose Gold Braid</option>
+		<option value="navyCorduroy">Navy Corduroy</option>
+		<option value="blackCork">Black Cork</option>
+		<option value="selenite">Selenite</option>
+		<option value="brandySaddle">Brandy Saddle</option>
+		<option value="blackAndWhiteStripes">Black and White Stripes</option>
+		<option value="lavenderFrost">Lavender Frost</option>
+		<option value="mustardChevron">Mustard Chevron</option>
+		<option value="emblem">Emblem - May Promo</option>
+		<option value="carmine">Carmine - May Promo</option>
+		<option value="bluesette">Bluesette - May Promo</option>
+	</select>
+</div>
+
+<div id="small">
+	<p>Small Layer</p>
+	<select id="colorOptions3" onChange="tryIt3()">
+		<option value="salmonBasketweave">Salmon Basketweave</option>
+		<option value="whiteCork">White Cork</option>
+		<option value="distressedRaspberry">Distressed Raspberry</option>
+		<option value="spruceGreenCork" selected>Spruce Green Cork</option>
+		<option value="blossom">Blossom</option>
+		<option value="leopard">Leopard</option>
+		<option value="gold">Gold</option>
+		<option value="aquaCork">Aqua Cork</option>
+		<option value="roseGoldBraid">Rose Gold Braid</option>
+		<option value="navyCorduroy">Navy Corduroy</option>
+		<option value="blackCork">Black Cork</option>
+		<option value="selenite">Selenite</option>
+		<option value="brandySaddle">Brandy Saddle</option>
+		<option value="blackAndWhiteStripes">Black and White Stripes</option>
+		<option value="lavenderFrost">Lavender Frost</option>
+		<option value="mustardChevron">Mustard Chevron</option>
+		<option value="emblem">Emblem - May Promo</option>
+		<option value="carmine">Carmine - May Promo</option>
+		<option value="bluesette">Bluesette - May Promo</option>
+	</select>
+</div>
+
+
+<br/>
+<br/>
+<svg width="170" height="292" viewBox="0 0 170 292" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0.246102 142.5C3.89254 77.7845 52.4127 19.8332 82.7461 0.499817C150.746 41.9998 169.746 112.5 169.746 142.5C169.746 172.5 143 269.5 82.7461 291.5C36.5 270.5 -2.74023 195.5 0.246102 142.5Z" fill="url(#pattern0_8_3)"/>
+<path d="M16.5454 146.5C30.8314 216 70.0454 241.5 82.5454 247C90.0454 250.3 150.5 198 156 125C161.713 49.1737 86.5 0.0227636 82.5454 1.50012C70.5 6.00002 -1.95451 56.5 16.5454 146.5Z" fill="url(#pattern1_8_3)"/>
+<path d="M28.5857 101.071C35.7857 165.071 65.0857 185.571 84.5857 195.071C91.5857 191.571 136.388 171.433 141.586 96.0709C145.586 38.0709 89.6634 3.54383 83.5857 0.0708579C80.0857 -1.92915 21.5544 38.5708 28.5857 101.071Z" fill="url(#pattern2_8_3)"/>
+<defs>
+<pattern id="pattern0_8_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use href="#image0_8_3" transform="matrix(0.000837498 0 0 0.000488281 -0.357598 0)"/>
+</pattern>
+<pattern id="pattern1_8_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use href="#image1_8_3" transform="matrix(0.00084024 0 0 0.000488281 -0.360405 0)"/>
+</pattern>
+<pattern id="pattern2_8_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use href="#image2_8_3" transform="matrix(0.000837062 0 0 0.000488281 -0.357152 0)"/>
+</pattern>
+<image id="image0_8_3" width="2048" height="2048" href="Colors/salmonBasketweave.jpg"/>
+<image id="image1_8_3" width="2048" height="2048" href="Colors/whiteCork.jpg"/>
+<image id="image2_8_3" width="2048" height="2048" href="Colors/spruceGreenCork.jpg"/>
+</defs>
+</svg>
+
+
+</body>
+</html>
+
+
+
