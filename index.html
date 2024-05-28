@@ -3,20 +3,60 @@
 
 
 <script>
-	function tryIt (){
-var selectedColor = document.getElementById("colorOptions").value;
-document.getElementById("image0_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+
+function tryIt (element){
+	var selectedColor = element.getAttribute("value");
+	var selectedColorName = element.name;
+	const children = document.querySelectorAll('.large');
+
+	if (element.classList.contains('selected')) {
+	    element.classList.remove('selected');
+	  } else {
+	    	children.forEach(function(e) {
+	      		e.classList.remove('selected');
+	    	});
+			element.classList.add("selected");
+		}
+	document.getElementById("lSelected").innerHTML = selectedColorName;
+	document.getElementById("image0_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 }
 
-function tryIt2 (){
-var selectedColor = document.getElementById("colorOptions2").value;
-document.getElementById("image1_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+
+
+function tryIt2 (element){
+	var selectedColor = element.getAttribute("value");
+	var selectedColorName = element.name;
+	const children = document.querySelectorAll('.medium');
+
+	if (element.classList.contains('selected')) {
+	    element.classList.remove('selected');
+	  } else {
+	    	children.forEach(function(e) {
+	      		e.classList.remove('selected');
+	    	});
+			element.classList.add("selected");
+		}
+	document.getElementById("mSelected").innerHTML = selectedColorName;
+	document.getElementById("image1_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 }
 
-function tryIt3 (){
-var selectedColor = document.getElementById("colorOptions3").value;
-document.getElementById("image2_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+function tryIt3 (element){
+	var selectedColor = element.getAttribute("value");
+	var selectedColorName = element.name;
+	const children = document.querySelectorAll('.small');
+
+	if (element.classList.contains('selected')) {
+	    element.classList.remove('selected');
+	  } else {
+	    	children.forEach(function(e) {
+	      		e.classList.remove('selected');
+	    	});
+			element.classList.add("selected");
+		}
+	document.getElementById("sSelected").innerHTML = selectedColorName;
+	document.getElementById("image2_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 }
+
 
 function layers(type){
 	switch(type.value){
@@ -69,28 +109,68 @@ function layers(type){
 		document.getElementById("pattern2_8_3").style.display = "block";
 		break;
 	default:
-		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
-		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
-		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("large").style.display = "none";
+		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("medium").style.display = "none";
+		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
 	}
 }
 
 </script>
 
+<style>
+
+.colorOptions {
+    display:inline-block;
+    overflow:hidden;
+
+}
+
+.colorOptions>img {
+    height: 35px;
+    cursor:pointer;
+}
+
+img.selected {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.selectedName{
+	font-weight:bold;
+}
+
+main{
+	display:flex;
+}
+
+#colors{
+	width:50%;
+}
+#mockup{
+	width:50%;
+	text-align:center;
+}
+svg{
+	margin-top:10%;
+}
+
+
+</style>
+
 
 </head>
 <body>
 	<h1>Leaf Color Example</h1>
+	
 	<input type="radio" id="sm" name="layers" value="sm" onChange="layers(this)">
 	<label for="sm">Small Leaf</label>
 	<input type="radio" id="med" name="layers" value="med" onChange="layers(this)">
 	<label for="med">Medium Leaf</label>
 	<input type="radio" id="lar" name="layers" value="lar" onChange="layers(this)">
 	<label for="lar">Large Leaf</label>
-	<br/>
 	<input type="radio" id="smallMedium" name="layers" value="smallMedium" onChange="layers(this)">
 	<label for="smallMedium">Small Medium Leaf</label>
 	<input type="radio" id="mediumLarge" name="layers" value="mediumLarge" onChange="layers(this)">
@@ -98,106 +178,112 @@ function layers(type){
 	<input type="radio" id="triple" name="layers" value="triple" onChange="layers(this)">
 	<label for="triple">Triple Leaf</label>
 
-<div id="large">
-	<p>Large Layer
-	<select id="colorOptions" onChange="tryIt()">
-		<option value="salmonBasketweave" selected>Salmon Basketweave</option>
-		<option value="whiteCork">White Cork</option>
-		<option value="distressedRaspberry">Distressed Raspberry</option>
-		<option value="spruceGreenCork">Spruce Green Cork</option>
-		<option value="blossom">Blossom</option>
-		<option value="leopard">Leopard</option>
-		<option value="gold">Gold</option>
-		<option value="aquaCork">Aqua Cork</option>
-		<option value="roseGoldBraid">Rose Gold Braid</option>
-		<option value="navyCorduroy">Navy Corduroy</option>
-		<option value="blackCork">Black Cork</option>
-		<option value="selenite">Selenite</option>
-		<option value="brandySaddle">Brandy Saddle</option>
-		<option value="blackAndWhiteStripes">Black and White Stripes</option>
-		<option value="lavenderFrost">Lavender Frost</option>
-		<option value="mustardChevron">Mustard Chevron</option>
-		<option value="emblem">Emblem - May Promo</option>
-		<option value="carmine">Carmine - May Promo</option>
-		<option value="bluesette">Bluesette - May Promo</option>
-	</select>
-	</p>
-</div>
-
-<div id="medium">
-	<p>Medium Layer
-	<select id="colorOptions2" onChange="tryIt2()">
-		<option value="salmonBasketweave">Salmon Basketweave</option>
-		<option value="whiteCork" selected>White Cork</option>
-		<option value="distressedRaspberry">Distressed Raspberry</option>
-		<option value="spruceGreenCork">Spruce Green Cork</option>
-		<option value="blossom">Blossom</option>
-		<option value="leopard">Leopard</option>
-		<option value="gold">Gold</option>
-		<option value="aquaCork">Aqua Cork</option>
-		<option value="roseGoldBraid">Rose Gold Braid</option>
-		<option value="navyCorduroy">Navy Corduroy</option>
-		<option value="blackCork">Black Cork</option>
-		<option value="selenite">Selenite</option>
-		<option value="brandySaddle">Brandy Saddle</option>
-		<option value="blackAndWhiteStripes">Black and White Stripes</option>
-		<option value="lavenderFrost">Lavender Frost</option>
-		<option value="mustardChevron">Mustard Chevron</option>
-		<option value="emblem">Emblem - May Promo</option>
-		<option value="carmine">Carmine - May Promo</option>
-		<option value="bluesette">Bluesette - May Promo</option>
-	</select>
-	</p>
-</div>
-
-<div id="small">
-	<p>Small Layer
-		<select id="colorOptions3" onChange="tryIt3()">
-		<option value="salmonBasketweave">Salmon Basketweave</option>
-		<option value="whiteCork">White Cork</option>
-		<option value="distressedRaspberry">Distressed Raspberry</option>
-		<option value="spruceGreenCork" selected>Spruce Green Cork</option>
-		<option value="blossom">Blossom</option>
-		<option value="leopard">Leopard</option>
-		<option value="gold">Gold</option>
-		<option value="aquaCork">Aqua Cork</option>
-		<option value="roseGoldBraid">Rose Gold Braid</option>
-		<option value="navyCorduroy">Navy Corduroy</option>
-		<option value="blackCork">Black Cork</option>
-		<option value="selenite">Selenite</option>
-		<option value="brandySaddle">Brandy Saddle</option>
-		<option value="blackAndWhiteStripes">Black and White Stripes</option>
-		<option value="lavenderFrost">Lavender Frost</option>
-		<option value="mustardChevron">Mustard Chevron</option>
-		<option value="emblem">Emblem - May Promo</option>
-		<option value="carmine">Carmine - May Promo</option>
-		<option value="bluesette">Bluesette - May Promo</option>
-	</select>
-	</p>
-
-</div>
-
-<br/>
-<svg width="170" height="292" viewBox="0 0 170 292" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M0.246102 142.5C3.89254 77.7845 52.4127 19.8332 82.7461 0.499817C150.746 41.9998 169.746 112.5 169.746 142.5C169.746 172.5 143 269.5 82.7461 291.5C36.5 270.5 -2.74023 195.5 0.246102 142.5Z" fill="url(#pattern0_8_3)"/>
-<path d="M16.5454 146.5C30.8314 216 70.0454 241.5 82.5454 247C90.0454 250.3 150.5 198 156 125C161.713 49.1737 86.5 0.0227636 82.5454 1.50012C70.5 6.00002 -1.95451 56.5 16.5454 146.5Z" fill="url(#pattern1_8_3)"/>
-<path d="M28.5857 101.071C35.7857 165.071 65.0857 185.571 84.5857 195.071C91.5857 191.571 136.388 171.433 141.586 96.0709C145.586 38.0709 89.6634 3.54383 83.5857 0.0708579C80.0857 -1.92915 21.5544 38.5708 28.5857 101.071Z" fill="url(#pattern2_8_3)"/>
-<defs>
-<pattern id="pattern0_8_3" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use href="#image0_8_3" transform="matrix(0.000837498 0 0 0.000488281 -0.357598 0)"/>
-</pattern>
-<pattern id="pattern1_8_3" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use href="#image1_8_3" transform="matrix(0.00084024 0 0 0.000488281 -0.360405 0)"/>
-</pattern>
-<pattern id="pattern2_8_3" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use href="#image2_8_3" transform="matrix(0.000837062 0 0 0.000488281 -0.357152 0)"/>
-</pattern>
-<image id="image0_8_3" width="2048" height="2048" href="Colors/salmonBasketweave.jpg"/>
-<image id="image1_8_3" width="3048" height="3048" href="Colors/whiteCork.jpg"/>
-<image id="image2_8_3" width="4048" height="4048" href="Colors/spruceGreenCork.jpg"/>
-</defs>
-</svg>
-
-
+	<br/><br/>
+	<main>
+		<section id="colors">
+			<div id="large" style="display:none;">
+				Large Layer: <span id="lSelected" class="selectedName"></span>
+					<br/><br/>
+					<div class="colorOptions">
+						<img id="lsalmon" class="large" value="salmonBasketweave" name="Salmon Basketweave" src="Colors/salmonBasketweave.jpg" onclick="tryIt(this)"/>
+						<img id="lwhite" class="large" value="whiteCork" name="White Cork" src="Colors/whiteCork.jpg" onclick="tryIt(this)"/>
+						<img id="lraspberry" class="large" value="distressedRaspberry" name="Distressed Raspberry" src="Colors/distressedRaspberry.jpg" onclick="tryIt(this)"/>
+						<img id="lspruce" class="large" value="spruceGreenCork" name="Spruce Green Cork" src="Colors/spruceGreenCork.jpg" onclick="tryIt(this)"/>
+						<img id="lblossom" class="large" value="blossom" name="Blossom" src="Colors/blossom.jpg" onclick="tryIt(this)"/>
+						<img id="lleopard" class="large" value="leopard" name="Leopard" src="Colors/leopard.jpg" onclick="tryIt(this)"/>
+						<img id="lgold" class="large" value="gold" name="Gold" src="Colors/gold.jpg" onclick="tryIt(this)"/>
+						<img id="laqua" class="large" value="aquaCork" name="Aqua Cork" src="Colors/aquaCork.jpg" onclick="tryIt(this)"/>
+						<img id="lrose" class="large" value="roseGoldBraid" name="Rose Gold Braid" src="Colors/roseGoldBraid.jpg" onclick="tryIt(this)"/>
+						<img id="lnavy" class="large" value="navyCorduroy" name="Navy Corduroy" src="Colors/navyCorduroy.jpg" onclick="tryIt(this)"/>
+						<img id="lblack" class="large" value="blackCork" name="Black Cork" src="Colors/blackCork.jpg" onclick="tryIt(this)"/>
+						<img id="lselenite" class="large" value="selenite" name="Selenite" src="Colors/selenite.jpg" onclick="tryIt(this)"/>
+						<img id="lbrandy" class="large" value="brandySaddle" name="Brandy Saddle" src="Colors/brandySaddle.jpg" onclick="tryIt(this)"/>
+						<img id="lbw" class="large" value="blackAndWhiteStripes" name="Black and White Stripes" src="Colors/blackAndWhiteStripes.jpg" onclick="tryIt(this)"/>
+						<img id="llavendar" class="large" value="lavenderFrost" name="Lavender Frost" src="Colors/lavenderFrost.jpg" onclick="tryIt(this)"/>
+						<img id="lmustard" class="large" value="mustardChevron" name="Mustard Chevron" src="Colors/mustardChevron.jpg" onclick="tryIt(this)"/>
+						<img id="lemblem" class="large" value="emblem" name="Emblem - May Promo" src="Colors/emblem.jpg" onclick="tryIt(this)"/>
+						<img id="lcarmine" class="large" value="carmine" name="Carmin - May Promo" src="Colors/carmine.jpg" onclick="tryIt(this)"/>
+						<img id="lbluesette" class="large" value="bluesette" name="Bluesette - May Promo" src="Colors/bluesette.jpg" onclick="tryIt(this)"/>
+					</div>
+			</div>
+			<br/>
+			<div id="medium" style="display:none;">
+				Medium Layer: <span id="mSelected" class="selectedName"></span>
+				<br/><br/>
+				<div class="colorOptions">
+					<img id="msalmon" class="medium" value="salmonBasketweave" name="Salmon Basketweave" src="Colors/salmonBasketweave.jpg" onclick="tryIt2(this)"/>
+					<img id="mwhite" class="medium" value="whiteCork" name="White Cork" src="Colors/whiteCork.jpg" onclick="tryIt2(this)"/>
+					<img id="mraspberry" class="medium" value="distressedRaspberry" name="Distressed Raspberry" src="Colors/distressedRaspberry.jpg" onclick="tryIt2(this)"/>
+					<img id="mspruce" class="medium" value="spruceGreenCork" name="Spruce Green Cork" src="Colors/spruceGreenCork.jpg" onclick="tryIt2(this)"/>
+					<img id="mblossom" class="medium" value="blossom" name="Blossom" src="Colors/blossom.jpg" onclick="tryIt2(this)"/>
+					<img id="mleopard" class="medium" value="leopard" name="Leopard" src="Colors/leopard.jpg" onclick="tryIt2(this)"/>
+					<img id="mgold" class="medium" value="gold" name="Gold" src="Colors/gold.jpg" onclick="tryIt2(this)"/>
+					<img id="maqua" class="medium" value="aquaCork" name="Aqua Cork" src="Colors/aquaCork.jpg" onclick="tryIt2(this)"/>
+					<img id="mrose" class="medium" value="roseGoldBraid" name="Rose Gold Braid" src="Colors/roseGoldBraid.jpg" onclick="tryIt2(this)"/>
+					<img id="mnavy" class="medium" value="navyCorduroy" name="Navy Corduroy" src="Colors/navyCorduroy.jpg" onclick="tryIt2(this)"/>
+					<img id="mblack" class="medium" value="blackCork" name="Black Cork" src="Colors/blackCork.jpg" onclick="tryIt2(this)"/>
+					<img id="mselenite" class="medium" value="selenite" name="Selenite" src="Colors/selenite.jpg" onclick="tryIt2(this)"/>
+					<img id="mbrandy" class="medium" value="brandySaddle" name="Brandy Saddle" src="Colors/brandySaddle.jpg" onclick="tryIt2(this)"/>
+					<img id="mbw" class="medium" value="blackAndWhiteStripes" name="Black and White Stripes" src="Colors/blackAndWhiteStripes.jpg" onclick="tryIt2(this)"/>
+					<img id="mlavendar" class="medium" value="lavenderFrost" name="Lavender Frost" src="Colors/lavenderFrost.jpg" onclick="tryIt2(this)"/>
+					<img id="mmustard" class="medium" value="mustardChevron" name="Mustard Chevron" src="Colors/mustardChevron.jpg" onclick="tryIt2(this)"/>
+					<img id="memblem" class="medium" value="emblem" name="Emblem - May Promo" src="Colors/emblem.jpg" onclick="tryIt2(this)"/>
+					<img id="mcarmine" class="medium" value="carmine" name="Carmin - May Promo" src="Colors/carmine.jpg" onclick="tryIt2(this)"/>
+					<img id="mbluesette" class="medium" value="bluesette" name="Bluesette - May Promo" src="Colors/bluesette.jpg" onclick="tryIt2(this)"/>
+				</div>
+			</div>
+			<br/>
+			<div id="small" style="display:none;">
+				Small Layer: <span id="sSelected" class="selectedName"></span>
+				<br/><br/>
+				<div class="colorOptions">
+					<img id="ssalmon" class="small" value="salmonBasketweave" name="Salmon Basketweave" src="Colors/salmonBasketweave.jpg" onclick="tryIt3(this)"/>
+					<img id="swhite" class="small" value="whiteCork" name="White Cork" src="Colors/whiteCork.jpg" onclick="tryIt3(this)"/>
+					<img id="sraspberry" class="small" value="distressedRaspberry" name="Distressed Raspberry" src="Colors/distressedRaspberry.jpg" onclick="tryIt3(this)"/>
+					<img id="sspruce" class="small" value="spruceGreenCork" name="Spruce Green Cork" src="Colors/spruceGreenCork.jpg" onclick="tryIt3(this)"/>
+					<img id="sblossom" class="small" value="blossom" name="Blossom" src="Colors/blossom.jpg" onclick="tryIt3(this)"/>
+					<img id="sleopard" class="small" value="leopard" name="Leopard" src="Colors/leopard.jpg" onclick="tryIt3(this)"/>
+					<img id="sgold" class="small" value="gold" name="Gold" src="Colors/gold.jpg" onclick="tryIt3(this)"/>
+					<img id="saqua" class="small" value="aquaCork" name="Aqua Cork" src="Colors/aquaCork.jpg" onclick="tryIt3(this)"/>
+					<img id="srose" class="small" value="roseGoldBraid" name="Rose Gold Braid" src="Colors/roseGoldBraid.jpg" onclick="tryIt3(this)"/>
+					<img id="snavy" class="small" value="navyCorduroy" name="Navy Corduroy" src="Colors/navyCorduroy.jpg" onclick="tryIt3(this)"/>
+					<img id="sblack" class="small" value="blackCork" name="Black Cork" src="Colors/blackCork.jpg" onclick="tryIt3(this)"/>
+					<img id="sselenite" class="small" value="selenite" name="Selenite" src="Colors/selenite.jpg" onclick="tryIt3(this)"/>
+					<img id="sbrandy" class="small" value="brandySaddle" name="Brandy Saddle" src="Colors/brandySaddle.jpg" onclick="tryIt3(this)"/>
+					<img id="sbw" class="small" value="blackAndWhiteStripes" name="Black and White Stripes" src="Colors/blackAndWhiteStripes.jpg" onclick="tryIt3(this)"/>
+					<img id="slavendar" class="small" value="lavenderFrost" name="Lavender Frost" src="Colors/lavenderFrost.jpg" onclick="tryIt3(this)"/>
+					<img id="smustard" class="small" value="mustardChevron" name="Mustard Chevron" src="Colors/mustardChevron.jpg" onclick="tryIt3(this)"/>
+					<img id="semblem" class="small" value="emblem" name="Emblem - May Promo" src="Colors/emblem.jpg" onclick="tryIt3(this)"/>
+					<img id="scarmine" class="small" value="carmine" name="Carmin - May Promo" src="Colors/carmine.jpg" onclick="tryIt3(this)"/>
+					<img id="sbluesette" class="small" value="bluesette" name="Bluesette - May Promo" src="Colors/bluesette.jpg" onclick="tryIt3(this)"/>
+				</div>
+					
+			</div>
+		</section>
+		<section id="mockup">
+			<svg width="170" height="292" viewBox="0 0 170 292" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path d="M0.246102 142.5C3.89254 77.7845 52.4127 19.8332 82.7461 0.499817C150.746 41.9998 169.746 112.5 169.746 142.5C169.746 172.5 143 269.5 82.7461 291.5C36.5 270.5 -2.74023 195.5 0.246102 142.5Z" fill="url(#pattern0_8_3)"/>
+				<path d="M16.5454 146.5C30.8314 216 70.0454 241.5 82.5454 247C90.0454 250.3 150.5 198 156 125C161.713 49.1737 86.5 0.0227636 82.5454 1.50012C70.5 6.00002 -1.95451 56.5 16.5454 146.5Z" fill="url(#pattern1_8_3)"/>
+				<path d="M28.5857 101.071C35.7857 165.071 65.0857 185.571 84.5857 195.071C91.5857 191.571 136.388 171.433 141.586 96.0709C145.586 38.0709 89.6634 3.54383 83.5857 0.0708579C80.0857 -1.92915 21.5544 38.5708 28.5857 101.071Z" fill="url(#pattern2_8_3)"/>
+				<defs>
+					<pattern id="pattern0_8_3" patternContentUnits="objectBoundingBox" width="1" height="1" style="display:none;">
+						<use href="#image0_8_3" transform="matrix(0.000837498 0 0 0.000488281 -0.357598 0)"/>
+					</pattern>
+					<pattern id="pattern1_8_3" patternContentUnits="objectBoundingBox" width="1" height="1" style="display:none;">
+						<use href="#image1_8_3" transform="matrix(0.00084024 0 0 0.000488281 -0.360405 0)"/>
+					</pattern>
+					<pattern id="pattern2_8_3" patternContentUnits="objectBoundingBox" width="1" height="1" style="display:none;">
+						<use href="#image2_8_3" transform="matrix(0.000837062 0 0 0.000488281 -0.357152 0)"/>
+					</pattern>
+					<image id="image0_8_3" width="2048" height="2048" href="Colors/salmonBasketweave.jpg"/>
+					<image id="image1_8_3" width="4048" height="4048" href="Colors/whiteCork.jpg"/>
+					<image id="image2_8_3" width="6048" height="6048" href="Colors/spruceGreenCork.jpg"/>
+				</defs>
+			</svg>
+		</section>
+	</main>
 </body>
 </html>
+
+
+
