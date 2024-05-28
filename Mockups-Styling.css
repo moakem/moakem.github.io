@@ -1,0 +1,53 @@
+.colorOptions {
+    display:inline-block;
+    overflow:hidden;
+
+}
+
+.colorOptions>img {
+    height: 35px;
+    cursor:pointer;
+}
+
+img.selected {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.selectedName{
+	font-weight:bold;
+}
+
+main{
+	display:flex;
+}
+
+#colors{
+	width:50%;
+}
+#mockup{
+	width:50%;
+	text-align:center;
+}
+svg{
+	margin-top:10%;
+}
+
+@media screen and (max-width: 805px) {
+	main{
+		flex-direction:column;
+	}
+
+	#colors{
+		width:100%;
+	}
+	#mockup{
+		width:100%;
+		text-align:center;
+	}
+
+	svg{
+		margin-top:20px;
+	}
+
+}
