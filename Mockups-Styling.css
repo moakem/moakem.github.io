@@ -70,10 +70,11 @@ main {
 	/*border-bottom: 1px solid black;*/
 }
 
-h1 span{
-	padding-top:10px;
+#header span{
+	padding-top:20px;
 	font-size: medium;
 	display:block;
+	font-weight:bold;
 }
 
 
