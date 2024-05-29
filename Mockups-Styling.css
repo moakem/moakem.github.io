@@ -1,3 +1,77 @@
+
+body {
+  min-height: 100vh;
+  margin: 0 20px;
+}
+
+header {
+  min-height: 50px;
+  padding-bottom: 10px;
+}
+
+footer {
+  min-height: 50px;
+  display:flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+footer span{
+	align-content: center;
+	padding-right:10px;
+}
+
+/* The article fills all the space between header & footer */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display:flex;
+}
+
+h1 span{
+	padding-top:10px;
+	font-size: medium;
+	display:block;
+}
+
+
+figure{
+	cursor:pointer;
+	padding-right:20px;
+}
+
+figure:hover {
+  opacity: 50%;
+}
+
+figcaption{
+	text-align: center;
+	padding-bottom:15px;
+}
+
+figure a{
+	text-decoration: none;
+	color:black!important;
+}
+
+a {
+	color: turquoise;
+}
+
+a:hover{
+	color:lightskyblue;
+}
+
+a:visited{
+	color: turquoise;
+}
+
+
 .colorOptions {
     display:inline-block;
     overflow:hidden;
@@ -16,10 +90,6 @@ img.selected {
 
 .selectedName{
 	font-weight:bold;
-}
-
-main{
-	display:flex;
 }
 
 #colors{
