@@ -1,23 +1,52 @@
 
 body {
   min-height: 100vh;
-  margin: 0 20px;
+  margin: 0;
 }
 
 header {
   min-height: 50px;
   padding-bottom: 10px;
+  background-color:turquoise;
+  text-align: center;
+  color:white;
+}
+
+nav{
+	text-align:center;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li{
+	cursor: pointer;
+	display:inline-block;
+	margin-right: 10px;
+	color: turquoise;
+}
+
+nav ul li:hover{
+	text-decoration: underline;
 }
 
 footer {
   min-height: 50px;
   display:flex;
   justify-content: center;
+  background-color:turquoise;
+  color:white;
+  margin-top: 20px;
 }
 
 footer span{
 	align-content: center;
 	padding-right:10px;
+}
+
+footer img{
+	padding-top:5px;
 }
 
 /* The article fills all the space between header & footer */
@@ -30,6 +59,15 @@ body {
 main {
   flex: 1;
   display:flex;
+  flex-wrap:wrap;
+  margin: 0 20px;
+  align-items: center;
+}
+
+#header{
+	width:90%;
+	margin: 0 20px;
+	/*border-bottom: 1px solid black;*/
 }
 
 h1 span{
@@ -41,7 +79,6 @@ h1 span{
 
 figure{
 	cursor:pointer;
-	padding-right:20px;
 }
 
 figure:hover {
@@ -58,18 +95,22 @@ figure a{
 	color:black!important;
 }
 
-a {
-	color: turquoise;
+figure a:hover{
+	text-decoration: none;
 }
 
-a:hover{
-	color:lightskyblue;
+a {
+	color: turquoise;
+	text-decoration: none;
 }
 
 a:visited{
 	color: turquoise;
 }
 
+a:hover{
+	text-decoration: underline;
+}
 
 .colorOptions {
     display:inline-block;
@@ -85,6 +126,16 @@ a:visited{
 img.selected {
   border: 1px solid #000;
   border-radius: 4px;
+  cursor: default;
+}
+
+li.selected{
+	text-decoration:underline;
+	cursor: default;
+}
+
+li.selected:hover{
+	text-decoration: underline;
 }
 
 .selectedName{
@@ -94,25 +145,32 @@ img.selected {
 #colors{
 	width:50%;
 }
+
+#colors div{
+	padding-bottom: 10px;
+}
+
 #mockup{
 	width:50%;
 	text-align:center;
 }
-svg{
-	margin-top:10%;
+
+
+#categories{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media screen and (max-width: 805px) {
-	main{
-		flex-direction:column;
-	}
-
 	#colors{
 		width:100%;
 	}
 	#mockup{
 		width:100%;
 		text-align:center;
+		height: initial!important;
 	}
 
 	svg{
