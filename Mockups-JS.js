@@ -173,6 +173,9 @@ function showMockup(style){
 	case "Spade":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/spadeShape.html");
 		break;
+	case "Moroccan":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/moroccanShape.html");
+		break;
 	}
 }
 
