@@ -70,7 +70,7 @@ main {
 	/*border-bottom: 1px solid black;*/
 }
 
-#header span{
+#header>span{
 	padding-top:20px;
 	font-size: medium;
 	display:block;
