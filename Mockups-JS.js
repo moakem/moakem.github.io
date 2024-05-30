@@ -162,13 +162,13 @@ function showMockup(){
 	var style = getParameters();
 	switch(style){
 	case "Leaf":
-		document.getElementById("mockup").setAttribute("w3-include-html", "leafShape.html");
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/leafShape.html");
 		break;
 	case "Teardrop":
-		document.getElementById("mockup").setAttribute("w3-include-html", "teardropShape.html");
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/teardropShape.html");
 		break;
 	case "Spade":
-		document.getElementById("mockup").setAttribute("w3-include-html", "spadeShape.html");
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/spadeShape.html");
 		break;
 	}
 }
