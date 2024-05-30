@@ -179,6 +179,9 @@ function showMockup(style){
 	case "Hoop":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/hoopShape.html");
 		break;
+	case "Bar":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/barShape.html");
+		break;
 	}
 }
 
