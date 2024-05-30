@@ -155,7 +155,6 @@ function showNav(style) {
 	else if (style == "Moroccan" || style == "Kite" || style == "Cairo" || style == "Oakley" || style == "Hoop"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
 	}
 	else {
 		document.getElementById("navigation").style.display = "none";
