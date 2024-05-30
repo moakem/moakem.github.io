@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<script type="text/javascript" src="Mockups-JS.js"></script>
+		<link rel="stylesheet" href="Mockups-Styling.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<h1>Customization Website for For Keeps Earring Shapes</h1>
+		</header>
+		<section id="header">
+			<span><a href="LeatherShapes.html">&larr; Customize a Different Design</a></span>
+			<h1>
+				Rochelle Customization <br/>
+			</h1>
+			<br/><br/>
+		</section>
+		<main>
+			<section id="colors">
+				<div id="medium" style="display:none">
+					 Top Leather: <span id="mSelected" class="selectedName"></span>
+					<br/><br/>
+					<div class="colorOptions">
+						<img id="mred" class="medium" value="red" name="Red" src="Colors/red.jpg" onclick="tryIt2(this)"/>
+						<img id="mnatural" class="medium" value="natural" name="Natural" src="Colors/natural.jpg" onclick="tryIt2(this)"/>
+						<img id="mblack" class="medium" value="black" name="Black" src="Colors/black.jpg" onclick="tryIt2(this)"/>
+						<img id="mpurple" class="medium" value="purple" name="Purple" src="Colors/purple.jpg" onclick="tryIt2(this)"/>
+						<img id="mgreen" class="medium" value="green" name="Green" src="Colors/green.jpg" onclick="tryIt2(this)"/>
+						<img id="mnavy" class="medium" value="darkNavy" name="Dark Navy" src="Colors/darkNavy.jpg" onclick="tryIt2(this)"/>
+						<img id="mbrown" class="medium" value="brown" name="Brown" src="Colors/brown.jpg" onclick="tryIt2(this)"/>
+					</div>
+				</div>
+				<div id="large" style="display:none">
+					Bottom Leather: <span id="lSelected" class="selectedName"></span>
+						<br/><br/>
+						<img id="lred" class="large" value="red" name="Red" src="Colors/red.jpg" onclick="tryIt(this)"/>
+						<img id="lnatural" class="large" value="natural" name="Natural" src="Colors/natural.jpg" onclick="tryIt(this)"/>
+						<img id="lblack" class="large" value="black" name="Black" src="Colors/black.jpg" onclick="tryIt(this)"/>
+						<img id="lpurple" class="large" value="purple" name="Purple" src="Colors/purple.jpg" onclick="tryIt(this)"/>
+						<img id="lgreen" class="large" value="green" name="Green" src="Colors/green.jpg" onclick="tryIt(this)"/>
+						<img id="lnavy" class="large" value="darkNavy" name="Dark Navy" src="Colors/darkNavy.jpg" onclick="tryIt(this)"/>
+						<img id="lbrown" class="large" value="brown" name="Brown" src="Colors/brown.jpg" onclick="tryIt(this)"/>
+						</div>
+				</div>
+			</section>
+			<section id="mockup" w3-include-html="Shapes/rochelleShape.html"></section>
+			<script>
+				includeHTML();
+			</script>
+		</main>
+	</body>
+
+	<footer>
+		<span>&copy; Melissa Moake</span>
+		<img src="WhiteLogo.png" alt="consultant logo" height="40px"/>
+	</footer>
+
+
+
+</html>
+
+
