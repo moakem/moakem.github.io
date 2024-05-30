@@ -164,8 +164,8 @@ function showMockup(){
 	case "Leaf":
 		document.getElementById("mockup").setAttribute("w3-include-html", "leafShape.html");
 		break;
-	case "teardrop":
-		document.getElementById("mockup").setAttribute("w3-include-html", "leafShape.html");
+	case "Teardrop":
+		document.getElementById("mockup").setAttribute("w3-include-html", "teardropShape.html");
 		break;
 	}
 }
