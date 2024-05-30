@@ -148,23 +148,23 @@ function getParameters() {
     
 }
 
-function showNav() {
-	var style = getParameters();
+function showNav(style) {
 	if (style == "Leaf" || style == "Spade" || style == "Circle" || style == "Ribbon" || style == "Teardrop"){
 		document.getElementById("navigation").style.display = "show";
 	}
 	else if (style == "Moroccan" || style == "Kite" || style == "Cairo" || style == "Oakley" || style == "Hoop"){
 		document.getElementById("navigation").style.display = "none";
-		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("medium").style.display = "none";
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
 	}
 	else {
 		document.getElementById("navigation").style.display = "none";
 	}
 }
 
-function showMockup(){
-	var style = getParameters();
+function showMockup(style){
 	switch(style){
 	case "Leaf":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/leafShape.html");
