@@ -163,6 +163,7 @@ function showNav(style) {
 }
 
 function showMockup(style){
+	console.log(style);
 	switch(style){
 	case "Leaf":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/leafShape.html");
