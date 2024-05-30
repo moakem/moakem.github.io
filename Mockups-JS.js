@@ -167,6 +167,9 @@ function showMockup(){
 	case "Teardrop":
 		document.getElementById("mockup").setAttribute("w3-include-html", "teardropShape.html");
 		break;
+	case "Spade":
+		document.getElementById("mockup").setAttribute("w3-include-html", "spadeShape.html");
+		break;
 	}
 }
 
