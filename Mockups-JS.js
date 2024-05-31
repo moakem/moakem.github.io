@@ -54,6 +54,7 @@ function tryIt4 (element){
 
 	const listItems = document.querySelectorAll('#id li');
 	for (let i = 0; i < listItems.length; i++) {
+		console.log(listItems[i]);
 		if(listItems[i].classList == "selected" && listItems[i].textContent == "Large"){
 			document.getElementById("mHSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "none";
