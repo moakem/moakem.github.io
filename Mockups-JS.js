@@ -168,7 +168,7 @@ function layers(type){
 		document.getElementById("small").style.display = "block";
 		document.getElementById("pattern2_8_3").style.display = "block";
 		document.getElementById("mockup").style.height = "";
-		children2.forEach(function(e) {
+		children.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
@@ -183,7 +183,7 @@ function layers(type){
 		document.getElementById("small").style.display = "block";
 		document.getElementById("pattern2_8_3").style.display = "block";
 		document.getElementById("mockup").style.height = "";
-		children.forEach(function(e) {
+		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
