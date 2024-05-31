@@ -42,6 +42,20 @@ function tryIt3 (element){
 	document.getElementById("image2_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 }
 
+function tryIt4 (element){
+	var selectedColor = element.getAttribute("value");
+	var selectedColorName = element.name;
+	const children = document.querySelectorAll('.medium');
+
+	children.forEach(function(e) {
+  		e.classList.remove('selected');
+	});
+	element.classList.add("selected");
+
+	document.getElementById("mSelected").innerHTML = selectedColorName;
+	document.getElementById("image4_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+}
+
 
 function layers(type){
 	const children = document.querySelectorAll('li');
