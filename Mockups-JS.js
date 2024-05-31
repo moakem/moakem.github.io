@@ -43,7 +43,6 @@ function tryIt3 (element){
 }
 
 function tryIt4 (element){
-	console.log("in try 4");
 	var selectedColor = element.getAttribute("value");
 	var selectedColorName = element.name;
 	const children = document.querySelectorAll('.medium');
@@ -54,9 +53,7 @@ function tryIt4 (element){
 	element.classList.add("selected");
 
 	const listItems = document.querySelectorAll('#three li');
-	console.log(listItems);
 	for (let i = 0; i < listItems.length; i++) {
-		console.log(listItems[i].textContent);
 		if(listItems[i].classList == "selected" && listItems[i].textContent == "Large"){
 			document.getElementById("mHSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "none";
@@ -79,9 +76,10 @@ function layers(type){
 	document.getElementById("mHSelected").innerHTML = "";
 	document.getElementById("lSelected").innerHTML = "";
 	const listItems = document.querySelectorAll('li');
+	console.log(listItems);
 	for (let i = 0; i < listItems.length; i++) {
 		if(listItems[i].classList == "selected"){
-			i.classList.remove('selected');
+			listItems[i].classList.remove("selected");
 		}
 	}
 	switch(type.id){
