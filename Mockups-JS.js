@@ -43,6 +43,7 @@ function tryIt3 (element){
 }
 
 function tryIt4 (element){
+	console.log("in try 4");
 	var selectedColor = element.getAttribute("value");
 	var selectedColorName = element.name;
 	const children = document.querySelectorAll('.medium');
@@ -54,7 +55,7 @@ function tryIt4 (element){
 
 	const listItems = document.querySelectorAll('#id li');
 	for (let i = 0; i < listItems.length; i++) {
-		console.log(listItems[i]);
+		console.log(listItems[i]+"");
 		if(listItems[i].classList == "selected" && listItems[i].textContent == "Large"){
 			document.getElementById("mHSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "none";
