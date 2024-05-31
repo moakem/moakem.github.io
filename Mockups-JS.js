@@ -60,14 +60,14 @@ function tryIt4 (element){
 		if(listItems[i].classList == "selected" && listItems[i].textContent == "Large"){
 			document.getElementById("mHSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "none";
-			document.getElementById("mHSelected").style.display = "block";
+			document.getElementById("mHSelected").style.display = "inline";
 			document.getElementById("image4_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 		}
 		else{
 			document.getElementById("mSelected").innerHTML = selectedColorName;
-				document.getElementById("mSelected").style.display = "block";
+				document.getElementById("mSelected").style.display = "inline";
 			document.getElementById("mHSelected").style.display = "none";
-			document.getElementById("image2_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+			document.getElementById("image1_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 		}
 	}
 }
