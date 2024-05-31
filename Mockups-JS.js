@@ -78,20 +78,21 @@ function reset(type) {
 	const mediumColors = document.querySelectorAll('.medium');
 	const smallColors = document.querySelectorAll('.small');
 	for (let i = 0; i < smallColors.length; i++) {
-		console.log(smallColors[i].classList);
-		console.log(smallColors);
-		if(smallColors[i].classList == "selected"){
+		if(smallColors[i].classList[1] == "selected"){
 			smallColors[i].classList.remove("selected");
+			break;
 		}
 	}
 	for (let i = 0; i < mediumColors.length; i++) {
-		if(mediumColors[i].classList == "selected"){
+		if(mediumColors[i].classList[1] == "selected"){
 			mediumColors[i].classList.remove("selected");
+			break;
 		}
 	}
 	for (let i = 0; i < largeColors.length; i++) {
-		if(largeColors[i].classList == "selected"){
+		if(largeColors[i].classList[1] == "selected"){
 			largeColors[i].classList.remove("selected");
+			break;
 		}
 	}
 	document.getElementById("pattern0_8_3").style.display = "none";
