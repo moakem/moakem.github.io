@@ -53,7 +53,7 @@ function tryIt4 (element){
 	});
 	element.classList.add("selected");
 
-	const listItems = document.querySelectorAll('#id li');
+	const listItems = document.querySelectorAll('#three li');
 	console.log(listItems);
 	for (let i = 0; i < listItems.length; i++) {
 		console.log(listItems[i].textContent);
