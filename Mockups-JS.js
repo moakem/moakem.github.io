@@ -182,6 +182,9 @@ function showMockup(style){
 	case "Bar":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/barShape.html");
 		break;
+	case "Circle":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/circleShape.html");
+		break;
 	}
 }
 
