@@ -257,7 +257,7 @@ function getParameters() {
     const currentUrl = window.location.href;
     let paramString = currentUrl.split('?')[1];
     var type = paramString.split('=')[1];
-	console.log(type);
+    console.log(type);
     if(type == "DoubleKite"){
     	type = "Double Kite";
     }
@@ -269,7 +269,7 @@ function showNav(style) {
 	if (style == "Leaf" || style == "Spade" || style == "Circle" || style == "Ribbon" || style == "Teardrop"){
 		document.getElementById("navigation").style.display = "show";
 	}
-	else if (style == "Moroccan" || style == "Kite" || style == "Bar" || style == "Oakley" || style == "Hoop" || style == "Double Kite"){
+	else if (style == "Moroccan" || style == "Kite" || style == "Bar" || style == "Oakley" || style == "Hoop"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -277,6 +277,11 @@ function showNav(style) {
 		document.getElementById("navigation").style.display = "show";
 		document.getElementById("six").style.display = "none";
 		document.getElementById("three").style.display = "block";
+	}
+	else if(style == "Double Kite"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("large").style.display = "block";
 	}
 	else {
 		document.getElementById("navigation").style.display = "none";
