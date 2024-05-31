@@ -95,11 +95,11 @@ function reset(type) {
 			break;
 		}
 	}
-	document.getElementById("pattern0_8_3").style.display = "none";
-	document.getElementById("pattern1_8_3").style.display = "none";
-	document.getElementById("pattern2_8_3").style.display = "none";
+	document.getElementById("image0_8_3").setAttribute("href", "");
+	document.getElementById("image1_8_3").setAttribute("href", "");
+	document.getElementById("image2_8_3").setAttribute("href", "");
 	if(type.id == "larHorizon"){
-		document.getElementById("pattern4_8_3").style.display = "none";
+		document.getElementById("image4_8_3").setAttribute("href", "");
 	}
 }
 
