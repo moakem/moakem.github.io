@@ -82,19 +82,16 @@ function reset(type) {
 		console.log(smallColors);
 		if(smallColors[i].classList == "selected"){
 			smallColors[i].classList.remove("selected");
-			break;
 		}
 	}
 	for (let i = 0; i < mediumColors.length; i++) {
 		if(mediumColors[i].classList == "selected"){
 			mediumColors[i].classList.remove("selected");
-			break;
 		}
 	}
 	for (let i = 0; i < largeColors.length; i++) {
 		if(largeColors[i].classList == "selected"){
 			largeColors[i].classList.remove("selected");
-			break;
 		}
 	}
 	document.getElementById("pattern0_8_3").style.display = "none";
