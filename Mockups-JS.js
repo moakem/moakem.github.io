@@ -321,6 +321,9 @@ function showMockup(style){
 	case "Kite":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kiteShape.html");
 		break;
+	case "Ribbon":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ribbonShape.html");
+		break;
 	}
 }
 
