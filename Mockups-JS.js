@@ -54,6 +54,7 @@ function tryIt4 (element){
 	element.classList.add("selected");
 
 	const listItems = document.querySelectorAll('#id li');
+	console.log(listItems);
 	for (let i = 0; i < listItems.length; i++) {
 		console.log(listItems[i].textContent);
 		if(listItems[i].classList == "selected" && listItems[i].textContent == "Large"){
