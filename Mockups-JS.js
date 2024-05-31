@@ -266,6 +266,7 @@ function getParameters() {
 }
 
 function showNav(style) {
+	console.log(style);
 	if (style == "Leaf" || style == "Spade" || style == "Circle" || style == "Ribbon" || style == "Teardrop"){
 		document.getElementById("navigation").style.display = "show";
 	}
