@@ -257,6 +257,9 @@ function getParameters() {
     const currentUrl = window.location.href;
     let paramString = currentUrl.split('?')[1];
     const type = paramString.split('=')[1];
+    if(type == "DoubleKite"){
+    	type = "Double Kite";
+    }
     return type;
     
 }
@@ -265,7 +268,7 @@ function showNav(style) {
 	if (style == "Leaf" || style == "Spade" || style == "Circle" || style == "Ribbon" || style == "Teardrop"){
 		document.getElementById("navigation").style.display = "show";
 	}
-	else if (style == "Moroccan" || style == "Kite" || style == "Bar" || style == "Oakley" || style == "Hoop"){
+	else if (style == "Moroccan" || style == "Kite" || style == "Bar" || style == "Oakley" || style == "Hoop" || style == "Double Kite"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -306,7 +309,7 @@ function showMockup(style){
 	case "Horizon":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/horizonShape.html");
 		break;
-	case "DoubleKite":
+	case "Double Kite":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleKiteShape.html");
 		break;
 	}
