@@ -52,8 +52,21 @@ function tryIt4 (element){
 	});
 	element.classList.add("selected");
 
-	document.getElementById("mSelected").innerHTML = selectedColorName;
-	document.getElementById("image4_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+	const listItems = document.querySelectorAll('#id li');
+	for (let i = 0; i < listItems.length; i++) {
+		if(listItems[i].classList == "selected" && listItems[i].textContent == "Large"){
+			document.getElementById("mHSelected").innerHTML = selectedColorName;
+			document.getElementById("mSelected").style.display = "none";
+			document.getElementById("mHSelected").style.display = "block";
+			document.getElementById("image4_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+		}
+		else{
+			document.getElementById("mSelected").innerHTML = selectedColorName;
+				document.getElementById("mSelected").style.display = "block";
+			document.getElementById("mHSelected").style.display = "none";
+			document.getElementById("image2_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+		}
+	}
 }
 
 
