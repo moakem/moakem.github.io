@@ -257,6 +257,7 @@ function getParameters() {
     const currentUrl = window.location.href;
     let paramString = currentUrl.split('?')[1];
     const type = paramString.split('=')[1];
+	console.log(type);
     if(type == "DoubleKite"){
     	type = "Double Kite";
     }
