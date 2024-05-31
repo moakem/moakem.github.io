@@ -266,7 +266,6 @@ function getParameters() {
 }
 
 function showNav(style) {
-	console.log(style);
 	if (style == "Leaf" || style == "Spade" || style == "Circle" || style == "Ribbon" || style == "Teardrop"){
 		document.getElementById("navigation").style.display = "show";
 	}
@@ -282,7 +281,7 @@ function showNav(style) {
 	else if(style == "Double Kite"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
-		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
 	}
 	else {
 		document.getElementById("navigation").style.display = "none";
