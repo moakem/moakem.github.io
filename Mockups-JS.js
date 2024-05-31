@@ -73,10 +73,38 @@ function layers(type){
 		});
 		type.classList.add("selected");
 		break;
+	case "medHorizon":
+		document.getElementById("large").style.display = "none";
+		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("pattern4_8_3").style.display = "none";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("mockup").style.height = "84%";
+		children.forEach(function(e) {
+	  		e.classList.remove('selected');
+		});
+		type.classList.add("selected");
+		break;
 	case "lar":
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
 		document.getElementById("medium").style.display = "none";
+		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("mockup").style.height = "";
+		children.forEach(function(e) {
+	  		e.classList.remove('selected');
+		});
+		type.classList.add("selected");
+		break;
+	case "larHorizon":
+		document.getElementById("large").style.display = "block";
+		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("pattern4_8_3").style.display = "block";
+		document.getElementById("medium").style.display = "block";
 		document.getElementById("pattern1_8_3").style.display = "none";
 		document.getElementById("small").style.display = "none";
 		document.getElementById("pattern2_8_3").style.display = "none";
@@ -125,6 +153,20 @@ function layers(type){
 		});
 		type.classList.add("selected");
 		break;
+	case "tripleHorizon":
+		document.getElementById("large").style.display = "block";
+		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("pattern4_8_3").style.display = "none";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("mockup").style.height = "";
+		children.forEach(function(e) {
+	  		e.classList.remove('selected');
+		});
+		type.classList.add("selected");
+		break;
 	default:
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
@@ -156,6 +198,11 @@ function showNav(style) {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
+	else if (style == "Horizon"){
+		document.getElementById("navigation").style.display = "show";
+		document.getElementById("six").style.display = "none";
+		document.getElementById("three").style.display = "block";
+	}
 	else {
 		document.getElementById("navigation").style.display = "none";
 	}
@@ -184,6 +231,9 @@ function showMockup(style){
 		break;
 	case "Circle":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/circleShape.html");
+		break;
+	case "Horizon":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/horizonShape.html");
 		break;
 	}
 }
