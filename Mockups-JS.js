@@ -318,6 +318,9 @@ function showMockup(style){
 	case "Double Kite":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleKiteShape.html");
 		break;
+	case "Kite":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kiteShape.html");
+		break;
 	}
 }
 
