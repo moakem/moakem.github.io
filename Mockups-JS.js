@@ -88,6 +88,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "medHorizon":
+		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
 		document.getElementById("pattern4_8_3").style.display = "none";
@@ -96,7 +97,7 @@ function layers(type){
 		document.getElementById("small").style.display = "block";
 		document.getElementById("pattern2_8_3").style.display = "block";
 		document.getElementById("mockup").style.height = "84%";
-		children.forEach(function(e) {
+		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
@@ -115,6 +116,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "larHorizon":
+		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
 		document.getElementById("pattern4_8_3").style.display = "block";
@@ -123,7 +125,7 @@ function layers(type){
 		document.getElementById("small").style.display = "none";
 		document.getElementById("pattern2_8_3").style.display = "none";
 		document.getElementById("mockup").style.height = "";
-		children.forEach(function(e) {
+		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
@@ -155,6 +157,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "triple":
+		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -162,7 +165,7 @@ function layers(type){
 		document.getElementById("small").style.display = "block";
 		document.getElementById("pattern2_8_3").style.display = "block";
 		document.getElementById("mockup").style.height = "";
-		children.forEach(function(e) {
+		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
