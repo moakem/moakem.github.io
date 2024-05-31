@@ -65,7 +65,7 @@ function tryIt4 (element){
 		}
 		else{
 			document.getElementById("mSelected").innerHTML = selectedColorName;
-				document.getElementById("mSelected").style.display = "inline";
+			document.getElementById("mSelected").style.display = "inline";
 			document.getElementById("mHSelected").style.display = "none";
 			document.getElementById("image1_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 		}
@@ -74,6 +74,16 @@ function tryIt4 (element){
 
 
 function layers(type){
+	document.getElementById("sSelected").innerHTML = "";
+	document.getElementById("mSelected").innerHTML = "";
+	document.getElementById("mHSelected").innerHTML = "";
+	document.getElementById("lSelected").innerHTML = "";
+	const listItems = document.querySelectorAll('li');
+	for (let i = 0; i < listItems.length; i++) {
+		if(listItems[i].classList == "selected"){
+			i.classList.remove('selected');
+		}
+	}
 	switch(type.id){
 	case "sm":
 		var children = document.querySelectorAll('li');
