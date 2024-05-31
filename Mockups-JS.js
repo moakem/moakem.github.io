@@ -77,6 +77,7 @@ function reset(type) {
 	const largeColors = document.querySelectorAll('.large');
 	const mediumColors = document.querySelectorAll('.medium');
 	const smallColors = document.querySelectorAll('.small');
+	console.log(largeColors);
 	for (let i = 0; i < smallColors.length; i++) {
 		if(smallColors[i].classList == "selected"){
 			smallColors[i].classList.remove("selected");
@@ -95,12 +96,6 @@ function reset(type) {
 			break;
 		}
 	}
-	const listItems = document.querySelectorAll('li');
-	for (let i = 0; i < listItems.length; i++) {
-		if(listItems[i].classList == "selected"){
-			listItems[i].classList.remove("selected");
-		}
-	}	
 	document.getElementById("pattern0_8_3").style.display = "none";
 	document.getElementById("pattern1_8_3").style.display = "none";
 	document.getElementById("pattern2_8_3").style.display = "none";
@@ -110,6 +105,7 @@ function reset(type) {
 }
 
 function layers(type){
+
 	reset(type);
 
 	switch(type.id){
