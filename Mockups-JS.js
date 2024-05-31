@@ -58,10 +58,9 @@ function tryIt4 (element){
 
 
 function layers(type){
-	const children = document.querySelectorAll('li');
-	console.log(children);
 	switch(type.id){
 	case "sm":
+		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
 		document.getElementById("medium").style.display = "none";
@@ -75,6 +74,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "med":
+		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
 		document.getElementById("medium").style.display = "block";
@@ -103,6 +103,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "lar":
+		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
 		document.getElementById("medium").style.display = "none";
@@ -131,6 +132,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "smallMedium":
+		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
 		document.getElementById("medium").style.display = "block";
@@ -144,6 +146,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "mediumLarge":
+		var children = document.querySelectorAll('li');
 		document.getElementById("small").style.display = "none";
 		document.getElementById("pattern2_8_3").style.display = "none";
 		document.getElementById("large").style.display = "block";
@@ -157,7 +160,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "triple":
-		var children2 = document.querySelectorAll('li');
+		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -171,6 +174,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	case "tripleHorizon":
+		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
 		document.getElementById("pattern4_8_3").style.display = "none";
@@ -185,6 +189,7 @@ function layers(type){
 		type.classList.add("selected");
 		break;
 	default:
+		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
 		document.getElementById("medium").style.display = "none";
