@@ -306,6 +306,9 @@ function showMockup(style){
 	case "Horizon":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/horizonShape.html");
 		break;
+	case "DoubleKite":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleKiteShape.html");
+		break;
 	}
 }
 
