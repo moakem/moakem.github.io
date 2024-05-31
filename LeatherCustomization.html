@@ -30,6 +30,7 @@
 				</ul>
 			</nav>
 			<br/><br/>
+			<script>var type = getParameters();</script>
 		</section>
 		<main>
 			<section id="colors">
@@ -63,25 +64,24 @@
 					Medium Layer: <span id="mSelected" class="selectedName"></span>
 					<br/><br/>
 					<div class="colorOptions">
-						<img id="msalmon" class="medium" value="salmonBasketweave" name="Salmon Basketweave" src="Colors/salmonBasketweave.jpg" onclick="tryIt2(this)"/>
-						<img id="mwhite" class="medium" value="whiteCork" name="White Cork" src="Colors/whiteCork.jpg" onclick="tryIt2(this)"/>
-						<img id="mraspberry" class="medium" value="distressedRaspberry" name="Distressed Raspberry" src="Colors/distressedRaspberry.jpg" onclick="tryIt2(this)"/>
-						<img id="mspruce" class="medium" value="spruceGreenCork" name="Spruce Green Cork" src="Colors/spruceGreenCork.jpg" onclick="tryIt2(this)"/>
-						<img id="mblossom" class="medium" value="blossom" name="Blossom" src="Colors/blossom.jpg" onclick="tryIt2(this)"/>
-						<img id="mleopard" class="medium" value="leopard" name="Leopard" src="Colors/leopard.jpg" onclick="tryIt2(this)"/>
-						<img id="mgold" class="medium" value="gold" name="Gold" src="Colors/gold.jpg" onclick="tryIt2(this)"/>
-						<img id="maqua" class="medium" value="aquaCork" name="Aqua Cork" src="Colors/aquaCork.jpg" onclick="tryIt2(this)"/>
-						<img id="mrose" class="medium" value="roseGoldBraid" name="Rose Gold Braid" src="Colors/roseGoldBraid.jpg" onclick="tryIt2(this)"/>
-						<img id="mnavy" class="medium" value="navyCorduroy" name="Navy Corduroy" src="Colors/navyCorduroy.jpg" onclick="tryIt2(this)"/>
-						<img id="mblack" class="medium" value="blackCork" name="Black Cork" src="Colors/blackCork.jpg" onclick="tryIt2(this)"/>
-						<img id="mselenite" class="medium" value="selenite" name="Selenite" src="Colors/selenite.jpg" onclick="tryIt2(this)"/>
-						<img id="mbrandy" class="medium" value="brandySaddle" name="Brandy Saddle" src="Colors/brandySaddle.jpg" onclick="tryIt2(this)"/>
-						<img id="mbw" class="medium" value="blackAndWhiteStripes" name="Black and White Stripes" src="Colors/blackAndWhiteStripes.jpg" onclick="tryIt2(this)"/>
-						<img id="mlavendar" class="medium" value="lavenderFrost" name="Lavender Frost" src="Colors/lavenderFrost.jpg" onclick="tryIt2(this)"/>
-						<img id="mmustard" class="medium" value="mustardChevron" name="Mustard Chevron" src="Colors/mustardChevron.jpg" onclick="tryIt2(this)"/>
-						<img id="memblem" class="medium" value="emblem" name="Emblem - May Promo" src="Colors/emblem.jpg" onclick="tryIt2(this)"/>
-						<img id="mcarmine" class="medium" value="carmine" name="Carmin - May Promo" src="Colors/carmine.jpg" onclick="tryIt2(this)"/>
-						<img id="mbluesette" class="medium" value="bluesette" name="Bluesette - May Promo" src="Colors/bluesette.jpg" onclick="tryIt2(this)"/>
+						<img id="msalmon" class="medium" value="salmonBasketweave" name="Salmon Basketweave" src="Colors/salmonBasketweave.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mraspberry" class="medium" value="distressedRaspberry" name="Distressed Raspberry" src="Colors/distressedRaspberry.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mspruce" class="medium" value="spruceGreenCork" name="Spruce Green Cork" src="Colors/spruceGreenCork.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mblossom" class="medium" value="blossom" name="Blossom" src="Colors/blossom.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mleopard" class="medium" value="leopard" name="Leopard" src="Colors/leopard.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mgold" class="medium" value="gold" name="Gold" src="Colors/gold.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="maqua" class="medium" value="aquaCork" name="Aqua Cork" src="Colors/aquaCork.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mrose" class="medium" value="roseGoldBraid" name="Rose Gold Braid" src="Colors/roseGoldBraid.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mnavy" class="medium" value="navyCorduroy" name="Navy Corduroy" src="Colors/navyCorduroy.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mblack" class="medium" value="blackCork" name="Black Cork" src="Colors/blackCork.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mselenite" class="medium" value="selenite" name="Selenite" src="Colors/selenite.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mbrandy" class="medium" value="brandySaddle" name="Brandy Saddle" src="Colors/brandySaddle.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mbw" class="medium" value="blackAndWhiteStripes" name="Black and White Stripes" src="Colors/blackAndWhiteStripes.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mlavendar" class="medium" value="lavenderFrost" name="Lavender Frost" src="Colors/lavenderFrost.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mmustard" class="medium" value="mustardChevron" name="Mustard Chevron" src="Colors/mustardChevron.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="memblem" class="medium" value="emblem" name="Emblem - May Promo" src="Colors/emblem.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mcarmine" class="medium" value="carmine" name="Carmin - May Promo" src="Colors/carmine.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
+						<img id="mbluesette" class="medium" value="bluesette" name="Bluesette - May Promo" src="Colors/bluesette.jpg" onclick="if(type == 'Horizon'){tryIt4(this)} else {tryIt2(this)}"/>
 					</div>
 				</div>
 				
@@ -114,7 +114,6 @@
 			</section>
 			<section id="mockup" w3-include-html=""></section>
 			<script>
-				var type = getParameters();
 				document.getElementById("category").innerHTML = type;
 				showMockup(type);
 				includeHTML();
