@@ -69,19 +69,49 @@ function tryIt4 (element){
 	}
 }
 
-
-function layers(type){
+function reset(type) {
 	document.getElementById("sSelected").innerHTML = "";
 	document.getElementById("mSelected").innerHTML = "";
 	document.getElementById("mHSelected").innerHTML = "";
 	document.getElementById("lSelected").innerHTML = "";
+	const largeColors = document.querySelectorAll('.large');
+	const mediumColors = document.querySelectorAll('.medium');
+	const smallColors = document.querySelectorAll('.small');
+	for (let i = 0; i < smallColors.length; i++) {
+		if(smallColors[i].classList == "selected"){
+			smallColors[i].classList.remove("selected");
+			break;
+		}
+	}
+	for (let i = 0; i < mediumColors.length; i++) {
+		if(mediumColors[i].classList == "selected"){
+			mediumColors[i].classList.remove("selected");
+			break;
+		}
+	}
+	for (let i = 0; i < largeColors.length; i++) {
+		if(largeColors[i].classList == "selected"){
+			largeColors[i].classList.remove("selected");
+			break;
+		}
+	}
 	const listItems = document.querySelectorAll('li');
-	console.log(listItems);
 	for (let i = 0; i < listItems.length; i++) {
 		if(listItems[i].classList == "selected"){
 			listItems[i].classList.remove("selected");
 		}
+	}	
+	document.getElementById("pattern0_8_3").style.display = "none";
+	document.getElementById("pattern1_8_3").style.display = "none";
+	document.getElementById("pattern2_8_3").style.display = "none";
+	if(type.id == "larHorizon"){
+		document.getElementById("pattern4_8_3").style.display = "none";
 	}
+}
+
+function layers(type){
+	reset(type);
+
 	switch(type.id){
 	case "sm":
 		var children = document.querySelectorAll('li');
