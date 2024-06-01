@@ -338,6 +338,8 @@ function menuOrNot(style) {
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamonds" || style == "Seoul"){
 		document.getElementById("navigation").style.display = "block";
+		document.getElementById("miniShape").style.display = "none";
+		document.getElementById("regularShape").style.display = "none";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
 		document.getElementById("navigation").style.display = "none";
