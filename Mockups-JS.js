@@ -248,7 +248,7 @@ function layers(type){
 		document.getElementById("medium").style.display = "none";
 		document.getElementById("pattern1_8_3").style.display = "none";
 		document.getElementById("mockup").style.height = "";
-		children2.forEach(function(e) {
+		children.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
@@ -264,7 +264,7 @@ function layers(type){
 		for (let i = 0; i < hardwoodColors.length; i++) {
 			hardwoodColors[i].style.display = "none";
 		}
-		children2.forEach(function(e) {
+		children.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
