@@ -102,14 +102,14 @@ function reset(type) {
 			document.getElementById("image2_8_3").setAttribute("xlink:href", "");
 		}
 	}
-	if(type.id == "larHorizon"){
+	if(type == "larHorizon"){
 		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
 	}
 }
 
 function layers(type){
 
-	reset(type);
+	reset(type.id);
 
 	switch(type.id){
 	case "sm":
