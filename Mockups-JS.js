@@ -33,6 +33,13 @@ function tryIt2 (element){
 
 	document.getElementById("mSelected").innerHTML = selectedColorName;
 	document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+	const currentUrl = window.location.href;
+    let paramString = currentUrl.split('/')[4];
+    if (paramString == "RochelleCustomization.html"){
+    	console.log("Rochelle");
+    	document.getElementById("image1_8_3").style.width = "600px";
+    	document.getElementById("image1_8_3").style.height = "600px";
+    }
 }
 
 function tryIt3 (element){
