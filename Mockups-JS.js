@@ -395,6 +395,9 @@ function showMockup(style){
 	case "Oakley":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/oakleyShape.html");
 		break;
+	case "Cairo":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cairoShape.html");
+		break;
 	}
 }
 
