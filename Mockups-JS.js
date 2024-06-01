@@ -11,10 +11,9 @@ function tryIt (element){
 	document.getElementById("lSelected").innerHTML = selectedColorName;
 	document.getElementById("image0_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 	const currentUrl = window.location.href;
-    let paramString = currentUrl.split('/')[1];
-	console.log(paramString);
+    let paramString = currentUrl.split('/')[4];
     if (paramString == "RochelleCustomization.html"){
-	    console.log("Rochelle");
+    	console.log("Rochelle");
     	document.getElementById("image0_8_3").style.width = "600px";
     	document.getElementById("image0_8_3").style.height = "600px";
     }
