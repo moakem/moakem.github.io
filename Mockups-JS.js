@@ -96,8 +96,12 @@ function reset(type) {
 		}
 	}
 	document.getElementById("image0_8_3").setAttribute("xlink:href", "");
-	document.getElementById("image1_8_3").setAttribute("xlink:href", "");
-	document.getElementById("image2_8_3").setAttribute("xlink:href", "");
+	if (type != "regular"){
+		if(type != "mini"){
+			document.getElementById("image1_8_3").setAttribute("xlink:href", "");
+			document.getElementById("image2_8_3").setAttribute("xlink:href", "");
+		}
+	}
 	if(type.id == "larHorizon"){
 		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
 	}
