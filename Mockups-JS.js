@@ -248,7 +248,7 @@ function layers(type){
 		document.getElementById("regularShape").style.stroke = "black";
 		document.getElementById("medium").style.display = "none";
 		document.getElementById("pattern1_8_3").style.display = "none";
-		document.getElementById("miniShape").style.stroke = "mini";
+		document.getElementById("miniShape").style.stroke = "";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
