@@ -237,6 +237,38 @@ function layers(type){
 		});
 		type.classList.add("selected");
 		break;
+	case "regular":
+		var children = document.querySelectorAll('li');
+		document.getElementById("large").style.display = "block";
+		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("medium").style.display = "none";
+		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("mockup").style.height = "";
+		children2.forEach(function(e) {
+	  		e.classList.remove('selected');
+		});
+		type.classList.add("selected");
+		break;
+	case "mini":
+		var children = document.querySelectorAll('li');
+		document.getElementById("large").style.display = "none";
+		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("small").style.display = "none";
+		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("mockup").style.height = "";
+		const hardwoodColors = document.querySelectorAll('.medium hardwood');
+		for (let i = 0; i < hardwoodColors.length; i++) {
+			hardwoodColors[i].style.display = "none";
+		}
+		children2.forEach(function(e) {
+	  		e.classList.remove('selected');
+		});
+		type.classList.add("selected");
+		break;
 	default:
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
@@ -261,6 +293,9 @@ function getParameters() {
     if(type == "DoubleKite"){
     	type = "Double Kite";
     }
+    if(type == "DoubleDiamonds"){
+    	type = "Double Diamonds";
+    }
     return type;
     
 }
@@ -282,6 +317,35 @@ function showNav(style) {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
+	}
+	else {
+		document.getElementById("navigation").style.display = "none";
+	}
+}
+
+function regularOrMini(style) {
+	if (style == "Winona") {
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+	}
+	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
+		|| style == "Dublin" || style == "Valencia" || style == "Double Diamonds" || style == "Seoul"){
+		document.getElementById("navigation").style.display = "block";
+	}
+	else if (style == "Sydney" || style == "Rowan"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("small").style.display = "block";
+	}
+	else if (style == "Sierra"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		const acrylicColors = document.querySelectorAll('.acrylic');
+		for (let i = 0; i < acrylicColors.length; i++) {
+			acrylicColors[i].style.display = "none";
+		}
 	}
 	else {
 		document.getElementById("navigation").style.display = "none";
