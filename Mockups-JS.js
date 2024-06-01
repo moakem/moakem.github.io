@@ -245,10 +245,10 @@ function layers(type){
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
-		document.getElementById("regularShape").style.display = "block";
+		document.getElementById("regularShape").stroke = "black";
 		document.getElementById("medium").style.display = "none";
 		document.getElementById("pattern1_8_3").style.display = "none";
-		document.getElementById("miniShape").style.display = "none";
+		document.getElementById("miniShape").stroke = "mini";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -259,10 +259,10 @@ function layers(type){
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
-		document.getElementById("regularShape").style.display = "none";
+		document.getElementById("regularShape").stroke = "";
 		document.getElementById("medium").style.display = "block";
 		document.getElementById("pattern1_8_3").style.display = "block";
-		document.getElementById("miniShape").style.display = "block";
+		document.getElementById("miniShape").stroke = "black";
 		document.getElementById("mockup").style.height = "";
 		const hardwoodColors = document.querySelectorAll('.medium hardwood');
 		for (let i = 0; i < hardwoodColors.length; i++) {
@@ -338,8 +338,6 @@ function menuOrNot(style) {
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamonds" || style == "Seoul"){
 		document.getElementById("navigation").style.display = "block";
-		document.getElementById("miniShape").style.display = "none";
-		document.getElementById("regularShape").style.display = "none";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
 		document.getElementById("navigation").style.display = "none";
