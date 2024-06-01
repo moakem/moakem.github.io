@@ -9,11 +9,20 @@
 			<h1>Customization Website for For Keeps Earring Shapes</h1>
 		</header>
 		<section id="header">
-			<span><a href="AcrylicAndHardwoodShapes.html">&larr; Customize a Different Design</a></span>
+			<span><a id="backLink" href="">&larr; Customize a Different Design</a></span>
 			<h1>
 				Berlin Customization <br/>
 			</h1>
 			<br/><br/>
+			<script>
+				var type = getParameters();
+				if (type == "leather"){
+					document.getElementById("backLink").setAttribute("href", "LeatherShapes.html");
+				}
+				else {
+					document.getElementById("backLink").setAttribute("href", "AcrylicAndHardwoodShapes.html");
+				}
+			</script>
 		</section>
 		<main>
 			<section id="colors">
