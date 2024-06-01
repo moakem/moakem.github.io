@@ -323,11 +323,13 @@ function showNav(style) {
 	}
 }
 
-function regularOrMini(style) {
+function menuOrNot(style) {
 	if (style == "Winona") {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
+		document.getElementById("ltitle").innerHTML = "Top";
+		document.getElementById("mtitle").innerHTML = "Bottom";
 	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamonds" || style == "Seoul"){
@@ -338,6 +340,8 @@ function regularOrMini(style) {
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
 		document.getElementById("small").style.display = "block";
+		document.getElementById("mtitle").innerHTML = "Middle";
+		document.getElementById("ltitle").innerHTML = "Top";
 	}
 	else if (style == "Sierra"){
 		document.getElementById("navigation").style.display = "none";
