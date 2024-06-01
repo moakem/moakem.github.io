@@ -245,10 +245,10 @@ function layers(type){
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
 		document.getElementById("pattern0_8_3").style.display = "block";
-		document.getElementById("regular").style.display = "block";
+		document.getElementById("regularShape").style.display = "block";
 		document.getElementById("medium").style.display = "none";
 		document.getElementById("pattern1_8_3").style.display = "none";
-		document.getElementById("mini").style.display = "none";
+		document.getElementById("miniShape").style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -259,10 +259,10 @@ function layers(type){
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementById("pattern0_8_3").style.display = "none";
-		document.getElementById("regular").style.display = "none";
+		document.getElementById("regularShape").style.display = "none";
 		document.getElementById("medium").style.display = "block";
 		document.getElementById("pattern1_8_3").style.display = "block";
-		document.getElementById("mini").style.display = "block";
+		document.getElementById("miniShape").style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		const hardwoodColors = document.querySelectorAll('.medium hardwood');
 		for (let i = 0; i < hardwoodColors.length; i++) {
