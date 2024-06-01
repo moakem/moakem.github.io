@@ -247,8 +247,6 @@ function layers(type){
 		document.getElementById("pattern0_8_3").style.display = "block";
 		document.getElementById("medium").style.display = "none";
 		document.getElementById("pattern1_8_3").style.display = "none";
-		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern2_8_3").style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -261,8 +259,6 @@ function layers(type){
 		document.getElementById("pattern0_8_3").style.display = "none";
 		document.getElementById("medium").style.display = "block";
 		document.getElementById("pattern1_8_3").style.display = "block";
-		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern2_8_3").style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		const hardwoodColors = document.querySelectorAll('.medium hardwood');
 		for (let i = 0; i < hardwoodColors.length; i++) {
