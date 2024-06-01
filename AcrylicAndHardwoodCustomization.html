@@ -26,7 +26,7 @@
 		<main>
 			<section id="colors">
 				<div id="large" style="display:none">
-					Large Layer: <span id="lSelected" class="selectedName"></span>
+					<span id="lTitle"> Color Options: </span> <span id="lSelected" class="selectedName"></span>
 						<br/><br/>
 						<div class="colorOptions">
 							<img id="lblack" class="large acrylic" value="black" name="Black" src="Colors/black.jpg" onclick="tryIt(this)"/>
@@ -50,7 +50,7 @@
 				</div>
 				
 				<div id="medium" style="display:none">
-					Medium Layer: <span id="mSelected" class="selectedName"></span> <span id="mHSelected" class="selectedName" style="display:none"></span>
+					<span id="mTitle"> Color Options: </span> <span id="mSelected" class="selectedName"></span> <span id="mHSelected" class="selectedName" style="display:none"></span>
 					<br/><br/>
 					<div class="colorOptions">
 						<img id="mblack" class="medium acrylic" value="black" name="Black" src="Colors/black.jpg" onclick="tryIt2(this)"/>
@@ -73,7 +73,7 @@
 				</div>
 				
 				<div id="small" style="display:none">
-					Small Layer: <span id="sSelected" class="selectedName"></span>
+					<span id="sTitle"> Bottom: </span> <span id="sSelected" class="selectedName"></span>
 					<br/><br/>
 					<div class="colorOptions">
 						<img id="sblack" class="small acrylic" value="black" name="Black" src="Colors/black.jpg" onclick="tryIt3(this)"/>
@@ -100,7 +100,7 @@
 			<script>
 				document.getElementById("category").innerHTML = type;
 				showMockup(type);
-				regularOrMini(type); 
+				menuOrNot(type); 
 				includeHTML();
 			</script>
 		</main>
