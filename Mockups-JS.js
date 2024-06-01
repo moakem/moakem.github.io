@@ -9,7 +9,7 @@ function tryIt (element){
 	element.classList.add("selected");
 	
 	document.getElementById("lSelected").innerHTML = selectedColorName;
-	document.getElementById("image0_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+	document.getElementById("image0_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 }
 
 
@@ -25,7 +25,7 @@ function tryIt2 (element){
 	element.classList.add("selected");
 
 	document.getElementById("mSelected").innerHTML = selectedColorName;
-	document.getElementById("image1_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+	document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 }
 
 function tryIt3 (element){
@@ -39,7 +39,7 @@ function tryIt3 (element){
 	element.classList.add("selected");
 		
 	document.getElementById("sSelected").innerHTML = selectedColorName;
-	document.getElementById("image2_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+	document.getElementById("image2_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 }
 
 function tryIt4 (element){
@@ -58,13 +58,13 @@ function tryIt4 (element){
 			document.getElementById("mHSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "none";
 			document.getElementById("mHSelected").style.display = "inline";
-			document.getElementById("image4_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+			document.getElementById("image4_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 		}
 		else{
 			document.getElementById("mSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "inline";
 			document.getElementById("mHSelected").style.display = "none";
-			document.getElementById("image1_8_3").setAttribute("href", "Colors/" + selectedColor + ".jpg");
+			document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 		}
 	}
 }
@@ -95,11 +95,11 @@ function reset(type) {
 			break;
 		}
 	}
-	document.getElementById("image0_8_3").setAttribute("href", "");
-	document.getElementById("image1_8_3").setAttribute("href", "");
-	document.getElementById("image2_8_3").setAttribute("href", "");
+	document.getElementById("image0_8_3").setAttribute("xlink:href", "");
+	document.getElementById("image1_8_3").setAttribute("xlink:href", "");
+	document.getElementById("image2_8_3").setAttribute("xlink:href", "");
 	if(type.id == "larHorizon"){
-		document.getElementById("image4_8_3").setAttribute("href", "");
+		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
 	}
 }
 
