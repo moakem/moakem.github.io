@@ -7,7 +7,11 @@ function tryIt (element){
   		e.classList.remove('selected');
 	});
 	element.classList.add("selected");
-	
+	var currentUrl = window.location.href;
+	    let paramString = currentUrl.split('/')[3];
+	    if (paramString == "RochelleCustomization.html"){
+    		document.getElementById("image083").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+    }
 	document.getElementById("lSelected").innerHTML = selectedColorName;
 	document.getElementById("image0_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 }
@@ -23,7 +27,11 @@ function tryIt2 (element){
   		e.classList.remove('selected');
 	});
 	element.classList.add("selected");
-
+var currentUrl = window.location.href;
+	    let paramString = currentUrl.split('/')[3];
+	    if (paramString == "RochelleCustomization.html"){
+    		document.getElementById("image183").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+    }
 	document.getElementById("mSelected").innerHTML = selectedColorName;
 	document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 }
