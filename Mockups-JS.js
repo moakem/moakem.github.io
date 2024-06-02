@@ -12,8 +12,8 @@ function tryIt (element){
     	let paramString = currentUrl.split('/')[3];
     	if (paramString == "RochelleCustomization.html"){
     		console.log("Rochelle");
-    		document.getElementById("image0_8_3").style.width = "null";
-    		document.getElementById("image0_8_3").style.height = "null";
+    		document.getElementById("image0_8_3").style.width = null;
+    		document.getElementById("image0_8_3").style.height = null;
     	}
 	document.getElementById("lSelected").innerHTML = selectedColorName;
 	document.getElementById("image0_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
@@ -48,7 +48,7 @@ function tryIt2 (element){
 	if (paramString == "RochelleCustomization.html"){
     		console.log("Rochelle");
     		document.getElementById("image1_8_3").style.width = "600px";
-    		document.getElementById("image1_8_3").style.height = "600px;
+    		document.getElementById("image1_8_3").style.height = "600px";
     	}
 }
 
