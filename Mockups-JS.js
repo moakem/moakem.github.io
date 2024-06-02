@@ -19,8 +19,8 @@ function tryIt (element){
 	document.getElementById("image0_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 	if (paramString == "RochelleCustomization.html"){
     		console.log("Rochelle");
-    		document.getElementById("image0_8_3").style.width = "";
-    		document.getElementById("image0_8_3").style.height = "";
+    		document.getElementById("image0_8_3").style.width = null;
+    		document.getElementById("image0_8_3").style.height = null;
     	}
 }
 
@@ -47,8 +47,8 @@ function tryIt2 (element){
 	document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 	if (paramString == "RochelleCustomization.html"){
     		console.log("Rochelle");
-    		document.getElementById("image0_8_3").style.width = "";
-    		document.getElementById("image0_8_3").style.height = "";
+    		document.getElementById("image0_8_3").style.width = null;
+    		document.getElementById("image0_8_3").style.height = null;
     	}
 }
 
