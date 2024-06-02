@@ -8,18 +8,8 @@ function tryIt (element){
 	});
 	element.classList.add("selected");
 	
-	var currentUrl = window.location.href;
-    	let paramString = currentUrl.split('/')[3];
 	document.getElementById("lSelected").innerHTML = selectedColorName;
 	document.getElementById("image0_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
-	if (paramString == "RochelleCustomization.html"){
-		document.getElementById("image0_8_3").style.width = null;
-    		document.getElementById("image0_8_3").style.height = null;
-    		document.getElementById("image0_8_3").style.width = "600px";
-    		document.getElementById("image0_8_3").style.height = "600px";
-		document.getElementById("image0_8_3").style.width = null;
-    		document.getElementById("image0_8_3").style.height = null;
-    	}
 }
 
 
@@ -34,18 +24,8 @@ function tryIt2 (element){
 	});
 	element.classList.add("selected");
 
-	var currentUrl = window.location.href;
-	let paramString = currentUrl.split('/')[3];
 	document.getElementById("mSelected").innerHTML = selectedColorName;
 	document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
-	if (paramString == "RochelleCustomization.html"){
-		document.getElementById("image1_8_3").style.width = null;
-    		document.getElementById("image1_8_3").style.height = null;
-    		document.getElementById("image1_8_3").style.width = "600px";
-    		document.getElementById("image1_8_3").style.height = "600px";
-		document.getElementById("image1_8_3").style.width = null;
-    		document.getElementById("image1_8_3").style.height = null;
-    	}
 }
 
 function tryIt3 (element){
