@@ -16,6 +16,7 @@ function tryIt (element){
 		console.log(document.getElementById("image083"));
 		console.log(document.getElementById("pattern083"));
 		document.getElementById("image083").setAttribute("xlink:href", file);
+		document.getElementById("image083").setAttribute("href", file);
 		includeHTML();
 	}
 	else{
