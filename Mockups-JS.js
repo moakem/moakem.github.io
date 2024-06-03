@@ -14,6 +14,7 @@ function tryIt (element){
     	if (paramString == "RochelleCustomization.html"){
 		console.log("Rochelle");
 		console.log(document.getElementById("image083"));
+		console.log(document.getElementById("pattern083"));
 		document.getElementById("image083").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
 	}
 	else{
