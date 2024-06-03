@@ -8,7 +8,7 @@ function tryIt (element){
 	});
 	element.classList.add("selected");
 	document.getElementById("lSelected").innerHTML = selectedColorName;
-	var file = "Colors/" + selectedColor + ".jpg";
+	var file = "../Colors/" + selectedColor + ".jpg";
 	var currentUrl = window.location.href;
     	let paramString = currentUrl.split('/')[3];
     	if (paramString == "RochelleCustomization.html"){
