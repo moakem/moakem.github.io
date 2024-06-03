@@ -9,7 +9,7 @@
 							<use xlink:href="#image1_8_3" transform="matrix(0.00183594 0 0 0.00166667 -0.0507812 0)"/>
 						</pattern>
 				
-					        <image id="image0_8_3" xlink:href="../Colors/red.jpg" />
-					        <image id="image1_8_3" xlink:href="../Colors/green.jpg" />
+					        <image id="image0_8_3" xlink:href="../Colors/red.jpg" width="600px" height="600px"/>
+					        <image id="image1_8_3" xlink:href="../Colors/green.jpg"/>
 					</defs>
 				</svg>
