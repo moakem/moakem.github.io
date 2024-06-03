@@ -9,7 +9,7 @@ function tryIt (element){
 	element.classList.add("selected");
 	document.getElementById("lSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	document.getElementById("image0_8_3").setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', file);
+	document.getElementById("image0_8_3").setAttribute("xlink:href", file);
 
 }
 
@@ -24,7 +24,7 @@ function tryIt2 (element){
 	element.classList.add("selected");
 	document.getElementById("mSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	document.getElementById("image1_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	document.getElementById("image1_8_3").setAttribute("xlink:href", file);
 
 
 function tryIt3 (element){
@@ -38,7 +38,8 @@ function tryIt3 (element){
 	element.classList.add("selected");
 		
 	document.getElementById("sSelected").innerHTML = selectedColorName;
-	document.getElementById("image2_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+	var file = "Colors/" + selectedColor + ".jpg";
+	document.getElementById("image2_8_3").setAttribute("xlink:href", file);
 }
 
 function tryIt4 (element){
