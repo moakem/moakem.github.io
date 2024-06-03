@@ -9,7 +9,14 @@ function tryIt (element){
 	element.classList.add("selected");
 	document.getElementById("lSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	document.getElementById("image0_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	var currentUrl = window.location.href;
+    	let paramString = currentUrl.split('/')[3];
+    	if (paramString == "RochelleCustomization.html"){
+		document.getElementById("image083").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	}
+	else{
+		document.getElementById("image0_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	}
 
 }
 
@@ -24,7 +31,14 @@ function tryIt2 (element){
 	element.classList.add("selected");
 	document.getElementById("mSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	document.getElementById("image1_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	var currentUrl = window.location.href;
+    	let paramString = currentUrl.split('/')[3];
+    	if (paramString == "RochelleCustomization.html"){
+		document.getElementById("image183").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	}
+	else{
+		document.getElementById("image1_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	}
 }
 
 function tryIt3 (element){
