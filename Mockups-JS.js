@@ -40,6 +40,7 @@ function tryIt2 (element){
     	let paramString = currentUrl.split('/')[3];
     	if (paramString == "RochelleCustomization.html"){
 		document.getElementById("image183").setAttribute("xlink:href", file);
+		document.getElementById("image183").setAttribute("href", file);
 	}
 	else{
 		document.getElementById("image1_8_3").setAttribute("xlink:href", file);
