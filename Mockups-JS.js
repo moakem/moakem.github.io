@@ -25,7 +25,7 @@ function tryIt2 (element){
 	document.getElementById("mSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
 	document.getElementById("image1_8_3").setAttribute("xlink:href", file);
-
+}
 
 function tryIt3 (element){
 	var selectedColor = element.getAttribute("value");
@@ -431,4 +431,3 @@ function includeHTML() {
       return;
     }
   }
-}
