@@ -15,11 +15,11 @@ function tryIt (element){
 		console.log("Rochelle");
 		console.log(document.getElementById("image083"));
 		console.log(document.getElementById("pattern083"));
-		document.getElementById("image083").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+		document.getElementById("image083").setAttribute("xlink:href", file);
 		includeHTML();
 	}
 	else{
-		document.getElementById("image0_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
 	}
 
 }
@@ -38,10 +38,10 @@ function tryIt2 (element){
 	var currentUrl = window.location.href;
     	let paramString = currentUrl.split('/')[3];
     	if (paramString == "RochelleCustomization.html"){
-		document.getElementById("image183").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+		document.getElementById("image183").setAttribute("xlink:href", file);
 	}
 	else{
-		document.getElementById("image1_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+		document.getElementById("image1_8_3").setAttribute("xlink:href", file);
 	}
 }
 
@@ -57,7 +57,7 @@ function tryIt3 (element){
 		
 	document.getElementById("sSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	document.getElementById("image2_8_3").setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", file);
+	document.getElementById("image2_8_3").setAttribute("xlink:href", file);
 }
 
 function tryIt4 (element){
