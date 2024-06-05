@@ -17,7 +17,7 @@ function tryIt (element){
 		console.log(document.getElementById("pattern083"));
 		document.getElementById("image083").setAttribute("xlink:href", file);
 		document.getElementById("image083").setAttribute("href", file);
-		document.getElementById("path083").setAttribute("stroke", "");
+		document.getElementById("path083").setAttribute("stroke", "none");
 	}
 	else{
 		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
