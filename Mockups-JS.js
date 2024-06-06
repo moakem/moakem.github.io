@@ -89,7 +89,7 @@ function tryIt4 (element){
 			document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 		}
 	}
-	document.getElementsByTagName("path")[3].getAttribute("stroke");
+	document.getElementsByTagName("path")[3].setAttribute("stroke", "black");
 }
 
 function reset(type) {
