@@ -129,11 +129,11 @@ function reset(type) {
 	}
 	if(type == "larHorizon"){
 		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
-		document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "black");
+		document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "none");
 	}
-	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
-	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
-	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "none");
+	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "none");
+	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "none");
 }
 
 function layers(type){
