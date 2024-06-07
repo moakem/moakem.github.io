@@ -77,6 +77,7 @@ function tryIt4 (element){
 	const listItems = document.querySelectorAll('#three li');
 	for (let i = 0; i < listItems.length; i++) {
 		if(listItems[i].classList == "selected" && listItems[i].textContent == "Large"){
+			console.log("largeHorizon");
 			document.getElementById("mHSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "none";
 			document.getElementById("mHSelected").style.display = "inline";
@@ -85,6 +86,7 @@ function tryIt4 (element){
 			document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "none");
 		}
 		else{
+			console.log("medium");
 			document.getElementById("mSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "inline";
 			document.getElementById("mHSelected").style.display = "none";
