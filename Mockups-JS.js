@@ -103,21 +103,20 @@ function reset(type) {
 	for (let i = 0; i < smallColors.length; i++) {
 		if(smallColors[i].classList[1] == "selected"){
 			smallColors[i].classList.remove("selected");
-			document.getElementsByTagName("path")[2].setAttribute("stroke", "black");
 			break;
 		}
 	}
 	for (let i = 0; i < mediumColors.length; i++) {
 		if(mediumColors[i].classList[1] == "selected"){
 			mediumColors[i].classList.remove("selected");
-			document.getElementsByTagName("path")[1].setAttribute("stroke", "black");
+			
 			break;
 		}
 	}
 	for (let i = 0; i < largeColors.length; i++) {
 		if(largeColors[i].classList[1] == "selected"){
 			largeColors[i].classList.remove("selected");
-			document.getElementsByTagName("path")[0].setAttribute("stroke", "black");
+
 			break;
 		}
 	}
@@ -132,6 +131,9 @@ function reset(type) {
 		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
 		document.getElementsByTagName("path")[3].setAttribute("stroke", "black");
 	}
+	document.getElementsByTagName("path")[1].setAttribute("stroke", "black");
+	document.getElementsByTagName("path")[0].setAttribute("stroke", "black");
+	document.getElementsByTagName("path")[2].setAttribute("stroke", "black");
 }
 
 function layers(type){
