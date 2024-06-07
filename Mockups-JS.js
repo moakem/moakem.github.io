@@ -133,7 +133,7 @@ function reset(type) {
 			document.getElementById("image2_8_3").setAttribute("xlink:href", "");
 		}
 	}
-	if(type == "larHorizon"){
+	if(type == "larHorizon" || type == "tripleHorizon"){
 		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "none");
 	}
