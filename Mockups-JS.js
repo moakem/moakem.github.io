@@ -9,15 +9,8 @@ function tryIt (element){
 	element.classList.add("selected");
 	document.getElementById("lSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	var currentUrl = window.location.href;
-    	let paramString = currentUrl.split('/')[3];
-    	if (paramString == "RochelleCustomization.html"){
-		document.getElementById("image083").setAttribute("xlink:href", file);
-		document.getElementById("image083").setAttribute("href", file);
-	}
-	else{
-		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
-	}
+	document.getElementById("image083").setAttribute("xlink:href", file);
+	document.getElementById("image083").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 }
 
@@ -32,15 +25,8 @@ function tryIt2 (element){
 	element.classList.add("selected");
 	document.getElementById("mSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	var currentUrl = window.location.href;
-    	let paramString = currentUrl.split('/')[3];
-    	if (paramString == "RochelleCustomization.html"){
-		document.getElementById("image183").setAttribute("xlink:href", file);
-		document.getElementById("image183").setAttribute("href", file);
-	}
-	else{
-		document.getElementById("image1_8_3").setAttribute("xlink:href", file);
-	}
+	document.getElementById("image183").setAttribute("xlink:href", file);
+	document.getElementById("image183").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
 }
 
@@ -56,7 +42,8 @@ function tryIt3 (element){
 		
 	document.getElementById("sSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
-	document.getElementById("image2_8_3").setAttribute("xlink:href", file);
+	document.getElementById("image283").setAttribute("xlink:href", file);
+	document.getElementById("image283").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
 }
 
@@ -77,7 +64,8 @@ function tryIt4 (element){
 			document.getElementById("mHSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "none";
 			document.getElementById("mHSelected").style.display = "inline";
-			document.getElementById("image4_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+			document.getElementById("image483").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+			document.getElementById("image483").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 			document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "black");
 			document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "none");
 			break;
@@ -87,7 +75,8 @@ function tryIt4 (element){
 			document.getElementById("mSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "inline";
 			document.getElementById("mHSelected").style.display = "none";
-			document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+			document.getElementById("image183").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
+			document.getElementById("image183").setAttribute("href", "Colors/" + selectedColor + ".jpg");
 			document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
 			document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "none");
 		}
@@ -122,15 +111,19 @@ function reset(type) {
 			break;
 		}
 	}
-	document.getElementById("image0_8_3").setAttribute("xlink:href", "");
+	document.getElementById("image083").setAttribute("xlink:href", "");
+	document.getElementById("image083").setAttribute("href", "");
 	if (type != "regular"){
 		if(type != "mini"){
-			document.getElementById("image1_8_3").setAttribute("xlink:href", "");
-			document.getElementById("image2_8_3").setAttribute("xlink:href", "");
+			document.getElementById("image183").setAttribute("xlink:href", "");
+			document.getElementById("image283").setAttribute("xlink:href", "");
+			document.getElementById("image183").setAttribute("href", "");
+			document.getElementById("image283").setAttribute("href", "");
 		}
 	}
 	if(type == "larHorizon" || type == "tripleHorizon"){
-		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
+		document.getElementById("image483").setAttribute("xlink:href", "");
+		document.getElementById("image483").setAttribute("href", "");
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "none");
 	}
 	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "none");
@@ -146,11 +139,11 @@ function layers(type){
 	case "sm":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("pattern083").style.display = "none";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("pattern183").style.display = "none";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("pattern283").style.display = "block";
 		document.getElementById("mockup").style.height = "67%";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -160,11 +153,11 @@ function layers(type){
 	case "med":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("pattern083").style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("pattern183").style.display = "block";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("pattern283").style.display = "none";
 		document.getElementById("mockup").style.height = "84%";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -174,12 +167,12 @@ function layers(type){
 	case "medHorizon":
 		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern0_8_3").style.display = "none";
-		document.getElementById("pattern4_8_3").style.display = "none";
+		document.getElementById("pattern083").style.display = "none";
+		document.getElementById("pattern483").style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("pattern183").style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("pattern283").style.display = "block";
 		document.getElementById("mockup").style.height = "84%";
 		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -189,11 +182,11 @@ function layers(type){
 	case "lar":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("pattern083").style.display = "block";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("pattern183").style.display = "none";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("pattern283").style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -203,12 +196,12 @@ function layers(type){
 	case "larHorizon":
 		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
-		document.getElementById("pattern4_8_3").style.display = "block";
+		document.getElementById("pattern083").style.display = "block";
+		document.getElementById("pattern483").style.display = "block";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("pattern183").style.display = "none";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("pattern283").style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -218,11 +211,11 @@ function layers(type){
 	case "smallMedium":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("pattern083").style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("pattern183").style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("pattern283").style.display = "block";
 		document.getElementById("mockup").style.height = "84%";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -232,11 +225,11 @@ function layers(type){
 	case "mediumLarge":
 		var children = document.querySelectorAll('li');
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("pattern283").style.display = "none";
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("pattern083").style.display = "block";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("pattern183").style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -246,11 +239,11 @@ function layers(type){
 	case "triple":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("pattern083").style.display = "block";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("pattern183").style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("pattern283").style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -260,12 +253,12 @@ function layers(type){
 	case "tripleHorizon":
 		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
-		document.getElementById("pattern4_8_3").style.display = "none";
+		document.getElementById("pattern083").style.display = "block";
+		document.getElementById("pattern483").style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("pattern183").style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern2_8_3").style.display = "block";
+		document.getElementById("pattern283").style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -275,10 +268,10 @@ function layers(type){
 	case "regular":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern0_8_3").style.display = "block";
+		document.getElementById("pattern083").style.display = "block";
 		document.getElementById("regularShape").style.stroke = "black";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("pattern183").style.display = "none";
 		document.getElementById("miniShape").style.stroke = "";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
@@ -289,10 +282,10 @@ function layers(type){
 	case "mini":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("pattern083").style.display = "none";
 		document.getElementById("regularShape").style.stroke = "";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern1_8_3").style.display = "block";
+		document.getElementById("pattern183").style.display = "block";
 		document.getElementById("miniShape").style.stroke = "black";
 		document.getElementById("mockup").style.height = "";
 		const hardwoodColors = document.querySelectorAll('.medium hardwood');
@@ -307,11 +300,11 @@ function layers(type){
 	default:
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern0_8_3").style.display = "none";
+		document.getElementById("pattern083").style.display = "none";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern1_8_3").style.display = "none";
+		document.getElementById("pattern183").style.display = "none";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern2_8_3").style.display = "none";
+		document.getElementById("pattern283").style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
