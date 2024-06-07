@@ -15,13 +15,11 @@ function tryIt (element){
 		console.log("Rochelle");
 		console.log(document.getElementById("image083"));
 		console.log(document.getElementById("pattern083"));
-		document.getElementById("image083").setAttribute("xlink:href", file);
-		document.getElementById("image083").setAttribute("href", file);
-		//document.getElementById("path083").setAttribute("stroke", "none");
+		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
+		document.getElementById("image0_8_3").setAttribute("href", file);
 	}
 	else{
 		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
-		//document.getElementById("image0_8_3").setAttribute("href", file);
 	}
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 }
@@ -40,8 +38,8 @@ function tryIt2 (element){
 	var currentUrl = window.location.href;
     	let paramString = currentUrl.split('/')[3];
     	if (paramString == "RochelleCustomization.html"){
-		document.getElementById("image183").setAttribute("xlink:href", file);
-		document.getElementById("image183").setAttribute("href", file);
+		document.getElementById("image1_8_3").setAttribute("xlink:href", file);
+		document.getElementById("image1_8_3").setAttribute("href", file);
 	}
 	else{
 		document.getElementById("image1_8_3").setAttribute("xlink:href", file);
