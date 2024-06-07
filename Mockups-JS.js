@@ -139,11 +139,11 @@ function layers(type){
 	case "sm":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern083").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "none";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern183").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "none";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern283").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "block";
 		document.getElementById("mockup").style.height = "67%";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -153,11 +153,11 @@ function layers(type){
 	case "med":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern083").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern283").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "none";
 		document.getElementById("mockup").style.height = "84%";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -167,12 +167,12 @@ function layers(type){
 	case "medHorizon":
 		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern083").style.display = "none";
-		document.getElementById("pattern483").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "none";
+		document.getElementsByTagName("svg")[0].children[3].style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern283").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "block";
 		document.getElementById("mockup").style.height = "84%";
 		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -182,11 +182,11 @@ function layers(type){
 	case "lar":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern083").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "block";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern183").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "none";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern283").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -196,12 +196,12 @@ function layers(type){
 	case "larHorizon":
 		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern083").style.display = "block";
-		document.getElementById("pattern483").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "block";
+		document.getElementsByTagName("svg")[0].children[3].style.display = "block";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "none";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern283").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -211,11 +211,11 @@ function layers(type){
 	case "smallMedium":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern083").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern283").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "block";
 		document.getElementById("mockup").style.height = "84%";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -225,11 +225,11 @@ function layers(type){
 	case "mediumLarge":
 		var children = document.querySelectorAll('li');
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern283").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "none";
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern083").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "block";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -239,11 +239,11 @@ function layers(type){
 	case "triple":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern083").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "block";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern283").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -253,12 +253,12 @@ function layers(type){
 	case "tripleHorizon":
 		var children2 = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern083").style.display = "block";
-		document.getElementById("pattern483").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "block";
+		document.getElementsByTagName("svg")[0].children[3].style.display = "none";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("pattern283").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		children2.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -268,9 +268,9 @@ function layers(type){
 	case "regular":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "block";
-		document.getElementById("pattern083").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "block";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern183").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "none";
 		document.getElementById("miniShape").style.stroke = "";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
@@ -281,10 +281,10 @@ function layers(type){
 	case "mini":
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern083").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "none";
 		document.getElementById("regularShape").style.stroke = "";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("pattern183").style.display = "block";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("mockup").style.height = "";
 		const hardwoodColors = document.querySelectorAll('.medium hardwood');
 		for (let i = 0; i < hardwoodColors.length; i++) {
@@ -298,11 +298,11 @@ function layers(type){
 	default:
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
-		document.getElementById("pattern083").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[0].style.display = "none";
 		document.getElementById("medium").style.display = "none";
-		document.getElementById("pattern183").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[1].style.display = "none";
 		document.getElementById("small").style.display = "none";
-		document.getElementById("pattern283").style.display = "none";
+		document.getElementsByTagName("svg")[0].children[2].style.display = "none";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
