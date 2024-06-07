@@ -21,6 +21,7 @@ function tryIt (element){
 	}
 	else{
 		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
+		document.getElementById("image0_8_3").setAttribute("href", file);
 	}
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 }
