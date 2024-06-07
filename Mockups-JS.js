@@ -82,25 +82,15 @@ function tryIt4 (element){
 			document.getElementById("mHSelected").style.display = "inline";
 			document.getElementById("image4_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 			document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "black");
-			document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "none");
 			document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "none");
-			document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
-		}
-		else if(listItems[i].classList == "selected" && listItems[i].textContent == "Triple"){
-			document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
-			document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "none");
-			document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
-			document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 		}
 		else{
 			document.getElementById("mSelected").innerHTML = selectedColorName;
 			document.getElementById("mSelected").style.display = "inline";
 			document.getElementById("mHSelected").style.display = "none";
 			document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
-			document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
 			document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "none");
 			document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
-			document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "none");
 		}
 	}
 }
