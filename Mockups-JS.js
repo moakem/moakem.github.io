@@ -425,6 +425,9 @@ function showMockup(style){
 	case "Larissa":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/larissaShape.html");
 		break;
+	case "Managua":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/managuaShape.html");
+		break;
 	}
 }
 
