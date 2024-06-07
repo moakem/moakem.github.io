@@ -90,6 +90,7 @@ function tryIt4 (element){
 			document.getElementById("mHSelected").style.display = "none";
 			document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 			document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
+			document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "black");
 		}
 	}
 }
