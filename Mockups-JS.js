@@ -22,7 +22,7 @@ function tryIt (element){
 	else{
 		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
 	}
-	document.getElementsByTagName("path")[0].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 }
 
 function tryIt2 (element){
@@ -45,7 +45,7 @@ function tryIt2 (element){
 	else{
 		document.getElementById("image1_8_3").setAttribute("xlink:href", file);
 	}
-	document.getElementsByTagName("path")[1].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
 }
 
 function tryIt3 (element){
@@ -61,7 +61,7 @@ function tryIt3 (element){
 	document.getElementById("sSelected").innerHTML = selectedColorName;
 	var file = "Colors/" + selectedColor + ".jpg";
 	document.getElementById("image2_8_3").setAttribute("xlink:href", file);
-	document.getElementsByTagName("path")[2].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
 }
 
 function tryIt4 (element){
@@ -89,7 +89,7 @@ function tryIt4 (element){
 			document.getElementById("image1_8_3").setAttribute("xlink:href", "Colors/" + selectedColor + ".jpg");
 		}
 	}
-	document.getElementsByTagName("path")[3].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "black");
 }
 
 function reset(type) {
@@ -129,11 +129,11 @@ function reset(type) {
 	}
 	if(type == "larHorizon"){
 		document.getElementById("image4_8_3").setAttribute("xlink:href", "");
-		document.getElementsByTagName("path")[3].setAttribute("stroke", "black");
+		document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "black");
 	}
-	document.getElementsByTagName("path")[1].setAttribute("stroke", "black");
-	document.getElementsByTagName("path")[0].setAttribute("stroke", "black");
-	document.getElementsByTagName("path")[2].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
+	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
 }
 
 function layers(type){
