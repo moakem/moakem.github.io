@@ -422,11 +422,14 @@ function showMockup(style){
 	case "Cairo":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cairoShape.html");
 		break;
+	case "Managua":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/managuaShape.html");
+		break;
 	case "Larissa":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/larissaShape.html");
 		break;
-	case "Managua":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/managuaShape.html");
+	case "Valencia":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/valenciaShape.html");
 		break;
 	}
 }
