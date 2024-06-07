@@ -12,9 +12,6 @@ function tryIt (element){
 	var currentUrl = window.location.href;
     	let paramString = currentUrl.split('/')[3];
     	if (paramString == "RochelleCustomization.html"){
-		console.log("Rochelle");
-		console.log(document.getElementById("image083"));
-		console.log(document.getElementById("pattern083"));
 		document.getElementById("image0_8_3").setAttribute("xlink:href", file);
 		document.getElementById("image0_8_3").setAttribute("href", file);
 	}
