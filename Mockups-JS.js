@@ -271,7 +271,6 @@ function layers(type){
 		document.getElementsByTagName("svg")[0].children[0].style.display = "block";
 		document.getElementById("medium").style.display = "none";
 		document.getElementsByTagName("svg")[0].children[1].style.display = "none";
-		document.getElementById("miniShape").style.stroke = "";
 		document.getElementById("mockup").style.height = "";
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
@@ -282,7 +281,6 @@ function layers(type){
 		var children = document.querySelectorAll('li');
 		document.getElementById("large").style.display = "none";
 		document.getElementsByTagName("svg")[0].children[0].style.display = "none";
-		document.getElementById("regularShape").style.stroke = "";
 		document.getElementById("medium").style.display = "block";
 		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("mockup").style.height = "";
