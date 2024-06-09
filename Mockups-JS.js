@@ -462,9 +462,6 @@ function showMockup(style){
 	case "Kauai":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kauaiShape.html");
 		break;
-	case "Monroe":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");
-		break;
 	case "Corinth":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/corinthShape.html");
 		break;
@@ -476,6 +473,12 @@ function showMockup(style){
 		break;
 	case "Sierra":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sierraShape.html");
+		break;
+	case "Rowan":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rowanShape.html");
+		break;
+	case "Monroe":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");
 		break;
 	}
 }
