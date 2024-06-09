@@ -437,6 +437,9 @@ function showMockup(style){
 	case "Sochi":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sochiShape.html");
 		break;
+	case "Dublin":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dublinShape.html");
+		break;
 	}
 }
 
