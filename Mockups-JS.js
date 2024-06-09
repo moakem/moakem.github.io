@@ -468,6 +468,9 @@ function showMockup(style){
 	case "Corinth":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/corinthShape.html");
 		break;
+	case "Winona":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/winonaShape.html");
+		break;
 	}
 }
 
