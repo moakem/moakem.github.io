@@ -440,6 +440,9 @@ function showMockup(style){
 	case "Dublin":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dublinShape.html");
 		break;
+	case "Double Diamond":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleDiamondShape.html");
+		break;
 	}
 }
 
