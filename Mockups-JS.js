@@ -387,7 +387,6 @@ function menuOrNot(style) {
 	else if (style == "Corinth"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
-                document.getElementById("pattern184").style.display = "none";
 	}
 	else {
 		document.getElementById("navigation").style.display = "none";
