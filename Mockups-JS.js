@@ -356,8 +356,8 @@ function menuOrNot(style) {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
-		document.getElementById("ltitle").innerHTML = "Top";
-		document.getElementById("mtitle").innerHTML = "Bottom";
+		document.getElementById("lTitle").innerHTML = "Top";
+		document.getElementById("mTitle").innerHTML = "Bottom";
 	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
@@ -369,8 +369,8 @@ function menuOrNot(style) {
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
 		document.getElementById("small").style.display = "block";
-		document.getElementById("mtitle").innerHTML = "Middle";
-		document.getElementById("ltitle").innerHTML = "Top";
+		document.getElementById("mTitle").innerHTML = "Middle";
+		document.getElementById("lTitle").innerHTML = "Top";
 	}
 	else if (style == "Sierra"){
 		document.getElementById("navigation").style.display = "none";
