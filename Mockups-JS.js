@@ -356,7 +356,7 @@ function menuOrNot(style) {
 		document.getElementById("mtitle").innerHTML = "Bottom";
 	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
-		|| style == "Dublin" || style == "Valencia" || style == "Double Diamonds" || style == "Seoul"){
+		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"){
 		document.getElementById("navigation").style.display = "block";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
