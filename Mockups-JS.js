@@ -375,6 +375,10 @@ function menuOrNot(style) {
 			acrylicColors[i].style.display = "none";
 		}
 	}
+	else if (style == "Kauai"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+	}
 	else {
 		document.getElementById("navigation").style.display = "none";
 	}
