@@ -446,6 +446,9 @@ function showMockup(style){
 	case "Seoul":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seoulShape.html");
 		break;
+	case "Kauai":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kauaiShape.html");
+		break;
 	}
 }
 
