@@ -114,10 +114,10 @@ function reset(type) {
 	document.getElementById("image083").setAttribute("xlink:href", "");
 	document.getElementById("image083").setAttribute("href", "");
 	if (type != "regular"){
+		document.getElementById("image183").setAttribute("xlink:href", "");
+		document.getElementById("image183").setAttribute("href", "");
 		if(type != "mini"){
-			document.getElementById("image183").setAttribute("xlink:href", "");
 			document.getElementById("image283").setAttribute("xlink:href", "");
-			document.getElementById("image183").setAttribute("href", "");
 			document.getElementById("image283").setAttribute("href", "");
 		}
 	}
