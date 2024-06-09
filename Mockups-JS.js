@@ -14,7 +14,7 @@ function tryIt (element){
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	var type = getParameters();
 	if(type == "Corinth"){
-	    document.getElementsByTagName("svg")[0].children[1].style.display = "block";
+	    document.getElementById("pattern184").style.display = "block";
 	}
 }
 
@@ -380,9 +380,14 @@ function menuOrNot(style) {
 			acrylicColors[i].style.display = "none";
 		}
 	}
-	else if (style == "Kauai" || style == "Corinth"){
+	else if (style == "Kauai"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
+	}
+	else if (style == "Corinth"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+                document.getElementById("pattern184").style.display = "none";
 	}
 	else {
 		document.getElementById("navigation").style.display = "none";
