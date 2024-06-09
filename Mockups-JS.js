@@ -317,8 +317,8 @@ function getParameters() {
     if(type == "DoubleKite"){
     	type = "Double Kite";
     }
-    if(type == "DoubleDiamonds"){
-    	type = "Double Diamonds";
+    if(type == "DoubleDiamond"){
+    	type = "Double Diamond";
     }
     return type;
     
