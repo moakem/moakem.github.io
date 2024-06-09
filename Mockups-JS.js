@@ -376,7 +376,7 @@ function menuOrNot(style) {
 			acrylicColors[i].style.display = "none";
 		}
 	}
-	else if (style == "Kauai"){
+	else if (style == "Kauai" || style == "Corinth"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -456,6 +456,9 @@ function showMockup(style){
 		break;
 	case "Monroe":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");
+		break;
+	case "Corinth":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/corinthShape.html");
 		break;
 	}
 }
