@@ -471,6 +471,9 @@ function showMockup(style){
 	case "Winona":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/winonaShape.html");
 		break;
+	case "Sydney":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sydneyShape.html");
+		break;
 	}
 }
 
