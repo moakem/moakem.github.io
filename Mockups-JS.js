@@ -12,6 +12,10 @@ function tryIt (element){
 	document.getElementById("image083").setAttribute("xlink:href", file);
 	document.getElementById("image083").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
+	var type = getParameters();
+	if(type == "Corinth"){
+	    document.getElementsByTagName("svg")[0].children[1].style.display = "block";
+	}
 }
 
 function tryIt2 (element){
