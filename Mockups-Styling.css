@@ -129,6 +129,7 @@ a:hover{
 .colorOptions>img {
     height: 35px;
     cursor:pointer;
+    margin: 3px;
 }
 
 img.selected {
