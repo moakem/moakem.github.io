@@ -21,30 +21,16 @@
 				</ul>
 			</nav>
 			<br/><br/>
-			<script>var type = getParameters();</script>
+			<script>
+				var type = getParameters();
+			</script>
 		</section>
 		<main>
 			<section id="colors">
 				<div id="large" style="display:none">
 					<span id="lTitle"> Color Options: </span> <span id="lSelected" class="selectedName"></span>
 						<br/><br/>
-						<div class="colorOptions">
-							<img id="lblack" class="large acrylic" value="black" name="Black" src="Colors/black.jpg" onclick="tryIt(this)"/>
-							<img id="lwhite" class="large acrylic" value="white" name="White" src="Colors/white.jpg" onclick="tryIt(this)"/>
-							<img id="lruby" class="large acrylic" value="ruby" name="Ruby" src="Colors/ruby.jpg" onclick="tryIt(this)"/>
-							<img id="lpink" class="large acrylic" value="pink" name="Pink" src="Colors/pink.jpg" onclick="tryIt(this)"/>
-							<img id="lturquoise" class="large acrylic" value="turquoise" name="Turquoise" src="Colors/turquoise.jpg" onclick="tryIt(this)"/>
-							<img id="lleopard" class="large acrylic" value="leopard" name="Leopard" src="Colors/leopard.jpg" onclick="tryIt(this)"/>
-							<img id="lpartyGlitter" class="large acrylic" value="partyGlitter" name="Party Glitter" src="Colors/partyGlitter.jpg" onclick="tryIt(this)"/>
-							<img id="lstarlightGlitter" class="large acrylic" value="starlightGlitter" name="Starlight Glitter" src="Colors/starlightGlitter.jpg" onclick="tryIt(this)"/>
-							<img id="lnaiades" class="large acrylic" value="naiades" name="Naiades - June Promo" src="Colors/naiades.jpg" onclick="tryIt(this)"/>
-							<img id="lsourAppleSwirl" class="large acrylic" value="sourAppleSwirl" name="Sour Apple Swirl - June Promo" src="Colors/sourAppleSwirl.jpg" onclick="tryIt(this)"/>
-							<img id="lmaple" class="large hardwood" value="maple" name="Maple" src="Colors/maple.jpg" onclick="tryIt(this)"/>
-							<img id="lcherry" class="large hardwood" value="cherry" name="Cherry" src="Colors/cherry.jpg" onclick="tryIt(this)"/>
-							<img id="lsapele" class="large hardwood" value="sapele" name="Sapele" src="Colors/sapele.jpg" onclick="tryIt(this)"/>
-							<img id="lwalnut" class="large hardwood" value="walnut" name="Walnut" src="Colors/walnut.jpg" onclick="tryIt(this)"/>
-							</div>
-						</div>
+						<div id="largeOptions" class="colorOptions"></div>
 				</div>
 				
 				<div id="medium" style="display:none">
@@ -96,6 +82,7 @@
 				showMockup(type); 
 				includeHTML();
 				menuOrNot(type);
+				getColors();
 			</script>
 		</main>
 	</body>
