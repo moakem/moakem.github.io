@@ -7,7 +7,7 @@ function getColors(colors){
 	
 }
 
-function getLeathers(colors){
+function getLeathers(colors, type){
 	if(type == 'Horizon'){
 			var mediumClick = "tryIt4(this)";
 		else { 
