@@ -1,4 +1,5 @@
 function getColors(colors){
+	console.log('in colors');
 	for (let i=0; i < colors.length; i++){
 		console.log(colors['AcrylicsAndHardwoods'][i]);
 		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='" + tryIt(this) + "'/>"
