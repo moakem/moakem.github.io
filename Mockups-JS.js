@@ -8,9 +8,14 @@ function getColors(colors){
 }
 
 function getLeathers(colors){
+	if(type == 'Horizon'){
+			var mediumClick = "tryIt4(this)";
+		else { 
+			var mediumClick = "tryIt2(this)";
+		}
 	for (let i=0; i < colors['Leathers'].length; i++){
 		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Leathers'][i]['value'] + "' class='large' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Leathers'][i]['value'] + "' class='medium' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='" + if(type == 'Horizon'){ + "tryIt4(this)" + } else { + "tryIt2(this)" + "}' />";
+		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Leathers'][i]['value'] + "' class='medium' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
 		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Leathers'][i]['value'] + "' class='small' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
 	}
 	
