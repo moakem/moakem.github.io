@@ -9,10 +9,10 @@ function getColors(colors){
 
 function getLeathers(colors, type){
 	if(type == 'Horizon'){
-			var mediumClick = "tryIt4(this)";
-		else { 
-			var mediumClick = "tryIt2(this)";
-		}
+		var mediumClick = "tryIt4(this)";
+	}else { 
+		var mediumClick = "tryIt2(this)";
+	}
 	for (let i=0; i < colors['Leathers'].length; i++){
 		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Leathers'][i]['value'] + "' class='large' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Leathers'][i]['value'] + "' class='medium' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
