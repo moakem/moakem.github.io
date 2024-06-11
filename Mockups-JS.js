@@ -1,7 +1,8 @@
 function getColors(colors){
-	document.getElementById("largeOptions").innerHTML = "<img id='l" + colors['AcrylicsAndHardwoods'][0]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][0]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][0]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][0]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][0]['src'] + "' onclick='tryIt(this)'/>";
-	for (let i=1; i < colors['AcrylicsAndHardwoods'].length; i++){
+	for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
 		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='tryIt(this)' />";
+		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='tryIt2(this)' />";
+		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='small " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='tryIt3(this)' />";
 	}
 	
 }
