@@ -1,26 +1,7 @@
-const colors = {
-		AcrylicsAndHardwoods : 
-		[
-		{className: "acrylic", value: "black", name: "Black", src: "black.jpg" },
-		{className: "acrylic", value: "white", name: "White", src: "white.jpg" },
-		{className: "acrylic", value: "ruby", name: "Ruby", src: "ruby.jpg" },
-		{className: "acrylic", value: "pink", name: "Pink", src: "pink.jpg" },
-		{className: "acrylic", value: "turquoise", name: "Turquoise", src: "turquoise.jpg" },
-		{className: "acrylic", value: "leopard", name: "Leopard", src: "leopard.jpg" },
-		{className: "acrylic", value: "partyGlitter", name: "Party Glitter", src: "partyGlitter.jpg" },
-		{className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter", src: "starlightGlitter.jpg" },
-		{className: "hardwood", value: "maple", name: "Maple", src: "maple.jpg" },
-		{className: "hardwood", value: "cherry", name: "Cherry", src: "cherry.jpg" },
-		{className: "hardwood", value: "sapele", name: "Sapele", src: "Sapele.jpg" },
-		{className: "hardwood", value: "walnut", name: "Walnut", src: "walnut.jpg" },
-		{className: "acrylic", value: "naiades", name: "Naiades - June Promo", src: "naiades.jpg" },
-		{className: "acrylic", value: "sourAppleSwirl", name: "Sour Apple Swirl", src: "sourAppleSwirl.jpg" }
-		]};
-
-function getColors(){
+function getColors(colors){
 	for (let i=0; i < colors.length; i++){
 		console.log(colors['AcrylicsAndHardwoods'][i]);
-		document.getElementById("largeOptions").innerHTML = "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='" + tryIt(this) + "'/>"
+		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='" + tryIt(this) + "'/>"
 	}
 	
 }
