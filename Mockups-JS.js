@@ -436,7 +436,7 @@ function menuOrNot(style) {
 			acrylicColors[i].style.display = "none";
 		}
 	}
-	else if (style == "Kauai" style == "Quincy"){
+	else if (style == "Kauai" || style == "Quincy"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
