@@ -1,8 +1,16 @@
 function getColors(colors){
 	for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
-		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='tryIt(this)' />";
-		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='tryIt2(this)' />";
-		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='small " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['src'] + "' onclick='tryIt3(this)' />";
+		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='small " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+	}
+	
+}
+
+function sportsColors(colors){
+	for (let i=0; i < colors['Sports'].length; i++){
+		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Sports'][i]['value'] + "' class='large' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Sports'][i]['value'] + "' class='medium' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
 	}
 	
 }
@@ -108,6 +116,31 @@ function tryIt4 (element){
 			document.getElementsByTagName("svg")[0].children[3].setAttribute("stroke", "none");
 		}
 	}
+}
+
+function chooseSport (element){
+	var selectedSport = element.getAttribute("value");
+	var selectedSportName = element.getAttribute("name");
+	const children = document.querySelectorAll('.small');
+
+	children.forEach(function(e) {
+  		e.classList.remove('selected');
+	});
+	element.classList.add("selected");
+
+	if(selectedSport == "cheer"){
+		document.getElementsByTagName("svg")[0].children[2].setAttribute("y", "116");
+		document.getElementsByTagName("svg")[0].children[2].setAttribute("x", "-3");
+	}
+	else{
+		document.getElementsByTagName("svg")[0].children[2].setAttribute("y", "140");
+		document.getElementsByTagName("svg")[0].children[2].setAttribute("x", "5");
+	}
+		
+	document.getElementById("sSelected").innerHTML = selectedSportName;
+	var file = "Colors/" + selectedSport + ".png";
+	document.getElementById("image283").setAttribute("xlink:href", file);
+	document.getElementById("image283").setAttribute("href", file);
 }
 
 function reset(type) {
@@ -499,6 +532,9 @@ function showMockup(style){
 		break;
 	case "Rowan":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rowanShape.html");
+		break;
+	case "Quincy":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quincyShape.html");
 		break;
 	case "Monroe":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");

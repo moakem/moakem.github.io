@@ -128,8 +128,25 @@ a:hover{
 
 .colorOptions>img {
     height: 35px;
+    width:35px;
     cursor:pointer;
     margin: 2px;
+}
+
+#smallOptions>div{
+	  padding: 5px 10px 5px;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 2px 0px;
+    cursor:pointer;
+}
+
+.colorOptions>div.selected{
+		cursor: default;
+    border: solid 2px #66BCB0 !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 img.selected {
@@ -139,6 +156,10 @@ img.selected {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+
+img:hover, .colorOptions>div:hover{
+	opacity:50%;
 }
 
 li.selected{
@@ -158,7 +179,7 @@ li.selected:hover{
 	width:48%;
 }
 
-#colors div{
+#colors>div{
 	padding-bottom: 10px;
 }
 
