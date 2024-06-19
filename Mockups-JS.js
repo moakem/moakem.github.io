@@ -436,7 +436,7 @@ function menuOrNot(style) {
 			acrylicColors[i].style.display = "none";
 		}
 	}
-	else if (style == "Kauai" || style == "Quincy"){
+	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -535,6 +535,9 @@ function showMockup(style){
 		break;
 	case "Quincy":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quincyShape.html");
+		break;
+	case "Cassidy":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cassidyShape.html");
 		break;
 	case "Monroe":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");
