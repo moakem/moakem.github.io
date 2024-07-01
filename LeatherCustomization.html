@@ -35,26 +35,30 @@
 				const colors = {
 					Leathers : 
 					[
-					{value: "salmonBasketweave", name: "Salmon BasketWeave"},
-					{value: "whiteCork", name: "White Cork"},
-					{value: "distressedRaspberry", name: "Distressed Raspberry"},
-					{value: "spruceGreenCork", name: "Spruce Green Cork"},
-					{value: "blossom", name: "Blossom"},
-					{value: "leopardLeather", name: "Leopard"},
-					{value: "gold", name: "Gold"},
-					{value: "aquaCork", name: "Aqua Cork"},
-					{value: "roseGoldBraid", name: "Rose Gold Braid" },
-					{value: "navyCorduroy", name: "Navy Corduroy"},
-					{value: "blackCork", name: "Black Cork"},
-					{value: "selenite", name: "Selenite"},
-					{value: "brandySaddle", name: "Brandy Saddle"},
-					{value: "blackAndWhiteStripes", name: "Black and White Stripes"},
-					{value: "lavenderFrost", name: "Lavender Frost"},
-					{value: "mustardChevron", name: "Mustard Chevron"},
-					{value: "midnightStingray", name: "Midnight Stingray - Hostess Exclusive"},
-					{value: "roselle", name: "Roselle - June Promo"},
-					{value: "persika", name: "Persika - June Promo"},
-					{value: "chandler", name: "Chandler - June Promo"}
+					{className: "stock", value: "salmonBasketweave", name: "Salmon BasketWeave"},
+					{className: "stock", value: "whiteCork", name: "White Cork"},
+					{className: "stock", value: "distressedRaspberry", name: "Distressed Raspberry"},
+					{className: "stock", value: "spruceGreenCork", name: "Spruce Green Cork"},
+					{className: "stock", value: "blossom", name: "Blossom"},
+					{className: "stock", value: "leopardLeather", name: "Leopard"},
+					{className: "stock", value: "gold", name: "Gold"},
+					{className: "stock", value: "aquaCork", name: "Aqua Cork"},
+					{className: "stock", value: "roseGoldBraid", name: "Rose Gold Braid" },
+					{className: "stock", value: "navyCorduroy", name: "Navy Corduroy"},
+					{className: "stock", value: "blackCork", name: "Black Cork"},
+					{className: "stock", value: "selenite", name: "Selenite"},
+					{className: "stock", value: "brandySaddle", name: "Brandy Saddle"},
+					{className: "stock", value: "blackAndWhiteStripes", name: "Black and White Stripes"},
+					{className: "stock", value: "lavenderFrost", name: "Lavender Frost"},
+					{className: "stock", value: "mustardChevron", name: "Mustard Chevron"},
+					{className: "stock", value: "midnightStingray", name: "Midnight Stingray - Hostess Exclusive"},
+					{className: "promo", value: "emblem", name: "Emblem - May Promo"},
+					{className: "promo", value: "roselle", name: "Roselle - June Promo"},
+					{className: "promo", value: "persika", name: "Persika - June Promo"},
+					{className: "promo", value: "chandler", name: "Chandler - June Promo"},
+					{className: "promo", value: "bodleian", name: "Bodleian - July Promo"},
+					{className: "promo", value: "astrid", name: "Astrid - July Promo"},
+					{className: "promo", value: "pummelo", name: "Pummelo - July Promo"}
 					]
 				};
 			</script>
@@ -86,6 +90,7 @@
 				showMockup(type);
 				includeHTML();
 				getLeathers(colors, type);
+				//promoShow();
 				showNav(type); 
 			</script>
 		</main>
