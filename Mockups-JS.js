@@ -380,6 +380,12 @@ function getParameters() {
     if(type == "DoubleDiamond"){
     	type = "Double Diamond";
     }
+    if(type == "TumblingBlocks"){
+    	type = "Tumbling Blocks";
+    }
+    if(type == "StarStruck"){
+    	type = "Star Struck";
+    }
     return type;
     
 }
@@ -417,7 +423,7 @@ function menuOrNot(style) {
 	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
-		|| style == "Monroe" || style == "Lima" || style == "Nairobi" || style == "Rio"){
+		|| style == "Monroe" || style == "Lima" || style == "Nairobi" || style == "Rio" || style == "Snowflakes"){
 		document.getElementById("navigation").style.display = "block";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
@@ -436,7 +442,7 @@ function menuOrNot(style) {
 			acrylicColors[i].style.display = "none";
 		}
 	}
-	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy"){
+	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" || style == "Aspen" || style == "Belize" || style == "TumblingBlocks" || style == "Taipei" || style == "Zurich" || style == "StarStruck"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -550,6 +556,27 @@ function showMockup(style){
 		break;
 	case "Rio":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rioShape.html");
+		break;
+	case "Snowflakes":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/snowflakesShape.html");
+		break;
+	case "Aspen":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/aspenShape.html");
+		break;
+	case "Belize":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/belizeShape.html");
+		break;
+	case "Tumbling Blocks":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tumblingBlocksShape.html");
+		break;
+	case "Taipei":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/taipeiShape.html");
+		break;
+	case "Zurich":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/zurichShape.html");
+		break;
+	case "Star Struck":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starStruckShape.html");
 		break;
 	}
 }
