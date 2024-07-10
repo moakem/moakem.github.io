@@ -383,9 +383,6 @@ function getParameters() {
     if(type == "TumblingBlocks"){
     	type = "Tumbling Blocks";
     }
-    if(type == "StarStruck"){
-    	type = "Star Struck";
-    }
     return type;
     
 }
@@ -444,7 +441,7 @@ function menuOrNot(style) {
 	}
 	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
 		|| style == "Aspen" || style == "Belize" || style == "Tumbling Blocks" 
-		|| style == "Taipei" || style == "Zurich" || style == "Star Struck"){
+		|| style == "Taipei" || style == "Zurich" || style == "Starstruck"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -577,8 +574,8 @@ function showMockup(style){
 	case "Zurich":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/zurichShape.html");
 		break;
-	case "Star Struck":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starStruckShape.html");
+	case "Starstruck":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starstruckShape.html");
 		break;
 	}
 }
