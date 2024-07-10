@@ -417,7 +417,7 @@ function menuOrNot(style) {
 	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
-		|| style == "Monroe" || style == "Lima"){
+		|| style == "Monroe" || style == "Lima" || style == "Nairobi"){
 		document.getElementById("navigation").style.display = "block";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
@@ -544,6 +544,9 @@ function showMockup(style){
 		break;
 	case "Lima":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/limaShape.html");
+		break;
+	case "Nairobi":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/nairobiShape.html");
 		break;
 	}
 }
