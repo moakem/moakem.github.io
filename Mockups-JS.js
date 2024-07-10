@@ -22,9 +22,9 @@ function getLeathers(colors, type){
 		var mediumClick = "tryIt2(this)";
 	}
 	for (let i=0; i < colors['Leathers'].length; i++){
-		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Leathers'][i]['value'] + "' class='large' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Leathers'][i]['value'] + "' class='medium' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
-		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Leathers'][i]['value'] + "' class='small' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Leathers'][i]['value'] + "' class='large " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Leathers'][i]['value'] + "' class='medium " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
+		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Leathers'][i]['value'] + "' class='small " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
 	}
 	
 }
@@ -417,7 +417,7 @@ function menuOrNot(style) {
 	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
-		|| style == "Monroe"){
+		|| style == "Monroe" || style == "Lima"){
 		document.getElementById("navigation").style.display = "block";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
@@ -542,7 +542,57 @@ function showMockup(style){
 	case "Monroe":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");
 		break;
+	case "Lima":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/limaShape.html");
+		break;
 	}
+}
+
+function promoShow(){
+	const currentDate = new Date();
+	const currentMonth = currentDate.toLocaleString('default', { month: 'long' });
+	const promo = document.querySelectorAll('.promo');
+	//currentDate.setDate(1); //changing the date to the first to test golden hours
+	//currentDate.setHours(7); //changing the hours to test golden hours
+	//console.log(currentDate); //making sure the date looks right for golden hours
+	promo.forEach(function(e) {
+		//Golden Hours Clause
+		if (currentDate.getDate() == 1){
+			var x = new Date();
+			x.setDate(0); //sets to previous month
+			previousMonth = x.toLocaleString('default', { month: 'long' }); //months name verse number
+			if (currentDate.getUTCHours() < 2){ //if it is before 8am MT
+	            if(e.name.includes(previousMonth)){
+	            	e.style.display = "inline-block";
+	            }
+	            else{
+	            	e.style.display = "none";
+	            }
+	        }
+	        else if (currentDate.getHours() >= 21){
+	        	if(e.name.includes(currentMonth)){
+	            	e.style.display = "inline-block";
+	            }
+	            else{
+	            	e.style.display = "none";
+	            }
+	        }
+	        else if (currentDate.getHours() >= 8 || currentDate.getHours() < 21){
+	        	if(e.name.includes(currentMonth) || e.name.includes(previousMonth)){
+	            	e.style.display = "inline-block";
+	            }
+	        }
+	    } // When it isnt Golden hours it hides the previous month and shows current month only
+	    else{
+	    	if(e.name.includes(currentMonth)){
+	            e.style.display = "inline-block";
+	        }
+	        else{
+	        	e.style.display = "none";
+	        }
+	    }
+	});
+
 }
 
 function includeHTML() {
