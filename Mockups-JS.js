@@ -442,7 +442,9 @@ function menuOrNot(style) {
 			acrylicColors[i].style.display = "none";
 		}
 	}
-	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" || style == "Aspen" || style == "Belize" || style == "TumblingBlocks" || style == "Taipei" || style == "Zurich" || style == "StarStruck"){
+	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
+		|| style == "Aspen" || style == "Belize" || style == "Tumbling Blocks" 
+		|| style == "Taipei" || style == "Zurich" || style == "Star Struck"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
