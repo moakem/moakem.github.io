@@ -441,7 +441,7 @@ function menuOrNot(style) {
 	}
 	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
 		|| style == "Aspen" || style == "Belize" || style == "Tumbling Blocks" 
-		|| style == "Taipei" || style == "Zurich" || style == "Starstruck"){
+		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -576,6 +576,9 @@ function showMockup(style){
 		break;
 	case "Starstruck":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starstruckShape.html");
+		break;
+	case "Dragonfly":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dragonflyShape.html");
 		break;
 	}
 }
