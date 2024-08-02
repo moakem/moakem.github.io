@@ -441,7 +441,8 @@ function menuOrNot(style) {
 	}
 	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
 		|| style == "Aspen" || style == "Belize" || style == "Tumbling Blocks" 
-		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly"){
+		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly" 
+		|| style == "Aster"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -579,6 +580,9 @@ function showMockup(style){
 		break;
 	case "Dragonfly":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dragonflyShape.html");
+		break;
+	case "Aster":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/asterShape.html");
 		break;
 	}
 }
