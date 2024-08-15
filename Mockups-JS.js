@@ -44,7 +44,7 @@ function tryIt (element){
 	document.getElementById("image083").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	var type = getParameters();
-	if(type == "Corinth"){
+	if(type == "Corinth" || type == "Football"){
 	    document.getElementById("pattern184").style.display = "block";
 	}
 }
