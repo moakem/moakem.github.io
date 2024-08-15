@@ -383,6 +383,9 @@ function getParameters() {
     if(type == "TumblingBlocks"){
     	type = "Tumbling Blocks";
     }
+    if(type == "MusicNote"){
+    	type = "MusicNote";
+    }
     return type;
     
 }
@@ -420,7 +423,8 @@ function menuOrNot(style) {
 	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
-		|| style == "Monroe" || style == "Lima" || style == "Nairobi" || style == "Rio" || style == "Snowflakes"){
+		|| style == "Monroe" || style == "Lima" || style == "Nairobi" || style == "Rio" || style == "Snowflakes" 
+		|| style == "Pumpkin"){
 		document.getElementById("navigation").style.display = "block";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
@@ -431,7 +435,7 @@ function menuOrNot(style) {
 		document.getElementById("mTitle").innerHTML = "Middle Color Options:";
 		document.getElementById("lTitle").innerHTML = "Top Color Options:";
 	}
-	else if (style == "Sierra"){
+	else if (style == "Sierra" || style == "Football"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		const acrylicColors = document.querySelectorAll('.acrylic');
@@ -442,7 +446,7 @@ function menuOrNot(style) {
 	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
 		|| style == "Aspen" || style == "Belize" || style == "Tumbling Blocks" 
 		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly" 
-		|| style == "Aster"){
+		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" ){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -583,6 +587,21 @@ function showMockup(style){
 		break;
 	case "Aster":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/asterShape.html");
+		break;
+	case "Pumpkin":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/pumpkinShape.html");
+		break;
+	case "Cactus":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cactusShape.html");
+		break;
+	case "Music Note":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/musicNoteShape.html");
+		break;
+	case "Ophelia":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/opheliaShape.html");
+		break;
+	case "Football":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/footballShape.html");
 		break;
 	}
 }
