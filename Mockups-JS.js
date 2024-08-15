@@ -384,7 +384,7 @@ function getParameters() {
     	type = "Tumbling Blocks";
     }
     if(type == "MusicNote"){
-    	type = "MusicNote";
+    	type = "Music Note";
     }
     return type;
     
