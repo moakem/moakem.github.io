@@ -446,7 +446,7 @@ function menuOrNot(style) {
 	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
 		|| style == "Aspen" || style == "Belize" || style == "Tumbling Blocks" 
 		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly" 
-		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" ){
+		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" || style == "Marnie" ){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -602,6 +602,9 @@ function showMockup(style){
 		break;
 	case "Football":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/footballShape.html");
+		break;
+	case "Marnie":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/marnieShape.html");
 		break;
 	}
 }
