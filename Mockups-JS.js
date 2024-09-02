@@ -389,8 +389,8 @@ function getParameters() {
     if(type == "LighningBolt"){
     	type = "Lightning Bolt";
     }
-    if(type == "OGSugarSkulls"){
-    	type = "OG Sugar Skulls";
+    if(type == "OGSugarSkull"){
+    	type = "OG Sugar Skull";
     }
     return type;
     
@@ -454,7 +454,7 @@ function menuOrNot(style) {
 		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly" 
 		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" 
 		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
-		|| style == "Lightning Bolt" || style == "OG Sugar Skulls" || style == "Austin" || style == "Salem"   ){
+		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" || style == "Salem"   ){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -626,8 +626,8 @@ function showMockup(style){
 	case "Lightning Bolt":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lightningBoltShape.html");
 		break;
-	case "OG Sugar Skulls":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ogSugarSkullsShape.html");
+	case "OG Sugar Skull":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ogSugarSkullShape.html");
 		break;
 	case "Austin":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/austinShape.html");
