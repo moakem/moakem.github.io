@@ -386,6 +386,12 @@ function getParameters() {
     if(type == "MusicNote"){
     	type = "Music Note";
     }
+    if(type == "LighningBolt"){
+    	type = "Lightning Bolt";
+    }
+    if(type == "OGSugarSkulls"){
+    	type = "OG Sugar Skulls";
+    }
     return type;
     
 }
@@ -446,7 +452,9 @@ function menuOrNot(style) {
 	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
 		|| style == "Aspen" || style == "Belize" || style == "Tumbling Blocks" 
 		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly" 
-		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" || style == "Marnie" ){
+		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" 
+		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
+		|| style == "Lightning Bolt" || style == "OG Sugar Skulls" || style == "Austin" || style == "Salem"   ){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -605,6 +613,27 @@ function showMockup(style){
 		break;
 	case "Marnie":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/marnieShape.html");
+		break;
+	case "Daphne":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/daphneShape.html");
+		break;
+	case "Elvira":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/elviraShape.html");
+		break;
+	case "Jaclyn":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/jaclynShape.html");
+		break;
+	case "Lightning Bolt":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lightningBoltShape.html");
+		break;
+	case "OG Sugar Skulls":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ogSugarSkullsShape.html");
+		break;
+	case "Austin":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/austinShape.html");
+		break;
+	case "Salem":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/salemShape.html");
 		break;
 	}
 }
