@@ -386,7 +386,7 @@ function getParameters() {
     if(type == "MusicNote"){
     	type = "Music Note";
     }
-    if(type == "LighningBolt"){
+    if(type == "LightningBolt"){
     	type = "Lightning Bolt";
     }
     if(type == "OGSugarSkull"){
