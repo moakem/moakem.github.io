@@ -1,6 +1,6 @@
 
 function getColors(colors, type){
-	if (type == "Mia"){
+	if (type == "Mia" || type == "Awareness Ribbon"){
 		for (let i=0; i < colors['Mia'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Mia'][i]['value'] + "' class='large " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Mia'][i]['value'] + "' class='medium " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
@@ -401,6 +401,9 @@ function getParameters() {
     if(type == "OGSugarSkull"){
     	type = "OG Sugar Skull";
     }
+    if(type == "AwarenessRibbon"){
+    	type = "Awareness Ribbon";
+    }
     return type;
     
 }
@@ -436,7 +439,7 @@ function menuOrNot(style) {
 		document.getElementById("lTitle").innerHTML = "Top Color Options:";
 		document.getElementById("mTitle").innerHTML = "Bottom Color Options:";
 	}
-	else if (style == "Mia") {
+	else if (style == "Mia" || style == "Awareness Ribbon") {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -653,6 +656,9 @@ function showMockup(style){
 		break;
 	case "Mia":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/miaShape.html");
+		break;
+	case "Awareness Ribbon":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/awarenessRibbonShape.html");
 		break;
 	}
 }
