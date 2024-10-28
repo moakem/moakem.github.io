@@ -1,10 +1,19 @@
-function getColors(colors){
-	for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
-		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
-		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='small " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+
+function getColors(colors, type){
+	if (type == "Mia"){
+		for (let i=0; i < colors['Mia'].length; i++){
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Mia'][i]['value'] + "' class='large " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Mia'][i]['value'] + "' class='medium " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+			document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Mia'][i]['value'] + "' class='small " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+		}
 	}
-	
+	else {
+		for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+			document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='small " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+		}
+	}
 }
 
 function sportsColors(colors){
@@ -427,6 +436,13 @@ function menuOrNot(style) {
 		document.getElementById("lTitle").innerHTML = "Top Color Options:";
 		document.getElementById("mTitle").innerHTML = "Bottom Color Options:";
 	}
+	else if (style == "Mia") {
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("lTitle").innerHTML = "Left Color:";
+		document.getElementById("mTitle").innerHTML = "Right Color:";
+	}
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
 		|| style == "Monroe" || style == "Lima" || style == "Nairobi" || style == "Rio" || style == "Snowflakes" 
@@ -454,7 +470,7 @@ function menuOrNot(style) {
 		|| style == "Taipei" || style == "Zurich" || style == "Starstruck" || style == "Dragonfly" 
 		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" 
 		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
-		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" || style == "Salem"   ){
+		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" || style == "Salem" ){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -634,6 +650,9 @@ function showMockup(style){
 		break;
 	case "Salem":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/salemShape.html");
+		break;
+	case "Mia":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/miaShape.html");
 		break;
 	}
 }
