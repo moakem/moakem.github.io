@@ -42,10 +42,42 @@
 					//{className: "acrylic promo", value: "opaline", name: "Opaline - August Promo"},
 				        {className: "acrylic promo", value: "autumnLuster", name: "Autumn Luster - Fan Favorite"},
 					{className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"},
-					{className: "acrylic promo", value: "alchemy", name: "Alchemy - September Promo"},
-					{className: "acrylic promo", value: "pumpkinSpice", name: "Pumpkin Spice - September Promo"},
+					//{className: "acrylic promo", value: "alchemy", name: "Alchemy - September Promo"},
+					//{className: "acrylic promo", value: "pumpkinSpice", name: "Pumpkin Spice - September Promo"},
 					{className: "acrylic promo", value: "pacific", name: "Pacific - October Promo"},
 					{className: "acrylic promo", value: "valkyrie", name: "Valkyrie - October Promo"},
+					{className: "acrylic promo", value: "adira", name: "Adira - Breast Cancer Awareness"}
+					],
+					Mia : 
+					[
+					{value: "black", name: "Black" },
+					{value: "white", name: "White" },
+					{value: "ruby", name: "Ruby" },
+					{value: "pink", name: "Pink" },
+					{value: "turquoise", name: "Turquoise" },
+					{value: "starlightGlitter", name: "Starlight Glitter" },
+					{value: "bordeaux", name: "Bordeaux" },
+					{value: "burntOrange", name: "Burnt Orange" },
+					{value: "darkTeal", name: "Dark Teal" },
+					{value: "transparentNavy", name: "Transparent Navy" },
+					{value: "limeGreen", name: "Lime Green" },
+					{value: "navyMirror", name: "Navy Mirror" },
+					{value: "redAcrylic", name: "Red" },
+					{value: "orange", name: "Orange" },
+					{value: "yellow", name: "Yellow" },
+					{value: "greenAcrylic", name: "Green" },
+					{value: "mirroredPurple", name: "Mirrored Purple" },
+					{value: "lightBlue", name: "Light Blue" },
+					{value: "darkBlue", name: "Dark Blue" },
+					{value: "purpleAcrylic", name: "Purple" },
+					{value: "brownAcrylic", name: "Brown" },
+					{value: "mirroredRoseGold", name: "Mirrored Rose Gold" },
+					{value: "confettiGlitter", name: "Confetti Glitter" },
+					{value: "gray", name: "Gray" },
+					{value: "ivory", name: "Ivory" },
+					{value: "mirroredGold", name: "Mirrored Gold" },
+					{value: "mirroredSilver", name: "Mirrored Silver" },
+					{className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"},
 					{className: "acrylic promo", value: "adira", name: "Adira - Breast Cancer Awareness"}
 					]
 				};
@@ -76,7 +108,7 @@
 				document.getElementById("category").innerHTML = type;
 				showMockup(type); 
 				includeHTML();
-				getColors(colors);
+				getColors(colors, type);
 				//promoShow();
 				menuOrNot(type);
 			</script>
@@ -91,4 +123,3 @@
 
 
 </html>
-
