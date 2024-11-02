@@ -662,7 +662,7 @@ function showMockup(style){
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/awarenessRibbonShape.html");
 		break;
 	case "Lisse":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/LisseShape.html");
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lisseShape.html");
 		break;
 	}
 }
