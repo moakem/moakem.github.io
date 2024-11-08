@@ -1,6 +1,6 @@
 
 function getColors(colors, type){
-	if (type == "Mia" || type == "Awareness Ribbon"){
+	if (type == "Awareness Ribbon"){
 		for (let i=0; i < colors['Mia'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Mia'][i]['value'] + "' class='large " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Mia'][i]['value'] + "' class='medium " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
