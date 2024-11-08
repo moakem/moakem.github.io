@@ -1,6 +1,6 @@
 
 function getColors(colors, type){
-	if (type == "Awareness Ribbon"){
+	if (type == "Mia" || type == "Awareness Ribbon"){
 		for (let i=0; i < colors['Mia'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Mia'][i]['value'] + "' class='large " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Mia'][i]['value'] + "' class='medium " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
@@ -404,6 +404,9 @@ function getParameters() {
     if(type == "AwarenessRibbon"){
     	type = "Awareness Ribbon";
     }
+    if(type == "MoonPhase"){
+    	type = "Moon Phase";
+    }
     return type;
     
 }
@@ -474,7 +477,7 @@ function menuOrNot(style) {
 		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" 
 		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
-		|| style == "Salem" || style == "Lisse" ){
+		|| style == "Salem" || style == "Lisse" || style == "Moon Phase"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -663,6 +666,9 @@ function showMockup(style){
 		break;
 	case "Lisse":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lisseShape.html");
+		break;
+	case "Moon Phase":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/moonPhaseShape.html");
 		break;
 	}
 }
