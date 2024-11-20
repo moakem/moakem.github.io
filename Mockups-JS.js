@@ -176,20 +176,21 @@ function reset(type) {
 	const mediumColors = document.querySelectorAll('.medium');
 	const smallColors = document.querySelectorAll('.small');
 	for (let i = 0; i < smallColors.length; i++) {
-		if(smallColors[i].classList[1] == "selected"){
+		if(smallColors[i].classList[2] == "selected"){
+
 			smallColors[i].classList.remove("selected");
 			break;
 		}
 	}
 	for (let i = 0; i < mediumColors.length; i++) {
-		if(mediumColors[i].classList[1] == "selected"){
+		if(mediumColors[i].classList[2] == "selected"){
 			mediumColors[i].classList.remove("selected");
 			
 			break;
 		}
 	}
 	for (let i = 0; i < largeColors.length; i++) {
-		if(largeColors[i].classList[1] == "selected"){
+		if(largeColors[i].classList[2] == "selected"){
 			largeColors[i].classList.remove("selected");
 
 			break;
@@ -213,7 +214,10 @@ function reset(type) {
 	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "none");
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "none");
 	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "none");
-	if (type == "Petal"){
+	const currentUrl = window.location.href;
+    let paramString = currentUrl.split('?')[1];
+    var url = paramString.split('=')[1];
+	if (url == "Petal"){
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "none");
 		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "none");
 		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "none");
@@ -373,7 +377,7 @@ function layers(type){
 		document.getElementById("medium").style.display = "block";
 		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("mockup").style.height = "";
-		const hardwoodColors = document.querySelectorAll('.medium hardwood');
+		const hardwoodColors = document.querySelectorAll('.medium.hardwood');
 		for (let i = 0; i < hardwoodColors.length; i++) {
 			hardwoodColors[i].style.display = "none";
 		}
@@ -395,11 +399,6 @@ function layers(type){
 	  		e.classList.remove('selected');
 		});
 		type.classList.add("selected");
-		if (type == "Petal"){
-		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "none");
-		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "none");
-		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "none");
-		}
 	}
 }
 
