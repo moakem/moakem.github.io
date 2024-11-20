@@ -56,6 +56,11 @@ function tryIt (element){
 	if(type == "Corinth" || type == "Football"){
 	    document.getElementById("pattern184").style.display = "block";
 	}
+	if (type == "Petal"){
+		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
+		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
+		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "black");
+	}
 }
 
 function tryIt2 (element){
@@ -72,6 +77,11 @@ function tryIt2 (element){
 	document.getElementById("image183").setAttribute("xlink:href", file);
 	document.getElementById("image183").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
+	if (type == "Petal"){
+		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
+		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
+		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "black");
+	}
 }
 
 function tryIt3 (element){
@@ -89,6 +99,11 @@ function tryIt3 (element){
 	document.getElementById("image283").setAttribute("xlink:href", file);
 	document.getElementById("image283").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
+	if (type == "Petal"){
+		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
+		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
+		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "black");
+	}
 }
 
 function tryIt4 (element){
@@ -198,6 +213,11 @@ function reset(type) {
 	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "none");
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "none");
 	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "none");
+	if (type == "Petal"){
+		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "none");
+		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "none");
+		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "none");
+	}
 }
 
 function layers(type){
