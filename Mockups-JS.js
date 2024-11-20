@@ -412,7 +412,7 @@ function getParameters() {
 }
 
 function showNav(style) {
-	if (style == "Leaf" || style == "Spade" || style == "Circle" || style == "Ribbon" || style == "Teardrop"){
+	if (style == "Leaf" || style == "Spade" || style == "Petal" || style == "Circle" || style == "Ribbon" || style == "Teardrop"){
 		document.getElementById("navigation").style.display = "show";
 	}
 	else if (style == "Moroccan" || style == "Kite" || style == "Bar" || style == "Oakley" || style == "Hoop"){
@@ -501,6 +501,9 @@ function showMockup(style){
 		break;
 	case "Spade":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/spadeShape.html");
+		break;
+	case "Petal":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/petalShape.html");
 		break;
 	case "Moroccan":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/moroccanShape.html");
