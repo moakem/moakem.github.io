@@ -476,7 +476,7 @@ function menuOrNot(style) {
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
 		|| style == "Monroe" || style == "Lima" || style == "Nairobi" || style == "Rio" || style == "Snowflakes" 
-		|| style == "Pumpkin" || style == "Anna" || style == "Gabrielle"){
+		|| style == "Pumpkin"){
 		document.getElementById("navigation").style.display = "block";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
@@ -501,7 +501,8 @@ function menuOrNot(style) {
 		|| style == "Aster" || style == "Ophelia" || style == "Music Note" || style == "Cactus" 
 		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
-		|| style == "Salem" || style == "Lisse" || style == "Moon Phase"){
+		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
+		|| style == "Gabrielle"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
