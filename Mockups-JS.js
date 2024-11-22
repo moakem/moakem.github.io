@@ -12,7 +12,7 @@ function getColors(colors, type){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
 		}	
-		document.getElementById("smallOptions").innerHTML += "<div name='Gold' class='small' value='#E6CD96' onclick='metalOptions(this)'/> <div name='Silver' class='small' value='#D1D6D2' onclick='metalOptions(this)'/>";
+		document.getElementById("smallOptions").innerHTML += "<div name='Gold' class='small' value='#E6CD96' onclick='metalOptions(this)'>Gold</div> <div name='Silver' class='small' value='#D1D6D2' onclick='metalOptions(this)'>Silver</div>";
 		//  Silver Color for Tess #D1D6D2  
 		//  Gold Color for Tess #E6CD96
 																				
