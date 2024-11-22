@@ -100,9 +100,6 @@ function tryIt2 (element){
 		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
 		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "black");
 	}
-	if (type == "Tess") {
-		document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "#D1D6D2");
-	}
 }
 
 function tryIt3 (element){
