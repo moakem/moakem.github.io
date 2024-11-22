@@ -7,6 +7,16 @@ function getColors(colors, type){
 			document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Mia'][i]['value'] + "' class='small " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
 		}
 	}
+	else if (type == "Tess"){
+		for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+		}	
+		document.getElementById("smallOptions").innerHTML == "<div name='Gold' class='small value='#E6CD96' onclick='metalOptions(this)'/> <div name='Silver' class='small value='#D1D6D2' onclick='metalOptions(this)'/>";
+		//  Silver Color for Tess #D1D6D2  
+		//  Gold Color for Tess #E6CD96
+																				
+	}
 	else {
 		for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
@@ -89,6 +99,9 @@ function tryIt2 (element){
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
 		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
 		document.getElementsByTagName("svg")[0].children[5].setAttribute("fill", "black");
+	}
+	if (type == "Tess") {
+		document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "#D1D6D2");
 	}
 }
 
@@ -173,6 +186,20 @@ function chooseSport (element){
 	var file = "Colors/" + selectedSport + ".png";
 	document.getElementById("image283").setAttribute("xlink:href", file);
 	document.getElementById("image283").setAttribute("href", file);
+}
+
+function metalOptions(element){
+	var selectedMetal = element.getAttribute("value");
+	var selectedMetalName = element.getAttribute("name");
+	const children = document.querySelectorAll('.small');
+
+	children.forEach(function(e) {
+  		e.classList.remove('selected');
+	});
+	element.classList.add("selected");
+
+	document.getElementById("sSelected").innerHTML = selectedMetalName;
+	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", selectedMetal);
 }
 
 function reset(type) {
@@ -495,6 +522,15 @@ function menuOrNot(style) {
 		document.getElementById("mTitle").innerHTML = "Middle Color Options:";
 		document.getElementById("lTitle").innerHTML = "Top Color Options:";
 	}
+	else if (style == "Tess"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("lTitle").innerHTML = "Top Color Options:";
+		document.getElementById("mTitle").innerHTML = "Bottom Color Options:";
+		document.getElementById("sTitle").innerHTML = "Metal Triangle:";
+	}
 	else if (style == "Sierra" || style == "Football"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
@@ -510,7 +546,7 @@ function menuOrNot(style) {
 		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
-		|| style == "Gabrielle"){
+		|| style == "Gabrielle" || style == "Bridget"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -711,6 +747,12 @@ function showMockup(style){
 		break;
 	case "Gabrielle":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/gabrielleShape.html");
+		break;
+	case "Tess":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tessShape.html");
+		break;
+	case "Bridget":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bridgetShape.html");
 		break;
 	}
 }
