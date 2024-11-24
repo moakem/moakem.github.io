@@ -409,10 +409,10 @@ function layers(type){
 		document.getElementById("medium").style.display = "block";
 		document.getElementsByTagName("svg")[0].children[1].style.display = "block";
 		document.getElementById("mockup").style.height = "";
-		const hardwoodColors = document.querySelectorAll('.medium.hardwood');
-		for (let i = 0; i < hardwoodColors.length; i++) {
-			hardwoodColors[i].style.display = "none";
-		}
+		//const hardwoodColors = document.querySelectorAll('.medium.hardwood');
+		//for (let i = 0; i < hardwoodColors.length; i++) {
+			//hardwoodColors[i].style.display = "none";
+		//}
 		children.forEach(function(e) {
 	  		e.classList.remove('selected');
 		});
