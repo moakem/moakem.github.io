@@ -752,7 +752,7 @@ function showMockup(style){
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bridgetShape.html");
 		break;
 	case "Wren":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/WrenShape.html");
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/wrenShape.html");
 		break;
 	}
 }
