@@ -543,7 +543,7 @@ function menuOrNot(style) {
 		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
-		|| style == "Gabrielle" || style == "Bridget"){
+		|| style == "Gabrielle" || style == "Bridget" || style == "Wren"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -750,6 +750,9 @@ function showMockup(style){
 		break;
 	case "Bridget":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bridgetShape.html");
+		break;
+	case "Wren":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/WrenShape.html");
 		break;
 	}
 }
