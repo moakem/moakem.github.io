@@ -491,7 +491,7 @@ function showNav(style) {
 }
 
 function menuOrNot(style) {
-	if (style == "Winona") {
+	if (style == "Winona" || style == "Edith") {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -760,6 +760,9 @@ function showMockup(style){
 		break;
 	case "Selene":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seleneShape.html");
+		break;
+	case "Edith":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/EdithShape.html");
 		break;
 	}
 }
