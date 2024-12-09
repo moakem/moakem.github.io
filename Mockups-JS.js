@@ -762,7 +762,7 @@ function showMockup(style){
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seleneShape.html");
 		break;
 	case "Edith":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/EdithShape.html");
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/edithShape.html");
 		break;
 	}
 }
