@@ -543,7 +543,8 @@ function menuOrNot(style) {
 		|| style == "Marnie" || style == "Daphne" || style == "Elvira" || style == "Jaclyn" 
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
-		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"){
+		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
+		|| style == "Selene"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -756,6 +757,9 @@ function showMockup(style){
 		break;
 	case "Saige":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/saigeShape.html");
+		break;
+	case "Selene":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seleneShape.html");
 		break;
 	}
 }
