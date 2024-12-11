@@ -25,7 +25,7 @@ function getColors(colors, type){
 		}
 	}
 	if (type == "Tannenbaum" || type == "Lublin"){
-		document.getElementById("largeOptions").innerHTML += "<img id='lwarmAndCozy' class='large hardwood promo' value='warmAndCozy' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/warmAndCozy.jpg' onclick='tryIt(this)' />";
+		document.getElementById("largeOptions").innerHTML += "<img id='lwarmAndCozy' class='large hardwood promo' value='warmAndCozy' name='Warm and Cozy' src='Colors/warmAndCozy.jpg' onclick='tryIt(this)' />";
 	}
 }
 
