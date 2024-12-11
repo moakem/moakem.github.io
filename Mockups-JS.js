@@ -24,6 +24,9 @@ function getColors(colors, type){
 			document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='small " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
 		}
 	}
+	if (type == "Tannenbaum" || type == "Lublin"){
+		document.getElementById("largeOptions").innerHTML += "<img id='lwarmAndCozy' class='large hardwood promo' value='warmAndCozy' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/warmAndCozy.jpg' onclick='tryIt(this)' />";
+	}
 }
 
 function sportsColors(colors){
@@ -71,7 +74,7 @@ function tryIt (element){
 	document.getElementById("image083").setAttribute("href", file);
 	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	var type = getParameters();
-	if(type == "Corinth" || type == "Football"){
+	if(type == "Corinth" || type == "Football" || type == "Lublin"){
 	    document.getElementById("pattern184").style.display = "block";
 	}
 	if (type == "Petal"){
@@ -528,7 +531,7 @@ function menuOrNot(style) {
 		document.getElementById("mTitle").innerHTML = "Bottom Color Options:";
 		document.getElementById("sTitle").innerHTML = "Metal Triangle:";
 	}
-	else if (style == "Sierra" || style == "Football"){
+	else if (style == "Sierra" || style == "Football" || style == "Nativity"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		const acrylicColors = document.querySelectorAll('.acrylic');
@@ -544,11 +547,11 @@ function menuOrNot(style) {
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
-		|| style == "Selene"){
+		|| style == "Selene" || style == "Tannenbaum"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
-	else if (style == "Corinth"){
+	else if (style == "Corinth" || style == "Lublin"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -763,6 +766,15 @@ function showMockup(style){
 		break;
 	case "Edith":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/edithShape.html");
+		break;
+	case "Nativity":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/nativityShape.html");
+		break;
+	case "Tannenbaum":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tannenbaumShape.html");
+		break;
+	case "Lublin":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lublinShape.html");
 		break;
 	}
 }
