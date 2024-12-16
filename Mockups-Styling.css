@@ -214,6 +214,10 @@ li.selected:hover{
 	text-decoration: underline;
 }
 
+#passwordLine{
+        margin-left: 125px;
+}
+
 @media screen and (max-width: 805px) {
 	#colors{
 		width:100%;
@@ -226,6 +230,9 @@ li.selected:hover{
 
 	svg{
 		margin-top:20px;
+	}
+	#passwordLine{
+        margin-left: 0px;
 	}
 
 }
