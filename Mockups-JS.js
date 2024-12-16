@@ -857,6 +857,7 @@ function includeHTML() {
 
 function Logout(){
 	document.cookie = "counsultantUsername=;"
+	document.cookie = "admin=;"
 	location.reload();
 }
 
