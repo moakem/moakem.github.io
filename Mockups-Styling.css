@@ -214,11 +214,6 @@ li.selected:hover{
 	text-decoration: underline;
 }
 
-#passwordLine {
-    margin-left: 98px;
-    font-size: 12px;
-}
-
 @media screen and (max-width: 805px) {
 	#colors{
 		width:100%;
