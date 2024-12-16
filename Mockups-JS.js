@@ -871,7 +871,6 @@ function getCookie(cname) {
     while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
-    console.log(c);
     if (c.indexOf(name) == 0) {
       return c.substring(name.length, c.length);
     }
@@ -880,8 +879,11 @@ function getCookie(cname) {
 }
 function checkCookie() {
   let user = getCookie("counsultantUsername");
+  let admin = getCookie("admin");
   if (user != "") {
   	document.getElementById("LoginInfo").innerHTML = "Welcome Consultant! <span onclick='Logout();'>Logout?</span>";
+  } if else (admin != "") {
+  	document.getElementById("LoginInfo").innerHTML = "Welcome Admin! <span onclick='Logout();'>Logout?</span>";
   } else {
 	document.getElementById("LoginInfo").innerHTML ='<a href="/Login.html">Consultant Login</a>';
   }

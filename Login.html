@@ -90,6 +90,11 @@
 		</main>
 	</body>
 	<script>
+			let user = getCookie("counsultantUsername");
+			let admin = getCookie("admin");
+			if (user != "" || admin != ""){
+				window.location.href = "/index.html"
+			}
 			const loginForm = document.getElementById("login-form");
 			const loginButton = document.getElementById("login-form-submit");
 			const loginErrorMsg = document.getElementById("login-error-msg");
@@ -102,7 +107,11 @@
 			    if (username === "consultant" && password === "BuyTheEarrings!") {
 			       setCookie("counsultantUsername", loginForm.username.value);
 			    	window.location.href = "/index.html";
-			    } else {
+			    } else if (username === "admin" && password === "T0p$ecr3t!") {
+			       setCookie("admin", loginForm.username.value);
+			    	window.location.href = "/index.html";
+			    }  
+			    else {
 			        loginErrorMsg.style.opacity = 1;
 			    }
 			});
