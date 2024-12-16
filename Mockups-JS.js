@@ -856,7 +856,7 @@ function includeHTML() {
 
 
 function Logout(){
-	document.cookie = "username=;"
+	document.cookie = "counsultantUsername=;"
 	location.reload();
 }
 
@@ -879,7 +879,7 @@ function getCookie(cname) {
   return "";
 }
 function checkCookie() {
-  let user = getCookie("username");
+  let user = getCookie("counsultantUsername");
   if (user != "") {
   	document.getElementById("LoginInfo").innerHTML = "Welcome Consultant! <span onclick='Logout();'>Logout?</span>";
   } else {
