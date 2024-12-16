@@ -62,39 +62,6 @@
 				display:block!important;
 			}
 		</style>
-		<script>
-			function Logout(){
-				document.cookie = "username=;"
-				location.reload();
-			}
-
-			function setCookie(cname, cvalue) {
-			  document.cookie = cname + "=" + cvalue + ";";
-			}
-			function getCookie(cname) {
-			  let name = cname + "=";
-			  let ca = document.cookie.split(';');
-			  for(let i = 0; i < ca.length; i++) {
-			    let c = ca[i];
-			    while (c.charAt(0) == ' ') {
-			      c = c.substring(1);
-			    }
-			    console.log(c);
-			    if (c.indexOf(name) == 0) {
-			      return c.substring(name.length, c.length);
-			    }
-			  }
-			  return "";
-			}
-			function checkCookie() {
-			  let user = getCookie("username");
-			  if (user != "") {
-			  	document.getElementById("LoginInfo").innerHTML = "Welcome Consultant! <span onclick='Logout();'>Logout?</span>";
-			  } else {
-				document.getElementById("LoginInfo").innerHTML ='<a href="/Login.html">Consultant Login</a>';
-			  }
-			}
-		</script>
 	</head>
 	<body onload="checkCookie()"></body>
 		<header>

@@ -206,6 +206,14 @@ li.selected:hover{
  		color: white;
  }
 
+ #LoginInfo > span{
+ 		cursor: pointer;
+ }
+
+ #LoginInfo > span:hover{
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 805px) {
 	#colors{
 		width:100%;
