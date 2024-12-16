@@ -63,6 +63,11 @@
 			}
 		</style>
 		<script>
+			function Logout(){
+				document.cookie = "username=;"
+				location.reload();
+			}
+
 			function setCookie(cname, cvalue) {
 			  document.cookie = cname + "=" + cvalue + ";";
 			}
@@ -84,7 +89,7 @@
 			function checkCookie() {
 			  let user = getCookie("username");
 			  if (user != "") {
-			  	document.getElementById("LoginInfo").innerHTML = "Welcome Consultant!";
+			  	document.getElementById("LoginInfo").innerHTML = "Welcome Consultant! <span onclick='Logout();'>Logout?</span>";
 			  } else {
 				document.getElementById("LoginInfo").innerHTML ='<a href="/Login.html">Consultant Login</a>';
 			  }
