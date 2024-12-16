@@ -68,7 +68,6 @@
 			}
 			function getCookie(cname) {
 			  let name = cname + "=";
-			  console.log(document.cookie);
 			  let ca = document.cookie.split(';');
 			  for(let i = 0; i < ca.length; i++) {
 			    let c = ca[i];
@@ -82,17 +81,17 @@
 			  }
 			  return "";
 			}
-			function checkCookie() {
-			  let user = getCookie("username");
-			  if (user != "") {
-			    alert("Welcome again " + user);
-			  } else {
-			   //location.("index.html");
-			  }
-			}
+			//function checkCookie() {
+			//  let user = getCookie("username");
+			//  if (user != "") {
+			//    return
+			//  } else {
+			//   //location.("index.html");
+			//  }
+			//}
 		</script>
 	</head>
-	<body onload="checkCookie();"></body>
+	<body></body>
 		<header>
 			<h1>Customization Website for For Keeps Earring Shapes</h1>
 		</header>
@@ -125,8 +124,7 @@
 
 			    if (username === "user" && password === "pass") {
 			       setCookie("username", loginForm.username.value);
-			       getCookie("username");
-			    	location.reload();
+			    	window.location.href = "/index.html";
 			    } else {
 			        loginErrorMsg.style.opacity = 1;
 			    }
