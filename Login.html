@@ -84,9 +84,9 @@
 			function checkCookie() {
 			  let user = getCookie("username");
 			  if (user != "") {
-			  	document.getElementById("headerLink").innerHTML("Welcome Consultant!");
+			  	document.getElementById("LoginInfo").innerHTML = "Welcome Consultant!";
 			  } else {
-				document.getElementById("headerLink").innerHTML('<a href="/Login.html">Login</a>');
+				document.getElementById("LoginInfo").innerHTML ='<a href="/Login.html">Consultant Login</a>';
 			  }
 			}
 		</script>
@@ -94,7 +94,7 @@
 	<body onload="checkCookie()"></body>
 		<header>
 			<h1>Customization Website for For Keeps Earring Shapes</h1>
-			<span id="headerLink"><a href="/Login.html">Login</a></span> 
+			<span id="LoginInfo"></span> 
 		</header>
 		<section id="header">
 			<span><a href="index.html">&larr; Back to Home</a></span>
