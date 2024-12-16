@@ -214,7 +214,7 @@ li.selected:hover{
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 600px) {
 	#colors{
 		width:100%;
 	}
@@ -227,7 +227,7 @@ li.selected:hover{
 	header{
 		padding-top: 25px;
 	}
-	
+
 	svg{
 		margin-top:20px;
 	}
