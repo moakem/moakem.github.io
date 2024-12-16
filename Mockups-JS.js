@@ -882,7 +882,7 @@ function checkCookie() {
   let admin = getCookie("admin");
   if (user != "") {
   	document.getElementById("LoginInfo").innerHTML = "Welcome Consultant! <span onclick='Logout();'>Logout?</span>";
-  } if else (admin != "") {
+  } else if (admin != "") {
   	document.getElementById("LoginInfo").innerHTML = "Welcome Admin! <span onclick='Logout();'>Logout?</span>";
   } else {
 	document.getElementById("LoginInfo").innerHTML ='<a href="/Login.html">Consultant Login</a>';
