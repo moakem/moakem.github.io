@@ -10,7 +10,7 @@ header {
   background-color:turquoise;
   text-align: center;
   color:white;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 #mwhite, #lwhite, #swhite{
@@ -224,6 +224,10 @@ li.selected:hover{
 		height: initial!important;
 	}
 
+	header{
+		padding-top: 25px;
+	}
+	
 	svg{
 		margin-top:20px;
 	}
