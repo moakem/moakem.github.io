@@ -536,8 +536,10 @@ function menuOrNot(style) {
 		document.getElementById("large").style.display = "block";
 		const acrylicColors = document.querySelectorAll('.acrylic');
 		for (let i = 0; i < acrylicColors.length; i++) {
-			let admin1 = getCookie("admin");
-			if (admin1 == "" && style != "Sierra") {
+			if (admin1 != "" && style == "Sierra") {
+				acrylicColors[i].style.display = "block";
+			}
+			else{
 				acrylicColors[i].style.display = "none";
 			}
 		}
