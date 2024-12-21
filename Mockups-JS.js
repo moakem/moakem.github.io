@@ -537,7 +537,7 @@ function menuOrNot(style) {
 		const acrylicColors = document.querySelectorAll('.acrylic');
 		for (let i = 0; i < acrylicColors.length; i++) {
 			if (admin1 != "" && style == "Sierra") {
-				acrylicColors[i].style.display = "block";
+				acrylicColors[i].style.display = "inline-block";
 			}
 			else{
 				acrylicColors[i].style.display = "none";
