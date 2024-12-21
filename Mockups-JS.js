@@ -536,7 +536,10 @@ function menuOrNot(style) {
 		document.getElementById("large").style.display = "block";
 		const acrylicColors = document.querySelectorAll('.acrylic');
 		for (let i = 0; i < acrylicColors.length; i++) {
-			acrylicColors[i].style.display = "none";
+			let admin1 = getCookie("admin");
+			if (admin1 == "" && style != "Sierra") {
+				acrylicColors[i].style.display = "none";
+			}
 		}
 	}
 	else if (style == "Kauai" || style == "Quincy" || style == "Cassidy" 
@@ -775,6 +778,9 @@ function showMockup(style){
 		break;
 	case "Lublin":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lublinShape.html");
+		break;
+	case "Trudy":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/trudyShape.html");
 		break;
 	}
 }
