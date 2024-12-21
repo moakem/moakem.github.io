@@ -552,7 +552,7 @@ function menuOrNot(style) {
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
-		|| style == "Selene" || style == "Tannenbaum"){
+		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
