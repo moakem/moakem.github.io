@@ -7,8 +7,6 @@
 		<link rel="stylesheet" href="Mockups-Styling.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-
-
 	<body onload="checkCookie()">
 		<header>
 			<h1>Customization Website for For Keeps Earring Shapes</h1>
@@ -44,7 +42,7 @@
 			 		<figcaption>Daphne<br/>(Hostess Exclusive)</figcaption>
 				</a>
 			</figure>
-			<figure>
+			<figure id="DoubleDiamond">
 				<a href="AcrylicAndHardwoodCustomization.html?type=DoubleDiamond">
 					<img src="ExampleImages/DoubleDiamondExample.jpg" alt="picture of the double diamond design" width="200px" height="200px"/>
 			 		<figcaption>Double Diamond<br/>(Regular and Mini Styles)</figcaption>
@@ -232,7 +230,12 @@
 			</figure>
 		</main>
 	</body>
-
+	<script>
+		let admin1 = getCookie("admin");
+		if (admin1 != "") {
+			document.getElementById("DoubleDiamond").style.display = "none";
+		}
+	</script>
 	<footer>
 		<span>&copy; Melissa Moake</span>
 		<img src="WhiteLogo.png" alt="consultant logo" height="40px"/>
