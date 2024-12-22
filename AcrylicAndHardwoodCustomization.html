@@ -36,7 +36,6 @@
 					{className: "acrylic", value: "partyGlitter", name: "Party Glitter" },
 					{className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" },
 					{className: "hardwood", value: "linen", name: "Linen" },
-					{className: "hardwood", value: "maple", name: "Maple" },
 					{className: "hardwood", value: "cherry", name: "Cherry"},
 					{className: "hardwood", value: "sapele", name: "Sapele"},
 					{className: "hardwood", value: "walnut", name: "Walnut" },
@@ -78,9 +77,6 @@
 				};
 
 				let user1 = getCookie("counsultantUsername");
-				if (user1 != "") {
-					//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
-				} 
 				let admin1 = getCookie("admin");
 				if (admin1 != "") {
 					colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "mirroredSilver", name: "Silver Mirror"});
@@ -89,7 +85,13 @@
 					colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "black", name: "Matte Black"});
 					colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "white", name: "Matte White"});
 
+				}
+				else if (user1 != "") {
+					//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 				} 
+				else {
+				       colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "maple", name: "Maple"});
+				}
 			</script>
 		</section>
 		<main>
