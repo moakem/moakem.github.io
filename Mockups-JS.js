@@ -1,10 +1,27 @@
 
 function getColors(colors, type){
-	if (type == "Awareness Ribbon"){
+	const colorOptions;
+
+	if(type == "Sports"){
+		for (let i=0; i < colors['Sports'].length; i++){
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Sports'][i]['value'] + "' class='large' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Sports'][i]['value'] + "' class='medium' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+			document.getElementById("smallOptions").innerHTML += "<div class='small' value='" + colors['SportShapes'][i]['value'] + "' name='" + colors['SportShapes'][i]['name'] + "' onclick='chooseSport(this)'>" + colors['SportShapes'][i]['className'] + "</div>";	
+		}
+	}
+	else if (type == "Awareness Ribbon"){
 		for (let i=0; i < colors['Mia'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Mia'][i]['value'] + "' class='large " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Mia'][i]['value'] + "' class='medium " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
 			document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Mia'][i]['value'] + "' class='small " + colors['Mia'][i]['className'] + "' value='" + colors['Mia'][i]['value'] + "' name='" + colors['Mia'][i]['name'] + "' src='Colors/" + colors['Mia'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+		}
+	}
+	else if (type == "Berlin"){
+		for (let i=0; i < colors['LaserLeathers'].length; i++){
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+		}
+		for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 		}
 	}
 	else if (type == "Tess"){
@@ -29,29 +46,44 @@ function getColors(colors, type){
 	}
 }
 
-function sportsColors(colors){
-	for (let i=0; i < colors['Sports'].length; i++){
-		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Sports'][i]['value'] + "' class='large' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Sports'][i]['value'] + "' class='medium' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
-	}
-	
-}
-
 function getLeathers(colors, type){
 	if(type == 'Horizon'){
 		var mediumClick = "tryIt4(this)";
 	}else { 
 		var mediumClick = "tryIt2(this)";
 	}
-	for (let i=0; i < colors['Leathers'].length; i++){
-		document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Leathers'][i]['value'] + "' class='large " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-		document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Leathers'][i]['value'] + "' class='medium " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
-		document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Leathers'][i]['value'] + "' class='small " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+
+	if(type == "Rochelle"){
+		for (let i=0; i < colors['LaserLeathers'].length; i++){
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+		}
+	}
+	else if (type == "Berlin"){
+		for (let i=0; i < colors['LaserLeathers'].length; i++){
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
+		}
+		for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+		}
+	}
+	else{
+		for (let i=0; i < colors['Leathers'].length; i++){
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Leathers'][i]['value'] + "' class='large " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Leathers'][i]['value'] + "' class='medium " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
+			document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Leathers'][i]['value'] + "' class='small " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+		}
 	}
 	if (type == "Petal"){
 		const corkColors = document.querySelectorAll('.cork');
 		for (let i = 0; i < corkColors.length; i++) {
 			corkColors[i].style.display = "none";
+		}
+	}
+	if (type == "Berlin"){
+		const acrylicColors = document.querySelectorAll('.acrylic');
+		for (let i = 0; i < acrylicColors.length; i++) {
+			acrylicColors[i].style.display = "none";
 		}
 	}
 }
@@ -485,6 +517,20 @@ function showNav(style) {
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
 	}
+	else if(style == "Rochelle"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("lTitle").innerHTML = "Top Leather:";
+		document.getElementById("mTitle").innerHTML = "Bottom Leather:";
+	}
+	else if(style == "Berlin"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("lTitle").innerHTML = "Top Leather:";
+		document.getElementById("mTitle").innerHTML = "Bottom Wood:";
+	}
 	else {
 		document.getElementById("navigation").style.display = "none";
 	}
@@ -604,6 +650,9 @@ function showMockup(style){
 	case "Oakley":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/oakleyShape.html");
 		break;
+	case "Rochelle":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rochelleShape.html");
+		break;
 	case "Cairo":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cairoShape.html");
 		break;
@@ -642,6 +691,9 @@ function showMockup(style){
 		break;
 	case "Sydney":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sydneyShape.html");
+		break;
+	case "Berlin":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/berlinShape.html");
 		break;
 	case "Sierra":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sierraShape.html");
@@ -893,4 +945,173 @@ function checkCookie() {
   } else {
 	document.getElementById("LoginInfo").innerHTML ='<a href="/Login.html">Consultant Login</a>';
   }
+}
+
+
+const colors = {
+	Leathers : 
+	[
+		{className: "stock", value: "salmonBasketweave", name: "Salmon BasketWeave"},
+		{className: "stock cork", value: "whiteCork", name: "White Cork"},
+		{className: "stock", value: "distressedRaspberry", name: "Distressed Raspberry"},
+		{className: "stock cork", value: "spruceGreenCork", name: "Spruce Green Cork"},
+		{className: "stock", value: "blossom", name: "Blossom"},
+		{className: "stock", value: "leopardLeather", name: "Leopard"},
+		{className: "stock", value: "gold", name: "Gold"},
+		{className: "stock cork", value: "aquaCork", name: "Aqua Cork"},
+		{className: "stock", value: "roseGoldBraid", name: "Rose Gold Braid" },
+		{className: "stock", value: "navyCorduroy", name: "Navy Corduroy"},
+		{className: "stock cork", value: "blackCork", name: "Black Cork"},
+		{className: "stock", value: "selenite", name: "Selenite"},
+		{className: "stock", value: "brandySaddle", name: "Brandy Saddle"},
+		{className: "stock", value: "blackAndWhiteStripes", name: "Black and White Stripes"},
+		{className: "stock", value: "lavenderFrost", name: "Lavender Frost"},
+		{className: "stock", value: "mustardChevron", name: "Mustard Chevron"},
+		{className: "stock", value: "shikoba", name: "Shikoba - Hostess Exclusive"},
+		{className: "promo", value: "fortune", name: "Fortune - December Promo"},
+		{className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"},
+		{className: "promo cork", value: "cheers", name: "Cheers - December Promo"},
+		{className: "promo cork", value: "resolution", name: "Resolution - December Promo"}
+	],
+	AcrylicsAndHardwoods : 
+	[
+		{className: "acrylic", value: "black", name: "Black - Leaving Jan 1st" },
+		{className: "acrylic", value: "white", name: "White - Leaving Jan 1st"},
+		{className: "acrylic", value: "ruby", name: "Ruby - Leaving Jan 1st"},
+		{className: "acrylic", value: "pink", name: "Pink - Leaving Jan 1st"},
+		{className: "acrylic", value: "turquoise", name: "Turquoise - Leaving Jan 1st"},
+		{className: "acrylic", value: "leopard", name: "Leopard - Leaving Jan 1st"},
+		{className: "acrylic", value: "partyGlitter", name: "Party Glitter - Leaving Jan 1st"},
+		{className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" },
+		{className: "hardwood", value: "linen", name: "Linen" },
+		{className: "hardwood", value: "cherry", name: "Cherry"},
+		{className: "hardwood", value: "sapele", name: "Sapele"},
+		{className: "hardwood", value: "walnut", name: "Walnut" },
+		{className: "acrylic", value: "raheen", name: "Raheen - Hostess Exclusive" },
+		{className: "acrylic promo", value: "moorishIdol", name: "Moorish Idol - December Promo"},
+		{className: "acrylic promo", value: "cloudfallConfetti", name: "Cloudfall Confetti - December Promo"}
+	],
+	Mia : 
+	[
+		{value: "black", name: "Black" },
+		{value: "white", name: "White" },
+		{value: "ruby", name: "Ruby" },
+		{value: "pink", name: "Pink" },
+		{value: "turquoise", name: "Turquoise" },
+		{value: "starlightGlitter", name: "Starlight Glitter" },
+		{value: "bordeaux", name: "Bordeaux" },
+		{value: "burntOrange", name: "Burnt Orange" },
+		{value: "darkTeal", name: "Dark Teal" },
+		{value: "transparentNavy", name: "Transparent Navy" },
+		{value: "limeGreen", name: "Lime Green" },
+		{value: "navyMirror", name: "Navy Mirror" },
+		{value: "redAcrylic", name: "Red" },
+		{value: "orange", name: "Orange" },
+		{value: "yellow", name: "Yellow" },
+		{value: "greenAcrylic", name: "Green" },
+		{value: "mirroredPurple", name: "Mirrored Purple" },
+		{value: "lightBlue", name: "Light Blue" },
+		{value: "darkBlue", name: "Dark Blue" },
+		{value: "purpleAcrylic", name: "Purple" },
+		{value: "brownAcrylic", name: "Brown" },
+		{value: "mirroredRoseGold", name: "Mirrored Rose Gold" },
+		{value: "confettiGlitter", name: "Confetti Glitter" },
+		{value: "gray", name: "Gray" },
+		{value: "ivory", name: "Ivory" },
+		{value: "mirroredGold", name: "Mirrored Gold" },
+		{value: "mirroredSilver", name: "Mirrored Silver" }
+	],
+	LaserLeathers :
+	[
+		{value: "red", name: "Red"},
+		{value: "natural", name: "Natural"},
+		{value: "blackLaserLeather", name: "Black"},
+		{value: "purple", name: "Purple"},
+		{value: "green", name: "Green"},
+		{value: "darkNavy", name: "Dark Navy"},
+		{value: "brown", name: "Brown"},
+		{value: "mustard", name: "Mustard"}
+	],
+	Sports : 
+	[
+		{value: "black", name: "Black" },
+		{value: "white", name: "White" },
+		{value: "ruby", name: "Ruby" },
+		{value: "pink", name: "Pink" },
+		{value: "turquoise", name: "Turquoise" },
+		{value: "starlightGlitter", name: "Starlight Glitter" },
+		{value: "bordeaux", name: "Bordeaux" },
+		{value: "burntOrange", name: "Burnt Orange" },
+		{value: "darkTeal", name: "Dark Teal" },
+		{value: "transparentNavy", name: "Transparent Navy" },
+		{value: "limeGreen", name: "Lime Green" },
+		{value: "navyMirror", name: "Navy Mirror" },
+		{value: "redAcrylic", name: "Red" },
+		{value: "orange", name: "Orange" },
+		{value: "yellow", name: "Yellow" },
+		{value: "greenAcrylic", name: "Green" },
+		{value: "mirroredPurple", name: "Mirrored Purple" },
+		{value: "lightBlue", name: "Light Blue" },
+		{value: "darkBlue", name: "Dark Blue" },
+		{value: "purpleAcrylic", name: "Purple" },
+		{value: "brownAcrylic", name: "Brown" },
+		{value: "mirroredRoseGold", name: "Mirrored Rose Gold" },
+		{value: "confettiGlitter", name: "Confetti Glitter" },
+		{value: "gray", name: "Gray" },
+		{value: "ivory", name: "Ivory" },
+		{value: "mirroredGold", name: "Mirrored Gold" },
+		{value: "mirroredSilver", name: "Mirrored Silver" }
+	],
+	SportShapes:
+	[
+		{value: "football", name: "Touchdown", className: "Football"},
+		{value: "soccer", name: "Goal", className: "Soccer"},
+		{value: "baseball", name: "Home Run", className: "Baseball"},
+		{value: "basketball", name: "Swish", className: "Basketball"},
+		{value: "hockey", name: "Slap Shot", className: "Hockey"},
+		{value: "volleyball", name: "Ace", className: "Volleyball"},
+		{value: "tennis", name: "Match", className: "Tennis"},
+		{value: "lacrosse", name: "Whip", className: "Lacrosse"},
+		{value: "golf", name: "Birdie", className: "Golf"},
+		{value: "crossCountry", name: "Cadence", className: "Cross Country"},
+		{value: "cheer", name: "Aerial", className: "Cheer"}
+	]
+};
+
+
+let user1 = getCookie("counsultantUsername");
+let admin1 = getCookie("admin");
+if (admin1 != "") {
+
+//Leathers
+	colors.Leathers.push({className: "stock", value: "bronze", name: "Bronze"});
+	colors.Leathers.push({className: "stock", value: "roseGold", name: "Rose Gold"});
+	colors.Leathers.push({className: "stock", value: "silver", name: "Silver"});
+	colors.Leathers.push({className: "stock", value: "whiteLeather", name: "White"});
+	colors.Leathers.push({className: "stock", value: "blackLeather", name: "Black"});
+	colors.Leathers.push({className: "stock cork", value: "naturalCork", name: "Natural Cork"});
+	colors.Leathers.push({className: "promo", value: "cordelia", name: "Cordelia"});
+	colors.Leathers.push({className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles"});
+	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam"});
+	colors.Leathers.push({className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid"});
+	colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork"});
+
+//Acrylics and Hardwoods
+	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "silverMirror", name: "Silver Mirror"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "goldMirror", name: "Gold Mirror"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "roseGoldMirror", name: "Rose Gold Mirror"});
+	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "matteBlack", name: "Matte Black"});
+	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "matteWhite", name: "Matte White"});
+	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteCranberry", name: "Matte Cranberry - January Promo"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pistachio", name: "Pistachio - January"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"});
+	colors.AcrylicsAndHardwoods.push({className: "hardwood promo", value: "bamboo", name: "Bamboo - January Promo"});
+	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "darya", name: "Darya - January Promo"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"});
+}
+else if (user1 != "") {
+	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
+} 
+else {
+       colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "maple", name: "Maple - Leaving Jan 1st"});
 }
