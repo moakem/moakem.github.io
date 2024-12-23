@@ -13,7 +13,9 @@ header {
   padding-top: 10px;
 }
 
-#mwhite, #lwhite, #swhite{
+#mwhite, #lwhite, #swhite, 
+#swhiteLeather, #mwhiteLeather, #lwhiteLeather,
+#smatteWhite, #mmatteWhite, #lmatteWhite{
 	border:.25px solid black;
 	box-sizing: border-box;
   -moz-box-sizing: border-box;
