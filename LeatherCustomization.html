@@ -38,16 +38,16 @@
 					Leathers : 
 					[
 					{className: "stock", value: "salmonBasketweave", name: "Salmon BasketWeave"},
-					{className: "stock", value: "whiteCork", name: "White Cork"},
+					{className: "stock cork", value: "whiteCork", name: "White Cork"},
 					{className: "stock", value: "distressedRaspberry", name: "Distressed Raspberry"},
-					{className: "stock", value: "spruceGreenCork", name: "Spruce Green Cork"},
+					{className: "stock cork", value: "spruceGreenCork", name: "Spruce Green Cork"},
 					{className: "stock", value: "blossom", name: "Blossom"},
 					{className: "stock", value: "leopardLeather", name: "Leopard"},
 					{className: "stock", value: "gold", name: "Gold"},
-					{className: "stock", value: "aquaCork", name: "Aqua Cork"},
+					{className: "stock cork", value: "aquaCork", name: "Aqua Cork"},
 					{className: "stock", value: "roseGoldBraid", name: "Rose Gold Braid" },
 					{className: "stock", value: "navyCorduroy", name: "Navy Corduroy"},
-					{className: "stock", value: "blackCork", name: "Black Cork"},
+					{className: "stock cork", value: "blackCork", name: "Black Cork"},
 					{className: "stock", value: "selenite", name: "Selenite"},
 					{className: "stock", value: "brandySaddle", name: "Brandy Saddle"},
 					{className: "stock", value: "blackAndWhiteStripes", name: "Black and White Stripes"},
@@ -56,28 +56,16 @@
 					{className: "stock", value: "shikoba", name: "Shikoba - Hostess Exclusive"},
 					{className: "promo", value: "fortune", name: "Fortune - December Promo"},
 					{className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"},
-					{className: "promo", value: "cheers", name: "Cheers - December Promo"},
-					{className: "promo", value: "resolution", name: "Resolution - December Promo"}
-					
-					],
-					Petals:
-					[
-					{className: "stock", value: "salmonBasketweave", name: "Salmon BasketWeave"},
-					{className: "stock", value: "distressedRaspberry", name: "Distressed Raspberry"},
-					{className: "stock", value: "blossom", name: "Blossom"},
-					{className: "stock", value: "leopardLeather", name: "Leopard"},
-					{className: "stock", value: "gold", name: "Gold"},
-					{className: "stock", value: "roseGoldBraid", name: "Rose Gold Braid" },
-					{className: "stock", value: "navyCorduroy", name: "Navy Corduroy"},
-					{className: "stock", value: "selenite", name: "Selenite"},
-					{className: "stock", value: "brandySaddle", name: "Brandy Saddle"},
-					{className: "stock", value: "blackAndWhiteStripes", name: "Black and White Stripes"},
-					{className: "stock", value: "lavenderFrost", name: "Lavender Frost"},
-					{className: "stock", value: "mustardChevron", name: "Mustard Chevron"},
-					{className: "promo", value: "fortune", name: "Fortune - December Promo"},
-					{className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"}
+					{className: "promo cork", value: "cheers", name: "Cheers - December Promo"},
+					{className: "promo cork", value: "resolution", name: "Resolution - December Promo"}
 					]
 				};
+
+				let user1 = getCookie("counsultantUsername");
+				let admin1 = getCookie("admin");
+				if (admin1 != "") {
+					colors.Leathers.push({className: "stock", value: "salmonBasketweave", name: "Salmon BasketWeave"});
+				}
 			</script>
 		</section>
 		<main>
