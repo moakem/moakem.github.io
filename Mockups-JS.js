@@ -1112,6 +1112,10 @@ if (admin1 != "") {
 	colors.Leathers.push({className: "stock", value: "whiteLeather", name: "White"});
 	colors.Leathers.push({className: "stock", value: "blackLeather", name: "Black"});
 	colors.Leathers.push({className: "stock cork", value: "naturalCork", name: "Natural Cork"});
+	colors.Leathers.push({className: "promo", value: "fortune", name: "Fortune - December Promo"});
+	colors.Leathers.push({className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"});
+	colors.Leathers.push({className: "promo cork", value: "cheers", name: "Cheers - December Promo"});
+	colors.Leathers.push({className: "promo cork", value: "resolution", name: "Resolution - December Promo"});
 	colors.Leathers.push({className: "promo", value: "cordelia", name: "Cordelia"});
 	colors.Leathers.push({className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles"});
 	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam"});
