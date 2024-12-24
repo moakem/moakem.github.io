@@ -1002,6 +1002,7 @@ const colors = {
 		{className: "acrylic", value: "partyGlitter", name: "Party Glitter - Leaving Jan 1st"},
 		{className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" },
 		{className: "hardwood", value: "linen", name: "Linen" },
+		{className: "hardwood", value: "maple", name: "Maple - Leaving Jan 1st"},
 		{className: "hardwood", value: "cherry", name: "Cherry"},
 		{className: "hardwood", value: "sapele", name: "Sapele"},
 		{className: "hardwood", value: "walnut", name: "Walnut" },
@@ -1123,11 +1124,19 @@ if (admin1 != "") {
 	colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork"});
 
 //Acrylics and Hardwoods
+	colors.AcrylicsAndHardwoods.length = 0;
+	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" });
 	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "silverMirror", name: "Silver Mirror"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "goldMirror", name: "Gold Mirror"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "roseGoldMirror", name: "Rose Gold Mirror"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "matteBlack", name: "Matte Black"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "matteWhite", name: "Matte White"});
+	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "linen", name: "Linen" });
+	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "cherry", name: "Cherry"});
+	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "sapele", name: "Sapele"});
+	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "walnut", name: "Walnut" });
+	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "moorishIdol", name: "Moorish Idol - December Promo"});
+	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cloudfallConfetti", name: "Cloudfall Confetti - December Promo"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteCranberry", name: "Matte Cranberry - January Promo"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pistachio", name: "Pistachio - January"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"});
@@ -1139,5 +1148,5 @@ else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 } 
 else {
-       colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "maple", name: "Maple - Leaving Jan 1st"});
+       
 }
