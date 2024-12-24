@@ -524,13 +524,6 @@ function showNav(style) {
 		document.getElementById("lTitle").innerHTML = "Top Leather:";
 		document.getElementById("mTitle").innerHTML = "Bottom Leather:";
 	}
-	else if(style == "Berlin"){
-		document.getElementById("navigation").style.display = "none";
-		document.getElementById("large").style.display = "block";
-		document.getElementById("medium").style.display = "block";
-		document.getElementById("lTitle").innerHTML = "Top Leather:";
-		document.getElementById("mTitle").innerHTML = "Bottom Wood:";
-	}
 	else {
 		document.getElementById("navigation").style.display = "none";
 	}
@@ -573,6 +566,13 @@ function menuOrNot(style) {
 		document.getElementById("sTitle").innerHTML = "Sports:";
 		document.getElementById("mTitle").innerHTML = "Large Heart:";
 		document.getElementById("lTitle").innerHTML = "Small Heart:";
+	}
+	else if(style == "Berlin"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("lTitle").innerHTML = "Top Leather:";
+		document.getElementById("mTitle").innerHTML = "Bottom Wood:";
 	}
 	else if (style == "Tess"){
 		document.getElementById("navigation").style.display = "none";
