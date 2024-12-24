@@ -1117,11 +1117,11 @@ if (admin1 != "") {
 	colors.Leathers.push({className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"});
 	colors.Leathers.push({className: "promo cork", value: "cheers", name: "Cheers - December Promo"});
 	colors.Leathers.push({className: "promo cork", value: "resolution", name: "Resolution - December Promo"});
-	colors.Leathers.push({className: "promo", value: "cordelia", name: "Cordelia"});
-	colors.Leathers.push({className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles"});
-	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam"});
-	colors.Leathers.push({className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid"});
-	colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork"});
+	colors.Leathers.push({className: "promo", value: "cordelia", name: "Cordelia - January Promo"});
+	colors.Leathers.push({className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles - January Promo"});
+	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam - January Promo"});
+	colors.Leathers.push({className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January Promo"});
+	colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"});
 
 //Acrylics and Hardwoods
 	colors.AcrylicsAndHardwoods.length = 0;
