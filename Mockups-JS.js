@@ -563,6 +563,15 @@ function menuOrNot(style) {
 		document.getElementById("mTitle").innerHTML = "Middle Color Options:";
 		document.getElementById("lTitle").innerHTML = "Top Color Options:";
 	}
+	else if (style == "Sports"){
+		document.getElementById("navigation").style.display = "none";
+		document.getElementById("large").style.display = "block";
+		document.getElementById("medium").style.display = "block";
+		document.getElementById("small").style.display = "block";
+		document.getElementById("sTitle").innerHTML = "Sports:";
+		document.getElementById("mTitle").innerHTML = "Large Heart:";
+		document.getElementById("lTitle").innerHTML = "Small Heart:";
+	}
 	else if (style == "Tess"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
