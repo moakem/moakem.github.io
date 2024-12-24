@@ -93,13 +93,7 @@ function tryIt (element){
 	var file = "Colors/" + selectedColor + ".jpg";
 	document.getElementById("image083").setAttribute("xlink:href", file);
 	document.getElementById("image083").setAttribute("href", file);
-	if (type == "Berlin"){
-		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
-		console.log("top");
-	}
-	else{
-		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
-	}
+	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	var type = getParameters();
 	if(type == "Corinth" || type == "Football" || type == "Lublin"){
 	    document.getElementById("pattern184").style.display = "block";
@@ -124,13 +118,7 @@ function tryIt2 (element){
 	var file = "Colors/" + selectedColor + ".jpg";
 	document.getElementById("image183").setAttribute("xlink:href", file);
 	document.getElementById("image183").setAttribute("href", file);
-	if (type == "Berlin"){
-		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
-		console.log("bottom");
-	}
-	else{
-		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
-	}
+	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
 	if (type == "Petal"){
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
 		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
