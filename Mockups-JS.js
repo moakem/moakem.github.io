@@ -1102,6 +1102,10 @@ let admin1 = getCookie("admin");
 if (admin1 != "") {
 
 //Leathers
+	colors.Leathers.length = 0;
+	colors.Leathers.push({className: "stock cork", value: "blackCork", name: "Black Cork"});
+	colors.Leathers.push({className: "stock cork", value: "whiteCork", name: "White Cork"});
+	colors.Leathers.push({className: "stock", value: "gold", name: "Gold"});
 	colors.Leathers.push({className: "stock", value: "bronze", name: "Bronze"});
 	colors.Leathers.push({className: "stock", value: "roseGold", name: "Rose Gold"});
 	colors.Leathers.push({className: "stock", value: "silver", name: "Silver"});
