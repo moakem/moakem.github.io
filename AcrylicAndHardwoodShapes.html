@@ -141,7 +141,7 @@
 			<figure>
 				<a href="AcrylicAndHardwoodCustomization.html?type=Sierra">
 					<img src="ExampleImages/SierraExample.jpg" alt="picture of the sierra design" width="200px" height="200px"/>
-			 		<figcaption>Sierra<br/>(Hardwood Only)</figcaption>
+			 		<figcaption>Sierra<br/><span id="Sierra">(Hardwood Only)</span></figcaption>
 				</a>
 			</figure>
 			<figure>
@@ -243,10 +243,11 @@
 		</main>
 	</body>
 	<script>
-		let admin1 = getCookie("admin");
-		if (admin1 != "") {
+		let admin2 = getCookie("admin");
+		if (admin2 != "") {
 			document.getElementById("DoubleDiamond").style.display = "none";
 			document.getElementById("Trudy").style.display = "block";
+			document.getElementById("Sierra").innerHTML = "";
             document.getElementById("Edith").style.display = "block";
 
 		}
