@@ -88,13 +88,22 @@ function tryIt (element){
 	children.forEach(function(e) {
   		e.classList.remove('selected');
 	});
+
 	element.classList.add("selected");
+
 	document.getElementById("lSelected").innerHTML = selectedColorName;
+
 	var file = "Colors/" + selectedColor + ".jpg";
+
 	document.getElementById("image083").setAttribute("xlink:href", file);
 	document.getElementById("image083").setAttribute("href", file);
-	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
-	var type = getParameters();
+	//var type = getParameters();
+	if(type == "Berlin"){
+		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
+	}
+	else {
+		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
+	}
 	if(type == "Corinth" || type == "Football" || type == "Lublin"){
 	    document.getElementById("pattern184").style.display = "block";
 	}
