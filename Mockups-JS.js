@@ -127,7 +127,12 @@ function tryIt2 (element){
 	var file = "Colors/" + selectedColor + ".jpg";
 	document.getElementById("image183").setAttribute("xlink:href", file);
 	document.getElementById("image183").setAttribute("href", file);
-	document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
+	if(type == "Berlin"){
+		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
+	}
+	else {
+		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
+	}
 	if (type == "Petal"){
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
 		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
