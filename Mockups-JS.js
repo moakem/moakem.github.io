@@ -1,7 +1,5 @@
 
 function getColors(colors, type){
-	const colorOptions;
-
 	if(type == "Sports"){
 		for (let i=0; i < colors['Sports'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Sports'][i]['value'] + "' class='large' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
