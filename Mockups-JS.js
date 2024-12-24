@@ -44,6 +44,12 @@ function getColors(colors, type){
 	if (type == "Tannenbaum" || type == "Lublin"){
 		document.getElementById("largeOptions").innerHTML += "<img id='lwarmAndCozy' class='large hardwood promo' value='warmAndCozy' name='Warm and Cozy' src='Colors/warmAndCozy.jpg' onclick='tryIt(this)' />";
 	}
+	if (type == "Berlin"){
+		const acrylicColors = document.querySelectorAll('.acrylic');
+		for (let i = 0; i < acrylicColors.length; i++) {
+			acrylicColors[i].style.display = "none";
+		}
+	}
 }
 
 function getLeathers(colors, type){
@@ -59,14 +65,6 @@ function getLeathers(colors, type){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 		}
 	}
-	else if (type == "Berlin"){
-		for (let i=0; i < colors['LaserLeathers'].length; i++){
-			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='" + mediumClick + "' />";
-		}
-		for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
-			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-		}
-	}
 	else{
 		for (let i=0; i < colors['Leathers'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Leathers'][i]['value'] + "' class='large " + colors['Leathers'][i]['className'] + "' value='" + colors['Leathers'][i]['value'] + "' name='" + colors['Leathers'][i]['name'] + "' src='Colors/" + colors['Leathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
@@ -78,12 +76,6 @@ function getLeathers(colors, type){
 		const corkColors = document.querySelectorAll('.cork');
 		for (let i = 0; i < corkColors.length; i++) {
 			corkColors[i].style.display = "none";
-		}
-	}
-	if (type == "Berlin"){
-		const acrylicColors = document.querySelectorAll('.acrylic');
-		for (let i = 0; i < acrylicColors.length; i++) {
-			acrylicColors[i].style.display = "none";
 		}
 	}
 }
