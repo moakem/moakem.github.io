@@ -18,10 +18,10 @@ function getColors(colors, type){
 	}
 	else if (type == "Berlin"){
 		for (let i=0; i < colors['LaserLeathers'].length; i++){
-			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['LaserLeathers'][i]['value'] + "' value='" + colors['LaserLeathers'][i]['value'] + "' name='" + colors['LaserLeathers'][i]['name'] + "' src='Colors/" + colors['LaserLeathers'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 		}
 		for (let i=0; i < colors['AcrylicsAndHardwoods'].length; i++){
-			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='large " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['AcrylicsAndHardwoods'][i]['value'] + "' class='medium " + colors['AcrylicsAndHardwoods'][i]['className'] + "' value='" + colors['AcrylicsAndHardwoods'][i]['value'] + "' name='" + colors['AcrylicsAndHardwoods'][i]['name'] + "' src='Colors/" + colors['AcrylicsAndHardwoods'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
 		}
 	}
 	else if (type == "Tess"){
