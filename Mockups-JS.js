@@ -710,6 +710,9 @@ function showMockup(style){
 	case "Rowan":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rowanShape.html");
 		break;
+	case "Sports":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sportsShape.html");
+		break;
 	case "Quincy":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quincyShape.html");
 		break;
