@@ -4,6 +4,8 @@ function getColors(colors, type){
 		for (let i=0; i < colors['Sports'].length; i++){
 			document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Sports'][i]['value'] + "' class='large' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
 			document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Sports'][i]['value'] + "' class='medium' value='" + colors['Sports'][i]['value'] + "' name='" + colors['Sports'][i]['name'] + "' src='Colors/" + colors['Sports'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+		}
+		for (let i=0; i < colors['SportShapes'].length; i++){
 			document.getElementById("smallOptions").innerHTML += "<div class='small' value='" + colors['SportShapes'][i]['value'] + "' name='" + colors['SportShapes'][i]['name'] + "' onclick='chooseSport(this)'>" + colors['SportShapes'][i]['className'] + "</div>";	
 		}
 	}
