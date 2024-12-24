@@ -95,6 +95,7 @@ function tryIt (element){
 	document.getElementById("image083").setAttribute("href", file);
 	if (type == "Berlin"){
 		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
+		console.log("top");
 	}
 	else{
 		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
@@ -125,6 +126,7 @@ function tryIt2 (element){
 	document.getElementById("image183").setAttribute("href", file);
 	if (type == "Berlin"){
 		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
+		console.log("bottom");
 	}
 	else{
 		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
