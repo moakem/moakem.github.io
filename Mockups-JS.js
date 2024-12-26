@@ -1111,7 +1111,7 @@ if (admin1 != "") {
 	colors.Leathers.push({className: "stock", value: "roseGold", name: "Rose Gold"});
 	colors.Leathers.push({className: "stock", value: "silver", name: "Silver"});
 	colors.Leathers.push({className: "stock", value: "whiteLeather", name: "White"});
-	colors.Leathers.push({className: "stock", value: "blackLeather", name: "Black"});
+	colors.Leathers.push({className: "stock", value: "blackLeather", name: "Distressed Black"});
 	colors.Leathers.push({className: "stock cork", value: "naturalCork", name: "Natural Cork"});
 	colors.Leathers.push({className: "promo", value: "fortune", name: "Fortune - December Promo"});
 	colors.Leathers.push({className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"});
