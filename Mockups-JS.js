@@ -1100,7 +1100,7 @@ const colors = {
 
 let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
-if (admin1 != "") {
+if (admin1 != "" || user1 != "") {
 
 //Leathers
 	colors.Leathers.length = 0;
