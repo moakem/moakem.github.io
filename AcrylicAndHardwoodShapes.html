@@ -243,8 +243,9 @@
 		</main>
 	</body>
 	<script>
+		let user2 = getCookie("consultant");
 		let admin2 = getCookie("admin");
-		if (admin2 != "") {
+		if (admin2 != "" || user2 != "") {
 			document.getElementById("DoubleDiamond").style.display = "none";
 			document.getElementById("Trudy").style.display = "block";
 			document.getElementById("Sierra").innerHTML = "";
