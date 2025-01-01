@@ -969,46 +969,45 @@ function checkCookie() {
 const colors = {
 	Leathers : 
 	[
-		{className: "stock", value: "salmonBasketweave", name: "Salmon BasketWeave - Leaving Dec 31st "},
-		{className: "stock cork", value: "whiteCork", name: "White Cork"},
-		{className: "stock", value: "distressedRaspberry", name: "Distressed Raspberry - Leaving Dec 31st"},
-		{className: "stock cork", value: "spruceGreenCork", name: "Spruce Green Cork - Leaving Dec 31st"},
-		{className: "stock", value: "blossom", name: "Blossom - Leaving Dec 31st"},
-		{className: "stock", value: "leopardLeather", name: "Leopard - Leaving Dec 31st"},
-		{className: "stock", value: "gold", name: "Gold"},
-		{className: "stock cork", value: "aquaCork", name: "Aqua Cork - Leaving Dec 31st"},
-		{className: "stock", value: "roseGoldBraid", name: "Rose Gold Braid - Leaving Dec 31st"},
-		{className: "stock", value: "navyCorduroy", name: "Navy Corduroy - Leaving Dec 31st"},
 		{className: "stock cork", value: "blackCork", name: "Black Cork"},
-		{className: "stock", value: "selenite", name: "Selenite - Leaving Dec 31st"},
-		{className: "stock", value: "brandySaddle", name: "Brandy Saddle - Leaving Dec 31st"},
-		{className: "stock", value: "blackAndWhiteStripes", name: "Black and White Stripes - Leaving Dec 31st"},
-		{className: "stock", value: "lavenderFrost", name: "Lavender Frost - Leaving Dec 31st"},
-		{className: "stock", value: "mustardChevron", name: "Mustard Chevron - Leaving Dec 31st"},
-		{className: "stock", value: "shikoba", name: "Shikoba - Hostess Exclusive"},
+		{className: "stock cork", value: "whiteCork", name: "White Cork"},
+		{className: "stock", value: "gold", name: "Gold"},
+		{className: "stock", value: "bronze", name: "Bronze"},
+		{className: "stock", value: "silver", name: "Silver"},
+		{className: "stock", value: "whiteLeather", name: "White"},
+		{className: "stock", value: "blackLeather", name: "Distressed Black"},
+		{className: "stock cork", value: "naturalCork", name: "Natural Cork"},
 		{className: "promo", value: "fortune", name: "Fortune - December Promo"},
 		{className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"},
 		{className: "promo cork", value: "cheers", name: "Cheers - December Promo"},
-		{className: "promo cork", value: "resolution", name: "Resolution - December Promo"}
+		{className: "promo cork", value: "resolution", name: "Resolution - December Promo"},
+		{className: "promo", value: "cordelia", name: "Cordelia - January Promo"},
+		{className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles - January Promo"},
+		{className: "promo cork", value: "winterGlam", name: "Winter Glam - January Promo"},
+		{className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January Promo"},
+		{className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"}
+
 	],
 	AcrylicsAndHardwoods : 
 	[
-		{className: "acrylic", value: "black", name: "Black - Leaving Dec 31st" },
-		{className: "acrylic", value: "white", name: "White - Leaving Dec 31st"},
-		{className: "acrylic", value: "ruby", name: "Ruby - Leaving Dec 31st"},
-		{className: "acrylic", value: "pink", name: "Pink - Leaving Dec 31st"},
-		{className: "acrylic", value: "turquoise", name: "Turquoise - Leaving Dec 31st"},
-		{className: "acrylic", value: "leopard", name: "Leopard - Leaving Dec 31st"},
-		{className: "acrylic", value: "partyGlitter", name: "Party Glitter - Leaving Dec 31st"},
 		{className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" },
-		{className: "hardwood", value: "linen", name: "Linen"},
-		{className: "hardwood", value: "maple", name: "Maple - Leaving Dec 31st"},
-		{className: "hardwood", value: "cherry", name: "Cherry"},
-		{className: "hardwood", value: "sapele", name: "Sapele"},
-		{className: "hardwood", value: "walnut", name: "Walnut" },
-		{className: "acrylic", value: "raheen", name: "Raheen - Hostess Exclusive" },
+		{className: "acrylic", value: "silverMirror", name: "Silver Mirror"},
+   		{className: "acrylic", value: "goldMirror", name: "Gold Mirror"},
+   		{className: "acrylic", value: "roseGoldMirror", name: "Rose Gold Mirror"},
+		{className: "acrylic", value: "matteBlack", name: "Matte Black"},
+		{className: "acrylic", value: "matteWhite", name: "Matte White"},
+		{className: "hardwood", value: "linen", name: "Linen Hardwood" },
+		{className: "hardwood", value: "cherry", name: "Cherry Hardwood"},
+		{className: "hardwood", value: "sapele", name: "Sapele Hardwood"},
+		{className: "hardwood", value: "walnut", name: "Walnut Hardwood" },
 		{className: "acrylic promo", value: "moorishIdol", name: "Moorish Idol - December Promo"},
-		{className: "acrylic promo", value: "cloudfallConfetti", name: "Cloudfall Confetti - December Promo"}
+		{className: "acrylic promo", value: "cloudfallConfetti", name: "Cloudfall Confetti - December Promo"},
+		{className: "acrylic promo", value: "matteCranberry", name: "Matte Cranberry - January Promo"},
+   		{className: "acrylic promo", value: "pistachio", name: "Pistachio - January"},
+    	{className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"},
+		{className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January Promo"},
+		{className: "acrylic promo", value: "darya", name: "Darya - January Promo"},
+    	{className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"}
 	],
 	Mia : 
 	[
@@ -1103,46 +1102,14 @@ let admin1 = getCookie("admin");
 if (admin1 != "" || user1 != "") {
 
 //Leathers
-	colors.Leathers.length = 0;
-	colors.Leathers.push({className: "stock cork", value: "blackCork", name: "Black Cork"});
-	colors.Leathers.push({className: "stock cork", value: "whiteCork", name: "White Cork"});
-	colors.Leathers.push({className: "stock", value: "gold", name: "Gold"});
-	colors.Leathers.push({className: "stock", value: "bronze", name: "Bronze"});
-	colors.Leathers.push({className: "stock", value: "roseGold", name: "Rose Gold"});
-	colors.Leathers.push({className: "stock", value: "silver", name: "Silver"});
-	colors.Leathers.push({className: "stock", value: "whiteLeather", name: "White"});
-	colors.Leathers.push({className: "stock", value: "blackLeather", name: "Distressed Black"});
-	colors.Leathers.push({className: "stock cork", value: "naturalCork", name: "Natural Cork"});
-	colors.Leathers.push({className: "promo", value: "fortune", name: "Fortune - December Promo"});
-	colors.Leathers.push({className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"});
-	colors.Leathers.push({className: "promo cork", value: "cheers", name: "Cheers - December Promo"});
-	colors.Leathers.push({className: "promo cork", value: "resolution", name: "Resolution - December Promo"});
-	colors.Leathers.push({className: "promo", value: "cordelia", name: "Cordelia - January Promo"});
-	colors.Leathers.push({className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles - January Promo"});
-	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam - January Promo"});
-	colors.Leathers.push({className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January Promo"});
-	colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"});
+	//colors.Leathers.length = 0;
+	//colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"});
 
+	
 //Acrylics and Hardwoods
-	colors.AcrylicsAndHardwoods.length = 0;
-	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" });
-	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "silverMirror", name: "Silver Mirror"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "goldMirror", name: "Gold Mirror"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "roseGoldMirror", name: "Rose Gold Mirror"});
-	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "matteBlack", name: "Matte Black"});
-	colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "matteWhite", name: "Matte White"});
-	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "linen", name: "Linen" });
-	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "cherry", name: "Cherry"});
-	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "sapele", name: "Sapele"});
-	colors.AcrylicsAndHardwoods.push({className: "hardwood", value: "walnut", name: "Walnut" });
-	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "moorishIdol", name: "Moorish Idol - December Promo"});
-	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cloudfallConfetti", name: "Cloudfall Confetti - December Promo"});
-	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteCranberry", name: "Matte Cranberry - January Promo"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pistachio", name: "Pistachio - January"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"});
-	colors.AcrylicsAndHardwoods.push({className: "hardwood promo", value: "bamboo", name: "Bamboo - January Promo"});
-	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "darya", name: "Darya - January Promo"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"});
+	//colors.AcrylicsAndHardwoods.length = 0;
+	//colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" });
+
 }
 else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
