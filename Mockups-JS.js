@@ -974,13 +974,10 @@ const colors = {
 		{className: "stock", value: "gold", name: "Gold"},
 		{className: "stock", value: "bronze", name: "Bronze"},
 		{className: "stock", value: "silver", name: "Silver"},
+		{className: "stock", value: "roseGold", name: "Rose Gold"},
 		{className: "stock", value: "whiteLeather", name: "White"},
 		{className: "stock", value: "blackLeather", name: "Distressed Black"},
 		{className: "stock cork", value: "naturalCork", name: "Natural Cork"},
-		{className: "promo", value: "fortune", name: "Fortune - December Promo"},
-		{className: "promo", value: "silverLeopard", name: "Silver Leopard - December Promo"},
-		{className: "promo cork", value: "cheers", name: "Cheers - December Promo"},
-		{className: "promo cork", value: "resolution", name: "Resolution - December Promo"},
 		{className: "promo", value: "cordelia", name: "Cordelia - January Promo"},
 		{className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles - January Promo"},
 		{className: "promo cork", value: "winterGlam", name: "Winter Glam - January Promo"},
@@ -1000,14 +997,12 @@ const colors = {
 		{className: "hardwood", value: "cherry", name: "Cherry Hardwood"},
 		{className: "hardwood", value: "sapele", name: "Sapele Hardwood"},
 		{className: "hardwood", value: "walnut", name: "Walnut Hardwood" },
-		{className: "acrylic promo", value: "moorishIdol", name: "Moorish Idol - December Promo"},
-		{className: "acrylic promo", value: "cloudfallConfetti", name: "Cloudfall Confetti - December Promo"},
 		{className: "acrylic promo", value: "matteCranberry", name: "Matte Cranberry - January Promo"},
    		{className: "acrylic promo", value: "pistachio", name: "Pistachio - January"},
-    	{className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"},
+    	        {className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"},
 		{className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January Promo"},
 		{className: "acrylic promo", value: "darya", name: "Darya - January Promo"},
-    	{className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"}
+    	        {className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"}
 	],
 	Mia : 
 	[
