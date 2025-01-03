@@ -1161,7 +1161,9 @@ const colors = {
 
 let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
-if (admin1 != "" || user1 != "") {
+if (admin1 != "") {
+
+	document.getElementById("beadedHoops").style.display = "block";
 
 //Leathers
 	//colors.Leathers.length = 0;
@@ -1177,5 +1179,5 @@ else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 } 
 else {
-       
+       document.getElementById("beadedHoops").style.display = "none";
 }
