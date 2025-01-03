@@ -136,7 +136,7 @@ a:hover{
     margin: 2px;
 }
 
-#smallOptions>div{
+#smallOptions>div, #hoop>div{
 	  padding: 5px 10px 5px;
     background-color: lightgray;
     display: inline-block;
