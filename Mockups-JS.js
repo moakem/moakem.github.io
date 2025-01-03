@@ -215,7 +215,7 @@ function genevaColors (element){
 
 	for (let j = 1; j <= 9; j++){
 		if (element.parentNode.id == j){
-			const beadClass = '.' + j + 'beads';
+			const beadClass = ".beads" + j;
 			const children = document.querySelectorAll(beadClass);
 
 			children.forEach(function(e) {
@@ -225,7 +225,8 @@ function genevaColors (element){
 			const selectedElement = j + "Selected";
 			document.getElementById(selectedElement).innerHTML = selectedColorName;
 			var file = "Colors/" + selectedColor + ".jpg";
-			const imageId = "image" + j-1 + "83";
+			const imageNumber = j-1; 
+			const imageId = "image" + imageNumber + "83";
 			document.getElementById(imageId).setAttribute("xlink:href", file);
 			document.getElementById(imageId).setAttribute("href", file);
 		}
