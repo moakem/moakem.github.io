@@ -237,6 +237,20 @@ function metalOptions(element){
 	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", selectedMetal);
 }
 
+function genevaMetals(element){
+	var selectedMetal = element.getAttribute("value");
+	var selectedMetalName = element.getAttribute("name");
+	const children = document.querySelectorAll('.bead');
+
+	children.forEach(function(e) {
+  		e.classList.remove('selected');
+	});
+	element.classList.add("selected");
+
+	document.getElementById("bSelected").innerHTML = selectedMetalName;
+	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", selectedMetal);
+}
+
 function reset(type) {
 	document.getElementById("sSelected").innerHTML = "";
 	document.getElementById("mSelected").innerHTML = "";
@@ -851,6 +865,9 @@ function showMockup(style){
 	case "Trudy":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/trudyShape.html");
 		break;
+	case "Geneva":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/genevaShape.html");
+		break;
 	}
 }
 
@@ -1088,6 +1105,20 @@ const colors = {
 		{value: "golf", name: "Birdie", className: "Golf"},
 		{value: "crossCountry", name: "Cadence", className: "Cross Country"},
 		{value: "cheer", name: "Aerial", className: "Cheer"}
+	],
+	Genevas:
+	[
+		{value: "purpleBead", name: "Purple" },
+		{value: "pinkBead", name: "Pink" },
+		{value: "neutralBead", name: "Neutral" },
+		{value: "goldBead", name: "Gold" },
+		{value: "silverBead", name: "Silver" },
+		{value: "tanBead", name: "Tan" },
+		{value: "mintBead", name: "Mint" },
+		{value: "navyBead", name: "Navy" },
+		{value: "coralBead", name: "Coral" },
+		{value: "greenBead", name: "Green" },
+		{value: "yellowBead", name: "Yellow" }
 	]
 };
 
