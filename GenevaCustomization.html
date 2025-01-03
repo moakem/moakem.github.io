@@ -3,14 +3,6 @@
 		<script type="text/javascript" src="Mockups-JS.js"></script>
 		<link rel="stylesheet" href="Mockups-Styling.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<script>
-			for (let i=0; i < colors['Genevas'].length; i++){
-				document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Genevas'][i]['value'] + "' class='large' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-				document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Genevas'][i]['value'] + "' class='medium' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
-				document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Genevas'][i]['value'] + "' class='small' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
-			}
-		</script>
 	</head>
 	<body onload="checkCookie()">
 		<header>
@@ -59,11 +51,17 @@
 			<section id="mockup" w3-include-html=""></section>
 			<script>
 				//document.getElementById("category").innerHTML = type;
-				showMockup(type); 
+				showMockup("Geneva"); 
 				includeHTML();
 				//getColors(colors, type);
 				//promoShow();
 				//menuOrNot(type);
+
+				for (let i=0; i < colors['Genevas'].length; i++){
+					document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Genevas'][i]['value'] + "' class='large' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
+					document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Genevas'][i]['value'] + "' class='medium' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
+					document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Genevas'][i]['value'] + "' class='small' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+				}
 			</script>
 		</main>
 	</body>
