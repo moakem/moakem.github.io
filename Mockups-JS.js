@@ -215,8 +215,8 @@ function genevaColors (element){
 
 	for (let j = 1; j <= 9; j++){
 		if (element.parentNode.id == j){
-			const beadClass = ".beads" + j;
-			const children = document.querySelectorAll(beadClass);
+			const beadClass = "beads" + j;
+			const children = document.querySelectorAll('.' + beadClass + '');
 
 			children.forEach(function(e) {
 		  		e.classList.remove('selected');
