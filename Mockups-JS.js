@@ -101,6 +101,9 @@ function tryIt (element){
 	if(type == "Berlin"){
 		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
 	}
+	else if (type == "Geneva"){
+
+	}
 	else {
 		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	}
@@ -130,6 +133,9 @@ function tryIt2 (element){
 	if(type == "Berlin"){
 		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	}
+	else if (type == "Geneva"){
+		
+	}
 	else {
 		document.getElementsByTagName("svg")[0].children[1].setAttribute("stroke", "black");
 	}
@@ -154,7 +160,12 @@ function tryIt3 (element){
 	var file = "Colors/" + selectedColor + ".jpg";
 	document.getElementById("image283").setAttribute("xlink:href", file);
 	document.getElementById("image283").setAttribute("href", file);
-	document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
+	if (type == "Geneva"){
+		
+	}
+	else{
+		document.getElementsByTagName("svg")[0].children[2].setAttribute("stroke", "black");
+	}
 	if (type == "Petal"){
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
 		document.getElementsByTagName("svg")[0].children[4].setAttribute("fill", "black");
