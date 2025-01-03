@@ -209,6 +209,30 @@ function tryIt4 (element){
 	}
 }
 
+function genevaColors (element){
+	var selectedColor = element.getAttribute("value");
+	var selectedColorName = element.name;
+
+	for (let j = 1; j <= 9; j++){
+		if (element.parentNode.id == j){
+			const beadClass = "." + j + "beads";
+			const children = document.querySelectorAll(beadClass);
+
+			children.forEach(function(e) {
+		  		e.classList.remove('selected');
+			});
+			element.classList.add("selected");
+			const selectedElement = j + "Selected";
+			document.getElementById(selectedElement).innerHTML = selectedColorName;
+			var file = "Colors/" + selectedColor + ".jpg";
+			const imageId = "image" + j-1 + "83";
+			document.getElementById(imageId).setAttribute("xlink:href", file);
+			document.getElementById(imageId).setAttribute("href", file);
+		}
+	}
+
+}
+
 function chooseSport (element){
 	var selectedSport = element.getAttribute("value");
 	var selectedSportName = element.getAttribute("name");

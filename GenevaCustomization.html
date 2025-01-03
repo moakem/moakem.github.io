@@ -28,22 +28,50 @@
 		</section>
 		<main>
 			<section id="colors">
-				<div id="large">
-					<span id="lTitle">Top Two Beads: </span> <span id="lSelected" class="selectedName"></span>
+				<div id="bead1">
+					<span id="1Title">Bead 1 Color: </span> <span id="1Selected" class="selectedName"></span>
 						<br/><br/>
-						<div id="largeOptions" class="colorOptions"></div>
+						<div id="1" class="colorOptions"></div>
 				</div>
-				
-				<div id="medium">
-					<span id="mTitle">Third Beads: </span> <span id="mSelected" class="selectedName"></span> <span id="mHSelected" class="selectedName" style="display:none"></span>
-					<br/><br/>
-					<div id="mediumOptions" class="colorOptions"></div>
+				<div id="bead2">
+					<span id="2Title">Bead 2 Color: </span> <span id="2Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="2" class="colorOptions"></div>
 				</div>
-			
-				<div id="small">
-					<span id="sTitle">Bottom Three Beads:</span> <span id="sSelected" class="selectedName"></span>
-					<br/><br/>
-					<div id="smallOptions" class="colorOptions"></div>
+				<div id="bead3">
+					<span id="3Title">Bead 3 Color: </span> <span id="3Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="3" class="colorOptions"></div>
+				</div>
+				<div id="bead4">
+					<span id="4Title">Bead 4 Color: </span> <span id="4Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="4" class="colorOptions"></div>
+				</div>
+				<div id="bead5">
+					<span id="5Title">Bead 5 Color: </span> <span id="5Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="5" class="colorOptions"></div>
+				</div>
+				<div id="bead6">
+					<span id="6Title">Bead 6 Color: </span> <span id="6Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="6" class="colorOptions"></div>
+				</div>
+				<div id="bead7">
+					<span id="7Title">Bead 7 Color: </span> <span id="7Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="7" class="colorOptions"></div>
+				</div>
+				<div id="bead8">
+					<span id="8Title">Bead 8 Color: </span> <span id="8Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="8" class="colorOptions"></div>
+				</div>
+				<div id="bead9">
+					<span id="9Title">Bead 9 Color: </span> <span id="9Selected" class="selectedName"></span>
+						<br/><br/>
+						<div id="9" class="colorOptions"></div>
 				</div>
 				<div id="hoop" class="colorOptions">
 					<span id="sTitle">Hoop Metal Option:</span> <span id="bSelected" class="selectedName"></span>
@@ -61,10 +89,10 @@
 				//promoShow();
 				//menuOrNot(type);
 
-				for (let i=0; i < colors['Genevas'].length; i++){
-					document.getElementById("largeOptions").innerHTML += "<img id='l" + colors['Genevas'][i]['value'] + "' class='large' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt(this)' />";
-					document.getElementById("mediumOptions").innerHTML += "<img id='m" + colors['Genevas'][i]['value'] + "' class='medium' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt2(this)' />";
-					document.getElementById("smallOptions").innerHTML += "<img id='s" + colors['Genevas'][i]['value'] + "' class='small' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='tryIt3(this)' />";
+				for (let j = 1; j <= 9; j++){
+					for (let i=0; i < colors['Genevas'].length; i++){
+						document.getElementById(j).innerHTML += "<img id='" + j + colors['Genevas'][i]['value'] + "' class='" + j + "beads' value='" + colors['Genevas'][i]['value'] + "' name='" + colors['Genevas'][i]['name'] + "' src='Colors/" + colors['Genevas'][i]['value'] + ".jpg' onclick='beadColors(this)' />";
+					}
 				}
 			</script>
 		</main>
