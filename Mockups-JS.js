@@ -284,7 +284,7 @@ function genevaMetals(element){
 	element.classList.add("selected");
 
 	document.getElementById("bSelected").innerHTML = selectedMetalName;
-	document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", selectedMetal);
+	document.getElementsByTagName("svg")[0].children[0].setAttribute("fill", selectedMetal);
 }
 
 function reset(type) {
