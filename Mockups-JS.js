@@ -908,7 +908,7 @@ function showMockup(style){
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/xoShape.html");
 		break;
 	case "Paris":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/xoShape.html");
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/parisShape.html");
 		break;
 	case "Lutetia":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lutetiaShape.html");
