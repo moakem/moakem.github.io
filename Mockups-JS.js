@@ -586,7 +586,7 @@ function showNav(style) {
 }
 
 function menuOrNot(style) {
-	if (style == "Winona" || style == "Edith") {
+	if (style == "Winona" || style == "Edith" || style == "Lutetia") {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -603,7 +603,7 @@ function menuOrNot(style) {
 	else if (style == "Cairo" || style == "Managua" || style == "Larissa" || style == "Sochi" || style == "Monaco" 
 		|| style == "Dublin" || style == "Valencia" || style == "Double Diamond" || style == "Seoul"
 		|| style == "Monroe" || style == "Lima" || style == "Nairobi" || style == "Rio" || style == "Snowflakes" 
-		|| style == "Pumpkin"){
+		|| style == "Pumpkin" || style == "XO" || style == "Paris"){
 		document.getElementById("navigation").style.display = "block";
 	}
 	else if (style == "Sydney" || style == "Rowan"){
@@ -903,6 +903,15 @@ function showMockup(style){
 		break;
 	case "Geneva":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/genevaShape.html");
+		break;
+	case "XO":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/xoShape.html");
+		break;
+	case "Paris":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/xoShape.html");
+		break;
+	case "Lutetia":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lutetiaShape.html");
 		break;
 	}
 }
