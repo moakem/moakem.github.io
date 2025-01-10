@@ -66,6 +66,12 @@
 			 		<figcaption>Larissa<br/>(Regular and Mini Styles)</figcaption>
 				</a>
 			</figure>
+			<figure class="comingSoon" style="display:none;">
+				<a href="AcrylicAndHardwoodCustomization.html?type=LoveLetter">
+					<img src="ExampleImages/LoveLetterExample.jpg" alt="picture of the heart and letter design" width="200px" height="200px"/>
+			 		<figcaption>Love Letter<br/>(Fan Favorite)</figcaption>
+				</a>
+			</figure>
 			<figure>
 				<a href="AcrylicAndHardwoodCustomization.html?type=Managua">
 					<img src="ExampleImages/ManaguaExample.jpg" alt="picture of the managua design" width="200px" height="200px"/>
@@ -84,10 +90,22 @@
 			 		<figcaption>Moon Phase<br/>(Discount Shape)</figcaption>
 				</a>
 			</figure>
+			<figure class="comingSoon" style="display:none;">
+				<a href="AcrylicAndHardwoodCustomization.html?type=Odette">
+					<img src="ExampleImages/OdetteExample.jpg" alt="picture of the odette design" width="200px" height="200px"/>
+			 		<figcaption>Odette<br/>(Fan Favorite)</figcaption>
+				</a>
+			</figure>
 			<figure>
 				<a href="AcrylicAndHardwoodCustomization.html?type=Paris">
 					<img src="ExampleImages/ParisExample.jpg" alt="picture of the heart design" width="200px" height="200px"/>
 			 		<figcaption>Paris<br/>(Regular and Mini Styles)<br/>(Discount Shape)</figcaption>
+				</a>
+			</figure>
+			<figure class="comingSoon" style="display:none;">
+				<a href="AcrylicAndHardwoodCustomization.html?type=Quinn">
+					<img src="ExampleImages/QuinnExample.jpg" alt="picture of the heart stud design" width="200px" height="200px"/>
+			 		<figcaption>Quinn<br/>(Fan Favorite)</figcaption>
 				</a>
 			</figure>
 			<figure>
@@ -203,8 +221,12 @@
 	<script>
 		let user2 = getCookie("counsultantUsername");
 		let admin2 = getCookie("admin");
-		if (admin2 != "" || user2 != "") {
+		if (admin2 != "") {
+			const children2 = document.querySelectorAll('.comingSoon');
 
+			children.forEach(function(e) {
+		  		e.style.display = "block";
+			});
 		}
 	</script>
 	<footer>
