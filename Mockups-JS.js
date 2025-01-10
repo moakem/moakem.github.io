@@ -111,7 +111,6 @@ function tryIt (element){
 	    document.getElementById("pattern184").style.display = "block";
 	}
 	if (type == "Love Letter"){
-		document.getElementById("pattern184").style.display = "block";
 		document.getElementById("pattern184").setAttribute("stroke", "black");
 	}
 	if (type == "Petal"){
