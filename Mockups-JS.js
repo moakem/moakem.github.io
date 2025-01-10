@@ -107,7 +107,7 @@ function tryIt (element){
 	else {
 		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	}
-	if(type == "Corinth" || type == "Football" || type == "Lublin"){
+	if(type == "Corinth" || type == "Football" || type == "Lublin" || type == "Love Letter"){
 	    document.getElementById("pattern184").style.display = "block";
 	}
 	if (type == "Petal"){
@@ -551,6 +551,9 @@ function getParameters() {
     if(type == "MoonPhase"){
     	type = "Moon Phase";
     }
+    if(type == "LoveLetter"){
+    	type = "Love Letter";
+    }
     return type;
     
 }
@@ -606,7 +609,7 @@ function menuOrNot(style) {
 		|| style == "Pumpkin" || style == "XO" || style == "Paris"){
 		document.getElementById("navigation").style.display = "block";
 	}
-	else if (style == "Sydney" || style == "Rowan"){
+	else if (style == "Sydney" || style == "Rowan" || style == "Odette"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -660,11 +663,11 @@ function menuOrNot(style) {
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
-		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy"){
+		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
-	else if (style == "Corinth" || style == "Lublin"){
+	else if (style == "Corinth" || style == "Lublin" || style == "Love Letter"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -912,6 +915,15 @@ function showMockup(style){
 		break;
 	case "Lutetia":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lutetiaShape.html");
+		break;
+	case "Love Letter":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/loveLetterShape.html");
+		break;
+	case "Quinn":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quinnShape.html");
+		break;
+	case "Odette":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/odetteShape.html");
 		break;
 	}
 }
@@ -1173,13 +1185,11 @@ let admin1 = getCookie("admin");
 if (admin1 != "") {
 
 //Leathers
-	//colors.Leathers.length = 0;
-	//colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"});
+	colors.Leathers.push({className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite"});
 
 	
 //Acrylics and Hardwoods
-	//colors.AcrylicsAndHardwoods.length = 0;
-	//colors.AcrylicsAndHardwoods.push({className: "acrylic", value: "starlightGlitter", name: "Starlight Glitter" });
+	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "amora", name: "Amora" });
 
 }
 else if (user1 != "") {
