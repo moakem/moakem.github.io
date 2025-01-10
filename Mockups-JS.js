@@ -1059,7 +1059,8 @@ const colors = {
 		{className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles - January Promo"},
 		{className: "promo cork", value: "winterGlam", name: "Winter Glam - January Promo"},
 		{className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January Promo"},
-		{className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"}
+		{className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"},
+		{className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite"}
 
 	],
 	AcrylicsAndHardwoods : 
@@ -1080,7 +1081,8 @@ const colors = {
 		{className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January Promo"},
 		{className: "acrylic promo", value: "darya", name: "Darya - January Promo"},
     	        {className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"},
-		{className: "acrylic promo", value: "pinkSparkle", name: "Pink Sparkle - Promo"}
+		{className: "acrylic promo", value: "pinkSparkle", name: "Pink Sparkle - Promo"},
+		{className: "acrylic promo", value: "amora", name: "Amora" }
 	],
 	Mia : 
 	[
@@ -1189,11 +1191,11 @@ let admin1 = getCookie("admin");
 if (admin1 != "") {
 
 //Leathers
-	colors.Leathers.push({className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite"});
+	//colors.Leathers.push({className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite"});
 
 	
 //Acrylics and Hardwoods
-	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "amora", name: "Amora" });
+	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "amora", name: "Amora" });
 
 }
 else if (user1 != "") {
