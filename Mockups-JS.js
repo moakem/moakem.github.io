@@ -1076,7 +1076,8 @@ const colors = {
     	        {className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"},
 		{className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January Promo"},
 		{className: "acrylic promo", value: "darya", name: "Darya - January Promo"},
-    	        {className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"}
+    	        {className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"},
+		{className: "acrylic promo", value: "pinkSparkle", name: "Pink Sparkle - Promo"}
 	],
 	Mia : 
 	[
