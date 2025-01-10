@@ -107,8 +107,12 @@ function tryIt (element){
 	else {
 		document.getElementsByTagName("svg")[0].children[0].setAttribute("stroke", "black");
 	}
-	if(type == "Corinth" || type == "Football" || type == "Lublin" || type == "Love Letter"){
+	if(type == "Corinth" || type == "Football" || type == "Lublin"){
 	    document.getElementById("pattern184").style.display = "block";
+	}
+	if (type == "Love Letter"){
+		document.getElementById("pattern184").style.display = "block";
+		document.getElementById("pattern184").setAttribute("stroke", "black");
 	}
 	if (type == "Petal"){
 		document.getElementsByTagName("svg")[0].children[3].setAttribute("fill", "black");
