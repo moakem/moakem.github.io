@@ -1189,14 +1189,22 @@ const colors = {
 
 let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
-if (admin1 != "") {
+if (admin1 != "" || user1 != "") {
 
 //Leathers
-	//colors.Leathers.push({className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite"});
+    //colors.Leathers.push({className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite"});
+    colors.Leathers.push({className: "promo", value: "azureIce", name: "Azure Ice - February Promo"});
+    colors.Leathers.push({className:"promo", value: "luckyLeopard", name: "Lucky Leopard - February Promo"});
+    colors.Leathers.push({className: "promo", value: "distressedCamel", name: "Distressed Camel - February Promo"});
+    
+
+
 
 	
 //Acrylics and Hardwoods
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "amora", name: "Amora" });
+	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteOrchid", name: "Matte Orchid - February Promo" });
+        colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "shamrockSparkle", name: "Shamrock Sparkle" });
 
 }
 else if (user1 != "") {
