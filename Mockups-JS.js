@@ -1211,5 +1211,11 @@ else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 } 
 else {
-       
+    colors.Leathers.push({className: "promo", value: "azureIce", name: "Azure Ice - February Promo"});
+    colors.Leathers.push({className:"promo", value: "luckyLeopard", name: "Lucky Leopard - February Promo"});
+    colors.Leathers.push({className: "promo", value: "distressedCamel", name: "Distressed Camel - February Promo"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteOrchid", name: "Matte Orchid - February Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "shamrockSparkle", name: "Shamrock Sparkle" });
+
+  
 }
