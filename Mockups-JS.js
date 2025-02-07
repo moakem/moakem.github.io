@@ -1075,15 +1075,12 @@ const colors = {
 		{className: "hardwood", value: "cherry", name: "Cherry Hardwood"},
 		{className: "hardwood", value: "sapele", name: "Sapele Hardwood"},
 		{className: "hardwood", value: "walnut", name: "Walnut Hardwood" },
-		{className: "acrylic promo", value: "matteCranberry", name: "Matte Cranberry - January Promo"},
-   		{className: "acrylic promo", value: "pistachio", name: "Pistachio - January"},
-    	        {className: "acrylic promo", value: "kailani", name: "Kailani - January Promo"},
-		{className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January Promo"},
-		{className: "acrylic promo", value: "darya", name: "Darya - January Promo"},
-    	        {className: "acrylic promo", value: "saphira", name: "Saphira - January Promo"},
+    	        {className: "acrylic promo", value: "kailani", name: "Kailani - January/February Promo"},
+		{className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January/February Promo"},
+    	        {className: "acrylic promo", value: "saphira", name: "Saphira - January/February Promo"},
 		{className: "acrylic promo", value: "pinkSparkle", name: "Pink Sparkle - Promo"},
-		{className: "acrylic promo", value: "amora", name: "Amora - Fan Favorites" },
-		{className: "acrylic promo", value: "rubyGlitter", name: "Ruby Glitter - Promo"}
+		{className: "acrylic promo", value: "rubyGlitter", name: "Ruby Glitter - Promo"},
+		{className: "acrylic promo", value: "amora", name: "Amora - Fan Favorites" }
 	],
 	Mia : 
 	[
