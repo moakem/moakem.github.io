@@ -650,7 +650,7 @@ function menuOrNot(style) {
 		document.getElementById("large").style.display = "block";
 		const acrylicColors = document.querySelectorAll('.acrylic');
 		for (let i = 0; i < acrylicColors.length; i++) {
-			if ((admin1 != "" || user1 != "") && style == "Sierra") {
+			if (style == "Sierra") {
 				acrylicColors[i].style.display = "inline-block";
 			}
 			else{
