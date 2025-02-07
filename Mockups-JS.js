@@ -1055,11 +1055,9 @@ const colors = {
 		{className: "stock", value: "whiteLeather", name: "White"},
 		{className: "stock", value: "blackLeather", name: "Distressed Black"},
 		{className: "stock cork", value: "naturalCork", name: "Natural Cork"},
-		{className: "promo", value: "cordelia", name: "Cordelia - January Promo"},
-		{className: "promo", value: "peacockMiniTriangles", name: "Peacock Mini Triangles - January Promo"},
-		{className: "promo cork", value: "winterGlam", name: "Winter Glam - January Promo"},
-		{className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January Promo"},
-		{className: "promo cork", value: "zebraCork", name: "Zebra Cork - January Promo"},
+		{className: "promo cork", value: "winterGlam", name: "Winter Glam - January/February Promo"},
+		{className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January/February Promo"},
+		{className: "promo cork", value: "zebraCork", name: "Zebra Cork - January/February Promo"},
 		{className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite"}
 
 	],
