@@ -1073,6 +1073,7 @@ const colors = {
 		{className: "hardwood", value: "cherry", name: "Cherry Hardwood"},
 		{className: "hardwood", value: "sapele", name: "Sapele Hardwood"},
 		{className: "hardwood", value: "walnut", name: "Walnut Hardwood" },
+		{className: "acrylic promo", value: "pistachio", name: "Pistachio - January/February Promo"},
     	        {className: "acrylic promo", value: "kailani", name: "Kailani - January/February Promo"},
 		{className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January/February Promo"},
     	        {className: "acrylic promo", value: "saphira", name: "Saphira - January/February Promo"},
