@@ -560,6 +560,9 @@ function getParameters() {
     if(type == "OrnateCross"){
     	type = "Ornate Cross";
     }
+    if(type == "TripleShamrock"){
+    	type = "Triple Shamrock";
+    }
     return type;
     
 }
@@ -615,7 +618,7 @@ function menuOrNot(style) {
 		|| style == "Pumpkin" || style == "XO" || style == "Paris"){
 		document.getElementById("navigation").style.display = "block";
 	}
-	else if (style == "Sydney" || style == "Rowan" || style == "Odette"){
+	else if (style == "Sydney" || style == "Rowan" || style == "Odette" || style == "Triple Shamrock"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -937,6 +940,9 @@ function showMockup(style){
 		break;
 	case "Bunny":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bunnyShape.html");
+		break;
+	case "Triple Shamrock":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tripleShamrockShape.html");
 		break;
 	}
 }
