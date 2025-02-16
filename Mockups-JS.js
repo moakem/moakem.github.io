@@ -557,6 +557,9 @@ function getParameters() {
     if(type == "LoveLetter"){
     	type = "Love Letter";
     }
+    if(type == "OrnateCross"){
+    	type = "Ornate Cross";
+    }
     return type;
     
 }
@@ -666,7 +669,8 @@ function menuOrNot(style) {
 		|| style == "Lightning Bolt" || style == "OG Sugar Skull" || style == "Austin" 
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
-		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn"){
+		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn" 
+		|| style == "Ornate Cross"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -927,6 +931,9 @@ function showMockup(style){
 		break;
 	case "Odette":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/odetteShape.html");
+		break;
+	case "Ornate Cross":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ornateCrossShape.html");
 		break;
 	}
 }
