@@ -673,7 +673,7 @@ function menuOrNot(style) {
 		|| style == "Salem" || style == "Lisse" || style == "Moon Phase" || style == "Anna" 
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
 		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn" 
-		|| style == "Ornate Cross" || style == "Bunny"){
+		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -943,6 +943,9 @@ function showMockup(style){
 		break;
 	case "Triple Shamrock":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tripleShamrockShape.html");
+		break;
+	case "Shamrock":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/shamrockShape.html");
 		break;
 	}
 }
