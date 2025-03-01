@@ -1196,7 +1196,7 @@ const colors = {
 
 let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
-if (admin1 != "" || user1 != "") {
+//if (admin1 != "" || user1 != "") {
 
 //Leathers
 	colors.Leathers.push({className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January/February Promo (Leaving March 1st)"});
@@ -1223,16 +1223,12 @@ if (admin1 != "" || user1 != "") {
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "faeGlitter", name: "Fae Glitter - March Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "fiestaConfetti", name: "Fiesta Confetti - March Promo" });
 
-}
-else if (user1 != "") {
+//}
+//else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
-} 
-else {
-    colors.Leathers.push({className: "promo", value: "azureIce", name: "Azure Ice - February Promo"});
-    colors.Leathers.push({className:"promo", value: "luckyLeopard", name: "Lucky Leopard - February Promo"});
-    colors.Leathers.push({className: "promo", value: "distressedCamel", name: "Distressed Camel - February Promo"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteOrchid", name: "Matte Orchid - February Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "shamrockSparkle", name: "Shamrock Sparkle" });
+//} 
+//else {
+    
 
   
-}
+//}
