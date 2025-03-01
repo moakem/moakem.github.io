@@ -1206,8 +1206,8 @@ if (admin1 != "" || user1 != "") {
     colors.Leathers.push({className: "promo", value: "azureIce", name: "Azure Ice - February/March Promo"});
     colors.Leathers.push({className: "promo", value: "luckyLeopard", name: "Lucky Leopard - February/March Promo"});
     colors.Leathers.push({className: "promo", value: "distressedCamel", name: "Distressed Camel - February/March Promo"});
-    colors.Leathers.push({className: "promo", value: "aviva", name: "Aviva - March Promo"});
-    colors.Leathers.push({className: "promo", value: "zoya", name: "Zoya - March Promo"});
+    colors.Leathers.push({className: "promo cork", value: "aviva", name: "Aviva - March Promo"});
+    colors.Leathers.push({className: "promo cork", value: "zoya", name: "Zoya - March Promo"});
     
 	
 //Acrylics and Hardwoods
