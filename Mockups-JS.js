@@ -1199,9 +1199,6 @@ let admin1 = getCookie("admin");
 //if (admin1 != "" || user1 != "") {
 
 //Leathers
-	colors.Leathers.push({className: "promo", value: "deepPlumBraid", name: "Deep Plum Braid - January/February Promo (Leaving March 1st)"});
-	colors.Leathers.push({className: "promo cork", value: "zebraCork", name: "Zebra Cork - January/February Promo (Leaving March 1st)"});
-	colors.Leathers.push({className: "promo cork", value: "knitAsOne", name: "Knit As One - Fan Favorite (Leaving March 1st)"});
 	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam - January/February/March Promo"});
     colors.Leathers.push({className: "promo", value: "azureIce", name: "Azure Ice - February/March Promo"});
     colors.Leathers.push({className: "promo", value: "luckyLeopard", name: "Lucky Leopard - February/March Promo"});
@@ -1211,9 +1208,6 @@ let admin1 = getCookie("admin");
     
 	
 //Acrylics and Hardwoods
-	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pistachio", name: "Pistachio - January/February Promo (Leaving March 1st)"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "kailani", name: "Kailani - January/February Promo (Leaving March 1st)"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "amora", name: "Amora - Fan Favorites (Leaving March 1st)" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pinkSparkle", name: "Pink Sparkle - Promo"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "rubyGlitter", name: "Ruby Glitter - Promo"});
 	colors.AcrylicsAndHardwoods.push({className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - January/February/March Promo"});
