@@ -1196,13 +1196,6 @@ const colors = {
 
 let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
-if (admin1 != "" || user1 != "") {
-	colors.Leathers.push({className: "promo", value: "springBouquet", name: "Spring Bouquet - Lucky Days Promo"});
-	console.log("in");
-}
-else if (user1 != "") {
-	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
-} 
 
 //Leathers
 	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam - January/February/March Promo"});
@@ -1222,3 +1215,11 @@ else if (user1 != "") {
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "shamrockSparkle", name: "Shamrock Sparkle - February/March Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "faeGlitter", name: "Fae Glitter - March Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "fiestaConfetti", name: "Fiesta Confetti - March Promo" });
+
+
+if (admin1 != "" || user1 != "") {
+	colors.Leathers.push({className: "promo", value: "springBouquet", name: "Spring Bouquet - Lucky Days Promo"});
+}
+else if (user1 != "") {
+	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
+} 
