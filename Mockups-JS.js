@@ -1230,13 +1230,13 @@ let admin1 = getCookie("admin");
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "fiestaConfetti", name: "Fiesta Confetti - March Promo" });
 
 
-if (admin1 != "" || user1 != "") {
+/=if (admin1 != "" || user1 != "") {
 	colors.Leathers.push({className: "promo", value: "springBouquet", name: "Spring Bouquet - Lucky Days Promo"});
 	colors.Leathers.push({className: "promo", value: "aztec", name: "Aztec - Lucky Days Promo"});
 	colors.Leathers.push({className: "promo", value: "dappledDrops", name: "Dappled Drops - Lucky Days Promo"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "chartreuseGlitter", name: "Chartreuse Glitter - Lucky Days Promo" });
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "confection", name: "Confection - Lucky Days Promo" });
-}
-else if (user1 != "") {
+//}
+//else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
-} 
+//} 
