@@ -1198,6 +1198,7 @@ let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
 if (admin1 != "" || user1 != "") {
 	colors.Leathers.push({className: "promo", value: "springBouquet", name: "Spring Bouquet - Lucky Days Promo"});
+	console.log("in");
 }
 else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
