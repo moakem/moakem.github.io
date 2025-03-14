@@ -677,7 +677,7 @@ function menuOrNot(style) {
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
 		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn" 
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
-		|| style == "Bindi" || style == "Triple Triangle"){
+		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -959,6 +959,9 @@ function showMockup(style){
 		break;
 	case "Triple Triangle":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tripleTriangleShape.html");
+		break;
+	case "Bow":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bowStudShape.html");
 		break;
 	}
 }
