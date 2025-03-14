@@ -178,6 +178,10 @@ li.selected:hover{
 	font-weight:bold;
 }
 
+.comingSoon{
+	display:none;
+}
+
 #colors{
 	width:48%;
 }
