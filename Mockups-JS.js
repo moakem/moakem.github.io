@@ -677,7 +677,7 @@ function menuOrNot(style) {
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
 		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn" 
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
-		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow"){
+		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -962,6 +962,9 @@ function showMockup(style){
 		break;
 	case "Bow":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bowStudShape.html");
+		break;
+	case "Antigua":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/antiguaShape.html");
 		break;
 	}
 }
