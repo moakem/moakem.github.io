@@ -44,12 +44,12 @@ function getColors(colors, type){
 	if (type == "Tannenbaum" || type == "Lublin"){
 		document.getElementById("largeOptions").innerHTML += "<img id='lwarmAndCozy' class='large hardwood promo' value='warmAndCozy' name='Warm and Cozy' src='Colors/warmAndCozy.jpg' onclick='tryIt(this)' />";
 	}
-	if (type == "Berlin"){
-		const acrylicColors = document.querySelectorAll('.acrylic');
-		for (let i = 0; i < acrylicColors.length; i++) {
-			acrylicColors[i].style.display = "none";
-		}
-	}
+	//if (type == "Berlin"){
+		//const acrylicColors = document.querySelectorAll('.acrylic');
+		//for (let i = 0; i < acrylicColors.length; i++) {
+			//acrylicColors[i].style.display = "none";
+		//}
+	//}
 }
 
 function getLeathers(colors, type){
@@ -643,7 +643,7 @@ function menuOrNot(style) {
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
 		document.getElementById("lTitle").innerHTML = "Top Leather:";
-		document.getElementById("mTitle").innerHTML = "Bottom Wood:";
+		document.getElementById("mTitle").innerHTML = "Bottom Color:";
 	}
 	else if (style == "Tess"){
 		document.getElementById("navigation").style.display = "none";
