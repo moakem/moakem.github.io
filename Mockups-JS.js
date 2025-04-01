@@ -1239,14 +1239,14 @@ let admin1 = getCookie("admin");
 
 
 
-if (admin1 != "" || user1 != "") {
+//if (admin1 != "" || user1 != "") {
     colors.Leathers.push({className: "promo", value: "spectrum", name: "Spectrum - April Promo"});
     colors.Leathers.push({className: "promo cork", value: "queenBee", name: "Queen Bee - April Promo"});
     colors.Leathers.push({className: "promo cork", value: "strawberryFields", name: "Strawberry Fields - April Promo"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "tallulah", name: "Tallulah - April Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "oriane", name: "Oriane - April Promo" });
 
-}
+//}
 //else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 //} 
