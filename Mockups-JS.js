@@ -1214,10 +1214,6 @@ let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
 
 //Leathers
-	colors.Leathers.push({className: "promo cork", value: "winterGlam", name: "Winter Glam - Leaving April 1st"});
-    colors.Leathers.push({className: "promo", value: "azureIce", name: "Azure Ice - Leaving April 1st"});
-    colors.Leathers.push({className: "promo", value: "luckyLeopard", name: "Lucky Leopard - Leaving April 1st"});
-    colors.Leathers.push({className: "promo", value: "distressedCamel", name: "Distressed Camel - Leaving April 1st"});
     colors.Leathers.push({className: "promo cork", value: "aviva", name: "Aviva - March/April Promo"});
     colors.Leathers.push({className: "promo cork", value: "zoya", name: "Zoya - March/April Promo"});
     colors.Leathers.push({className: "promo", value: "springBouquet", name: "Spring Bouquet - Lucky Days Promo"});
@@ -1228,8 +1224,6 @@ let admin1 = getCookie("admin");
 //Acrylics and Hardwoods
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pinkSparkle", name: "Pink Sparkle - Promo"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "rubyGlitter", name: "Ruby Glitter - Promo"});
-	colors.AcrylicsAndHardwoods.push({className: "hardwood promo", value: "bamboo", name: "Bamboo Hardwood - Leaving April 1st"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "saphira", name: "Saphira - Leaving April 1st"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteOrchid", name: "Matte Orchid - February/March/April Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "shamrockSparkle", name: "Shamrock Sparkle - February/March/April Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "faeGlitter", name: "Fae Glitter - March/April Promo" });
