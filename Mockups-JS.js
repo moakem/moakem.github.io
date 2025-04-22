@@ -1243,7 +1243,7 @@ let admin1 = getCookie("admin");
     colors.Leathers.push({className: "promo cork", value: "strawberryFields", name: "Strawberry Fields - April Promo"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "tallulah", name: "Tallulah - April Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "oriane", name: "Oriane - April Promo" });
-    colors.Leathers.push({className: "promo", value: "aries", name: "Aries - Spring Fling Exclusive"});
+    colors.Leathers.push({className: "promo cork", value: "aries", name: "Aries - Spring Fling Exclusive"});
     colors.Leathers.push({className: "promo", value: "evolet", name: "Evolet - Spring Fling Exclusive"});
     colors.Leathers.push({className: "promo cork", value: "zinna", name: "Zinna - Spring Fling Exclusive"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cassiopeia", name: "Cassiopeia - Spring Fling Exclusive" });
