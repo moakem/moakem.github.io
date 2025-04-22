@@ -677,7 +677,8 @@ function menuOrNot(style) {
 		|| style == "Gabrielle" || style == "Bridget" || style == "Wren" || style == "Saige"
 		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn" 
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
-		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"){
+		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
+		|| style == "Aponi"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -966,6 +967,9 @@ function showMockup(style){
 	case "Antigua":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/antiguaShape.html");
 		break;
+	case "Aponi":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/aponiShape.html");
+		break;
 	}
 }
 
@@ -1245,6 +1249,11 @@ let admin1 = getCookie("admin");
     colors.Leathers.push({className: "promo cork", value: "strawberryFields", name: "Strawberry Fields - April Promo"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "tallulah", name: "Tallulah - April Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "oriane", name: "Oriane - April Promo" });
+    colors.Leathers.push({className: "promo", value: "aries", name: "Aries - Spring Fling Exclusive"});
+    colors.Leathers.push({className: "promo", value: "evolet", name: "Evolet - Spring Fling Exclusive"});
+    colors.Leathers.push({className: "promo cork", value: "zinna", name: "Zinna - Spring Fling Exclusive"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cassiopeia", name: "Cassiopeia - Spring Fling Exclusive" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "haruka", name: "Haruka - Spring Fling Exclusive" });
 
 //}
 //else if (user1 != "") {
