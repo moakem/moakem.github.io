@@ -678,7 +678,7 @@ function menuOrNot(style) {
 		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn" 
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
 		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
-		|| style == "Aponi"){
+		|| style == "Aponi" || style == "Hoshi"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -970,6 +970,9 @@ function showMockup(style){
 	case "Aponi":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/aponiShape.html");
 		break;
+	case "Hoshi":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/hoshiShape.html");
+		break;
 	}
 }
 
@@ -1218,36 +1221,37 @@ let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
 
 //Leathers
-    colors.Leathers.push({className: "promo cork", value: "aviva", name: "Aviva - March/April Promo"});
-    colors.Leathers.push({className: "promo cork", value: "zoya", name: "Zoya - March/April Promo"});
-    colors.Leathers.push({className: "promo", value: "springBouquet", name: "Spring Bouquet - Lucky Days Promo"});
-    colors.Leathers.push({className: "promo", value: "aztec", name: "Aztec - Lucky Days Promo"});
-    colors.Leathers.push({className: "promo", value: "dappledDrops", name: "Dappled Drops - Lucky Days Promo"});
+    colors.Leathers.push({className: "promo cork", value: "aviva", name: "Aviva - March/April/May Promo"});
+    colors.Leathers.push({className: "promo cork", value: "zoya", name: "Zoya - March/April/May Promo"});
+    colors.Leathers.push({className: "promo", value: "springBouquet", name: "Spring Bouquet - Promo"});
+    colors.Leathers.push({className: "promo", value: "aztec", name: "Aztec - Promo"});
+    colors.Leathers.push({className: "promo", value: "dappledDrops", name: "Dappled Drops - Promo"});
+    colors.Leathers.push({className: "promo", value: "spectrum", name: "Spectrum - April/May Promo"});
+    colors.Leathers.push({className: "promo cork", value: "queenBee", name: "Queen Bee - April/May Promo"});
+    colors.Leathers.push({className: "promo cork", value: "strawberryFields", name: "Strawberry Fields - April/May Promo"});
+    colors.Leathers.push({className: "promo", value: "anahita", name: "Anahita - May Promo"});
+    colors.Leathers.push({className: "promo", value: "marlowe", name: "Marlowe - May Promo"});
+    colors.Leathers.push({className: "promo", value: "robinEgg", name: "Robin Egg - May Promo"});
+    colors.Leathers.push({className: "promo", value: "vega", name: "Vega - May Promo"});
     
 	
 //Acrylics and Hardwoods
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pinkSparkle", name: "Pink Sparkle - Promo"});
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "rubyGlitter", name: "Ruby Glitter - Promo"});
-	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteOrchid", name: "Matte Orchid - February/March/April Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "shamrockSparkle", name: "Shamrock Sparkle - February/March/April Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "faeGlitter", name: "Fae Glitter - March/April Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "fiestaConfetti", name: "Fiesta Confetti - March/April Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "chartreuseGlitter", name: "Chartreuse Glitter - Lucky Days Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "confection", name: "Confection - Lucky Days Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "faeGlitter", name: "Fae Glitter - March/April/May Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "fiestaConfetti", name: "Fiesta Confetti - March/April/May Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "chartreuseGlitter", name: "Chartreuse Glitter - Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "confection", name: "Confection - Promo" });
+        colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "tallulah", name: "Tallulah - April/May Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "oriane", name: "Oriane - April/May Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "", name: "matteRed", name: "Matte Red - May Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "coquina", name: "Coquina - May Promo" });
 
 
 
 //if (admin1 != "" || user1 != "") {
-    colors.Leathers.push({className: "promo", value: "spectrum", name: "Spectrum - April Promo"});
-    colors.Leathers.push({className: "promo cork", value: "queenBee", name: "Queen Bee - April Promo"});
-    colors.Leathers.push({className: "promo cork", value: "strawberryFields", name: "Strawberry Fields - April Promo"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "tallulah", name: "Tallulah - April Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "oriane", name: "Oriane - April Promo" });
-    colors.Leathers.push({className: "promo", value: "aries", name: "Aries - Spring Fling Exclusive"});
-    colors.Leathers.push({className: "promo", value: "evolet", name: "Evolet - Spring Fling Exclusive"});
-    colors.Leathers.push({className: "promo cork", value: "zinna", name: "Zinna - Spring Fling Exclusive"});
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cassiopeia", name: "Cassiopeia - Spring Fling Exclusive" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "haruka", name: "Haruka - Spring Fling Exclusive" });
+    
+  
 
 //}
 //else if (user1 != "") {
