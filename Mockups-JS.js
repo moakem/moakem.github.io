@@ -1242,9 +1242,9 @@ let admin1 = getCookie("admin");
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "fiestaConfetti", name: "Fiesta Confetti - March/April/May Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "chartreuseGlitter", name: "Chartreuse Glitter - Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "confection", name: "Confection - Promo" });
-        colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "tallulah", name: "Tallulah - April/May Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "tallulah", name: "Tallulah - April/May Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "oriane", name: "Oriane - April/May Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "", name: "matteRed", name: "Matte Red - May Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteRed", name: "Matte Red - May Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "coquina", name: "Coquina - May Promo" });
 
 
