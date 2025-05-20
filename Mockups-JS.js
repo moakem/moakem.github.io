@@ -1250,8 +1250,7 @@ let admin1 = getCookie("admin");
 
 
 //if (admin1 != "" || user1 != "") {
-    
-  
+
 
 //}
 //else if (user1 != "") {
