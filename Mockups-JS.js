@@ -566,7 +566,7 @@ function getParameters() {
     if(type == "TripleTriangle"){
     	type = "Triple Triangle";
     }
-     if(type == "MediumVictoria"){
+    if(type == "MediumVictoria"){
     	type = "Medium Victoria";
     }
     return type;
@@ -604,7 +604,7 @@ function showNav(style) {
 }
 
 function menuOrNot(style) {
-	if (style == "Winona" || style == "Edith" || style == "Lutetia" || style="Medium Victoria") {
+	if (style == "Winona" || style == "Edith" || style == "Lutetia" || style == "Medium Victoria") {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
