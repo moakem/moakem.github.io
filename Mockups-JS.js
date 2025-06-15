@@ -566,6 +566,9 @@ function getParameters() {
     if(type == "TripleTriangle"){
     	type = "Triple Triangle";
     }
+     if(type == "MediumVictoria"){
+    	type = "Medium Victoria";
+    }
     return type;
     
 }
@@ -601,7 +604,7 @@ function showNav(style) {
 }
 
 function menuOrNot(style) {
-	if (style == "Winona" || style == "Edith" || style == "Lutetia") {
+	if (style == "Winona" || style == "Edith" || style == "Lutetia" || style="Medium Victoria") {
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -972,6 +975,9 @@ function showMockup(style){
 		break;
 	case "Hoshi":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/hoshiShape.html");
+		break;
+	case "Medium Victoria":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/mediumVictoriaShape.html");
 		break;
 	}
 }
