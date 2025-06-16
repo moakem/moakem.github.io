@@ -9,7 +9,7 @@ header {
   padding-bottom: 10px;
   background-color: #c2c9c3;
   text-align: center;
-  color:white;
+  color:black;
   padding-top: 10px;
 }
 
@@ -46,7 +46,7 @@ footer {
   display:flex;
   justify-content: center;
   background-color: #c2c9c3;
-  color:white;
+  color:black;
   margin-top: 20px;
 }
 
@@ -206,10 +206,10 @@ li.selected:hover{
     position: absolute;
     right: 10;
     top: 10;
-    color: white;
+    color: black;
  }
  #LoginInfo > a{
- 		color: white;
+ 		color: black;
  }
 
  #LoginInfo > span{
