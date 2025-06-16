@@ -1232,7 +1232,7 @@ let admin1 = getCookie("admin");
     colors.Leathers.push({className: "promo", value: "marlowe", name: "Marlowe - May/June Promo"});
     colors.Leathers.push({className: "promo", value: "robinEgg", name: "Robin Egg - May/June Promo"});
     colors.Leathers.push({className: "promo", value: "vega", name: "Vega - May/June Promo"});
-	colors.Leathers.push({className: "promo", value: "watermelon", name: "Watermelon - June Promo"});
+	colors.Leathers.push({className: "promo cork", value: "watermelon", name: "Watermelon - June Promo"});
     colors.Leathers.push({className: "promo", value: "sparkler", name: "Sparkler - June Promo"});
     colors.Leathers.push({className: "promo", value: "lisbon", name: "Lisbon - June Promo"});
     
