@@ -7,9 +7,9 @@ body {
 header {
   min-height: 50px;
   padding-bottom: 10px;
-  background-color:turquoise;
+  background-color: #c2c9c3;
   text-align: center;
-  color:white;
+  color:black;
   padding-top: 10px;
 }
 
@@ -34,7 +34,7 @@ nav ul li{
 	cursor: pointer;
 	display:inline-block;
 	margin-right: 10px;
-	color: turquoise;
+	color: #5D695F;
 }
 
 nav ul li:hover{
@@ -45,9 +45,10 @@ footer {
   min-height: 50px;
   display:flex;
   justify-content: center;
-  background-color:turquoise;
-  color:white;
+  background-color: #c2c9c3;
+  color:black;
   margin-top: 20px;
+  font-size: 110%;
 }
 
 footer span{
@@ -111,12 +112,12 @@ figure a:hover{
 }
 
 a {
-	color: turquoise;
+	color: #5D695F;
 	text-decoration: none;
 }
 
 a:visited{
-	color: turquoise;
+	color: #5D695F;
 }
 
 a:hover{
@@ -206,10 +207,10 @@ li.selected:hover{
     position: absolute;
     right: 10;
     top: 10;
-    color: white;
+    color: black;
  }
  #LoginInfo > a{
- 		color: white;
+ 		color: black;
  }
 
  #LoginInfo > span{
