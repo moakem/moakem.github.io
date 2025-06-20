@@ -624,7 +624,7 @@ function menuOrNot(style) {
 		|| style == "Pumpkin" || style == "XO" || style == "Paris"){
 		document.getElementById("navigation").style.display = "block";
 	}
-	else if (style == "Sydney" || style == "Rowan" || style == "Odette" || style == "Triple Shamrock"){
+	else if (style == "Sydney" || style == "Rowan" || style == "Odette" || style == "Triple Shamrock" || style == "Adelaide"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 		document.getElementById("medium").style.display = "block";
@@ -978,6 +978,9 @@ function showMockup(style){
 		break;
 	case "Medium Victoria":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/mediumVictoriaShape.html");
+		break;
+	case "Adelaide":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/adelaideShape.html");
 		break;
 	}
 }
