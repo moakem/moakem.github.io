@@ -1257,7 +1257,7 @@ let admin1 = getCookie("admin");
 
 
 if (admin1 != "" || user1 != "") {
-	colors.Leathers.push({className: "promo cork", value: "Talia", name: "Talia - July Promo"});
+	colors.Leathers.push({className: "promo cork", value: "talia", name: "Talia - July Promo"});
     colors.Leathers.push({className: "promo cork", value: "cressida", name: "Cressida - July Promo"});
     colors.Leathers.push({className: "promo", value: "rosyGecko", name: "Rosy Gecko - July Promo"});
     
