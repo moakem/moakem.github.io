@@ -1256,7 +1256,7 @@ let admin1 = getCookie("admin");
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "phosphorescentBlue", name: "Phosphorescent Blue (glows in the dark!) - June Promo" });
 
 
-if (admin1 != "" || user1 != "") {
+//if (admin1 != "" || user1 != "") {
 	colors.Leathers.push({className: "promo cork", value: "talia", name: "Talia - July Promo"});
     colors.Leathers.push({className: "promo cork", value: "cressida", name: "Cressida - July Promo"});
     colors.Leathers.push({className: "promo", value: "rosyGecko", name: "Rosy Gecko - July Promo"});
@@ -1265,7 +1265,7 @@ if (admin1 != "" || user1 != "") {
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "naida", name: "Naida - July Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteDandelion", name: "Matte Dandelion - July Promo" });      
 
-}
+//}
 //else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 //} 
