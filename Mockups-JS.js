@@ -572,6 +572,9 @@ function getParameters() {
     if(type == "TreeOfLife"){
     	type = "Tree of Life";
     }
+    if(type == "StarStud"){
+    	type = "Star Stud";
+    }
     return type;
     
 }
@@ -685,7 +688,7 @@ function menuOrNot(style) {
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
 		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
 		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree" 
-		|| style == "Tree of Life" || style == "Star"){
+		|| style == "Tree of Life" || style == "Star Stud"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -995,8 +998,8 @@ function showMockup(style){
 	case "Tree of Life":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/treeOfLifeShape.html");
 		break;
-	case "Star":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starShape.html");
+	case "Star Stud":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starStudShape.html");
 		break;
 	}
 }
