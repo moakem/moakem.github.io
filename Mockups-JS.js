@@ -688,7 +688,7 @@ function menuOrNot(style) {
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
 		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
 		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree" 
-		|| style == "Tree of Life" || style == "Star Stud" || style == "Elsie"){
+		|| style == "Tree of Life" || style == "Star Stud" || style == "Elsie" || style == "Reindeer"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -1003,6 +1003,9 @@ function showMockup(style){
 			break;
 		case "Elsie":
 			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/elsieShape.html");
+			break;
+		case "Reindeer":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/reindeerShape.html");
 			break;
 	}
 }
