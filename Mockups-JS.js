@@ -681,7 +681,7 @@ function menuOrNot(style) {
 		|| style == "Selene" || style == "Tannenbaum" || style == "Trudy" || style == "Quinn" 
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
 		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
-		|| style == "Aponi" || style == "Hoshi" || style == "Gemma"){
+		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -984,6 +984,9 @@ function showMockup(style){
 		break;
 	case "Gemma":
 		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/gemmaShape.html");
+		break;
+	case "Filigree":
+		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/filigreeShape.html");
 		break;
 	}
 }
