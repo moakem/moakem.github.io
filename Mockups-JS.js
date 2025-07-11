@@ -688,7 +688,7 @@ function menuOrNot(style) {
 		|| style == "Ornate Cross" || style == "Bunny" || style == "Shamrock" || style == "Anastasia"
 		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
 		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree" 
-		|| style == "Tree of Life" || style == "Star Stud"){
+		|| style == "Tree of Life" || style == "Star Stud" || style == "Elsie"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -704,303 +704,306 @@ function menuOrNot(style) {
 function showMockup(style){
 	console.log(style);
 	switch(style){
-	case "Leaf":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/leafShape.html");
-		break;
-	case "Teardrop":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/teardropShape.html");
-		break;
-	case "Spade":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/spadeShape.html");
-		break;
-	case "Petal":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/petalShape.html");
-		break;
-	case "Moroccan":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/moroccanShape.html");
-		break;
-	case "Hoop":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/hoopShape.html");
-		break;
-	case "Bar":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/barShape.html");
-		break;
-	case "Circle":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/circleShape.html");
-		break;
-	case "Horizon":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/horizonShape.html");
-		break;
-	case "Double Kite":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleKiteShape.html");
-		break;
-	case "Kite":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kiteShape.html");
-		break;
-	case "Ribbon":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ribbonShape.html");
-		break;
-	case "Oakley":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/oakleyShape.html");
-		break;
-	case "Rochelle":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rochelleShape.html");
-		break;
-	case "Cairo":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cairoShape.html");
-		break;
-	case "Managua":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/managuaShape.html");
-		break;
-	case "Larissa":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/larissaShape.html");
-		break;
-	case "Valencia":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/valenciaShape.html");
-		break;
-	case "Monaco":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monacoShape.html");
-		break;
-	case "Sochi":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sochiShape.html");
-		break;
-	case "Dublin":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dublinShape.html");
-		break;
-	case "Double Diamond":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleDiamondShape.html");
-		break;
-	case "Seoul":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seoulShape.html");
-		break;
-	case "Kauai":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kauaiShape.html");
-		break;
-	case "Corinth":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/corinthShape.html");
-		break;
-	case "Winona":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/winonaShape.html");
-		break;
-	case "Sydney":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sydneyShape.html");
-		break;
-	case "Berlin":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/berlinShape.html");
-		break;
-	case "Sierra":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sierraShape.html");
-		break;
-	case "Rowan":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rowanShape.html");
-		break;
-	case "Sports":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sportsShape.html");
-		break;
-	case "Quincy":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quincyShape.html");
-		break;
-	case "Cassidy":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cassidyShape.html");
-		break;
-	case "Monroe":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");
-		break;
-	case "Lima":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/limaShape.html");
-		break;
-	case "Nairobi":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/nairobiShape.html");
-		break;
-	case "Rio":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rioShape.html");
-		break;
-	case "Snowflakes":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/snowflakesShape.html");
-		break;
-	case "Aspen":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/aspenShape.html");
-		break;
-	case "Belize":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/belizeShape.html");
-		break;
-	case "Tumbling Blocks":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tumblingBlocksShape.html");
-		break;
-	case "Taipei":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/taipeiShape.html");
-		break;
-	case "Zurich":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/zurichShape.html");
-		break;
-	case "Starstruck":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starstruckShape.html");
-		break;
-	case "Dragonfly":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dragonflyShape.html");
-		break;
-	case "Aster":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/asterShape.html");
-		break;
-	case "Pumpkin":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/pumpkinShape.html");
-		break;
-	case "Cactus":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cactusShape.html");
-		break;
-	case "Music Note":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/musicNoteShape.html");
-		break;
-	case "Ophelia":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/opheliaShape.html");
-		break;
-	case "Football":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/footballShape.html");
-		break;
-	case "Marnie":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/marnieShape.html");
-		break;
-	case "Daphne":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/daphneShape.html");
-		break;
-	case "Elvira":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/elviraShape.html");
-		break;
-	case "Jaclyn":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/jaclynShape.html");
-		break;
-	case "Lightning Bolt":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lightningBoltShape.html");
-		break;
-	case "OG Sugar Skull":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ogSugarSkullShape.html");
-		break;
-	case "Austin":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/austinShape.html");
-		break;
-	case "Salem":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/salemShape.html");
-		break;
-	case "Mia":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/miaShape.html");
-		break;
-	case "Awareness Ribbon":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/awarenessRibbonShape.html");
-		break;
-	case "Lisse":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lisseShape.html");
-		break;
-	case "Moon Phase":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/moonPhaseShape.html");
-		break;
-	case "Anna":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/annaShape.html");
-		break;
-	case "Gabrielle":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/gabrielleShape.html");
-		break;
-	case "Tess":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tessShape.html");
-		break;
-	case "Bridget":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bridgetShape.html");
-		break;
-	case "Wren":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/wrenShape.html");
-		break;
-	case "Saige":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/saigeShape.html");
-		break;
-	case "Selene":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seleneShape.html");
-		break;
-	case "Edith":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/edithShape.html");
-		break;
-	case "Nativity":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/nativityShape.html");
-		break;
-	case "Tannenbaum":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tannenbaumShape.html");
-		break;
-	case "Lublin":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lublinShape.html");
-		break;
-	case "Trudy":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/trudyShape.html");
-		break;
-	case "Geneva":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/genevaShape.html");
-		break;
-	case "XO":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/xoShape.html");
-		break;
-	case "Paris":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/parisShape.html");
-		break;
-	case "Lutetia":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lutetiaShape.html");
-		break;
-	case "Love Letter":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/loveLetterShape.html");
-		break;
-	case "Quinn":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quinnShape.html");
-		break;
-	case "Odette":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/odetteShape.html");
-		break;
-	case "Ornate Cross":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ornateCrossShape.html");
-		break;
-	case "Bunny":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bunnyShape.html");
-		break;
-	case "Triple Shamrock":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tripleShamrockShape.html");
-		break;
-	case "Shamrock":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/shamrockShape.html");
-		break;
-	case "Anastasia":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/anastasiaShape.html");
-		break;
-	case "Bindi":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bindiShape.html");
-		break;
-	case "Triple Triangle":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tripleTriangleShape.html");
-		break;
-	case "Bow":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bowStudShape.html");
-		break;
-	case "Antigua":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/antiguaShape.html");
-		break;
-	case "Aponi":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/aponiShape.html");
-		break;
-	case "Hoshi":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/hoshiShape.html");
-		break;
-	case "Medium Victoria":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/mediumVictoriaShape.html");
-		break;
-	case "Adelaide":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/adelaideShape.html");
-		break;
-	case "Gemma":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/gemmaShape.html");
-		break;
-	case "Filigree":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/filigreeShape.html");
-		break;
-	case "Tree of Life":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/treeOfLifeShape.html");
-		break;
-	case "Star Stud":
-		document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starStudShape.html");
-		break;
+		case "Leaf":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/leafShape.html");
+			break;
+		case "Teardrop":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/teardropShape.html");
+			break;
+		case "Spade":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/spadeShape.html");
+			break;
+		case "Petal":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/petalShape.html");
+			break;
+		case "Moroccan":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/moroccanShape.html");
+			break;
+		case "Hoop":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/hoopShape.html");
+			break;
+		case "Bar":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/barShape.html");
+			break;
+		case "Circle":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/circleShape.html");
+			break;
+		case "Horizon":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/horizonShape.html");
+			break;
+		case "Double Kite":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleKiteShape.html");
+			break;
+		case "Kite":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kiteShape.html");
+			break;
+		case "Ribbon":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ribbonShape.html");
+			break;
+		case "Oakley":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/oakleyShape.html");
+			break;
+		case "Rochelle":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rochelleShape.html");
+			break;
+		case "Cairo":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cairoShape.html");
+			break;
+		case "Managua":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/managuaShape.html");
+			break;
+		case "Larissa":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/larissaShape.html");
+			break;
+		case "Valencia":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/valenciaShape.html");
+			break;
+		case "Monaco":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monacoShape.html");
+			break;
+		case "Sochi":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sochiShape.html");
+			break;
+		case "Dublin":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dublinShape.html");
+			break;
+		case "Double Diamond":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/doubleDiamondShape.html");
+			break;
+		case "Seoul":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seoulShape.html");
+			break;
+		case "Kauai":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/kauaiShape.html");
+			break;
+		case "Corinth":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/corinthShape.html");
+			break;
+		case "Winona":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/winonaShape.html");
+			break;
+		case "Sydney":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sydneyShape.html");
+			break;
+		case "Berlin":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/berlinShape.html");
+			break;
+		case "Sierra":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sierraShape.html");
+			break;
+		case "Rowan":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rowanShape.html");
+			break;
+		case "Sports":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/sportsShape.html");
+			break;
+		case "Quincy":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quincyShape.html");
+			break;
+		case "Cassidy":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cassidyShape.html");
+			break;
+		case "Monroe":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/monroeShape.html");
+			break;
+		case "Lima":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/limaShape.html");
+			break;
+		case "Nairobi":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/nairobiShape.html");
+			break;
+		case "Rio":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/rioShape.html");
+			break;
+		case "Snowflakes":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/snowflakesShape.html");
+			break;
+		case "Aspen":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/aspenShape.html");
+			break;
+		case "Belize":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/belizeShape.html");
+			break;
+		case "Tumbling Blocks":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tumblingBlocksShape.html");
+			break;
+		case "Taipei":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/taipeiShape.html");
+			break;
+		case "Zurich":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/zurichShape.html");
+			break;
+		case "Starstruck":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starstruckShape.html");
+			break;
+		case "Dragonfly":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/dragonflyShape.html");
+			break;
+		case "Aster":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/asterShape.html");
+			break;
+		case "Pumpkin":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/pumpkinShape.html");
+			break;
+		case "Cactus":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/cactusShape.html");
+			break;
+		case "Music Note":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/musicNoteShape.html");
+			break;
+		case "Ophelia":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/opheliaShape.html");
+			break;
+		case "Football":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/footballShape.html");
+			break;
+		case "Marnie":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/marnieShape.html");
+			break;
+		case "Daphne":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/daphneShape.html");
+			break;
+		case "Elvira":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/elviraShape.html");
+			break;
+		case "Jaclyn":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/jaclynShape.html");
+			break;
+		case "Lightning Bolt":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lightningBoltShape.html");
+			break;
+		case "OG Sugar Skull":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ogSugarSkullShape.html");
+			break;
+		case "Austin":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/austinShape.html");
+			break;
+		case "Salem":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/salemShape.html");
+			break;
+		case "Mia":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/miaShape.html");
+			break;
+		case "Awareness Ribbon":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/awarenessRibbonShape.html");
+			break;
+		case "Lisse":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lisseShape.html");
+			break;
+		case "Moon Phase":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/moonPhaseShape.html");
+			break;
+		case "Anna":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/annaShape.html");
+			break;
+		case "Gabrielle":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/gabrielleShape.html");
+			break;
+		case "Tess":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tessShape.html");
+			break;
+		case "Bridget":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bridgetShape.html");
+			break;
+		case "Wren":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/wrenShape.html");
+			break;
+		case "Saige":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/saigeShape.html");
+			break;
+		case "Selene":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/seleneShape.html");
+			break;
+		case "Edith":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/edithShape.html");
+			break;
+		case "Nativity":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/nativityShape.html");
+			break;
+		case "Tannenbaum":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tannenbaumShape.html");
+			break;
+		case "Lublin":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lublinShape.html");
+			break;
+		case "Trudy":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/trudyShape.html");
+			break;
+		case "Geneva":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/genevaShape.html");
+			break;
+		case "XO":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/xoShape.html");
+			break;
+		case "Paris":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/parisShape.html");
+			break;
+		case "Lutetia":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/lutetiaShape.html");
+			break;
+		case "Love Letter":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/loveLetterShape.html");
+			break;
+		case "Quinn":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/quinnShape.html");
+			break;
+		case "Odette":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/odetteShape.html");
+			break;
+		case "Ornate Cross":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/ornateCrossShape.html");
+			break;
+		case "Bunny":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bunnyShape.html");
+			break;
+		case "Triple Shamrock":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tripleShamrockShape.html");
+			break;
+		case "Shamrock":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/shamrockShape.html");
+			break;
+		case "Anastasia":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/anastasiaShape.html");
+			break;
+		case "Bindi":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bindiShape.html");
+			break;
+		case "Triple Triangle":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/tripleTriangleShape.html");
+			break;
+		case "Bow":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/bowStudShape.html");
+			break;
+		case "Antigua":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/antiguaShape.html");
+			break;
+		case "Aponi":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/aponiShape.html");
+			break;
+		case "Hoshi":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/hoshiShape.html");
+			break;
+		case "Medium Victoria":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/mediumVictoriaShape.html");
+			break;
+		case "Adelaide":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/adelaideShape.html");
+			break;
+		case "Gemma":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/gemmaShape.html");
+			break;
+		case "Filigree":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/filigreeShape.html");
+			break;
+		case "Tree of Life":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/treeOfLifeShape.html");
+			break;
+		case "Star Stud":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starStudShape.html");
+			break;
+		case "Elsie":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/elsieShape.html");
+			break;
 	}
 }
 
