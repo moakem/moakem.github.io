@@ -1256,15 +1256,24 @@ let admin1 = getCookie("admin");
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "phosphorescentBlue", name: "Phosphorescent Blue (glows in the dark!) - June Promo" });
 
 
-//if (admin1 != "" || user1 != "") {
+
 	colors.Leathers.push({className: "promo cork", value: "talia", name: "Talia - July Promo"});
     colors.Leathers.push({className: "promo cork", value: "cressida", name: "Cressida - July Promo"});
     colors.Leathers.push({className: "promo", value: "rosyGecko", name: "Rosy Gecko - July Promo"});
     
 	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "verity", name: "Verity - July Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "naida", name: "Naida - July Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteDandelion", name: "Matte Dandelion - July Promo" });      
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteDandelion", name: "Matte Dandelion - July Promo" });    
 
+
+    colors.Leathers.push({className: "promo", value: "goldenLode", name: "Golden Lode - Christmas in July Promo"});
+    colors.Leathers.push({className: "promo", value: "boysenberry", name: "Boysenberry - Christmas in July Promo"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "valkerie", name: "Valkerie - Christmas in July Promo" });
+	colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "opaline", name: "Opaline - Christmas in July Promo" });
+
+
+
+//if (admin1 != "" || user1 != "") {
 //}
 //else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
