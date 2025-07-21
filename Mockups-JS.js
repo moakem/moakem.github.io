@@ -581,6 +581,9 @@ function getParameters() {
     if(type == "ArtDecoRectangle"){
     	type = "Art Deco Rectangle";
     } 
+    if(type == "CelticKnot"){
+    	type = "Celtic Knot";
+    } 
     return type;
     
 }
@@ -695,7 +698,8 @@ function menuOrNot(style) {
 		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
 		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree" 
 		|| style == "Tree of Life" || style == "Star Stud" || style == "Elsie" || style == "Dasher" 
-		|| style == "Flower Stud" || style == "Art Deco Rectangle"){
+		|| style == "Flower Stud" || style == "Art Deco Rectangle" || style == "Celtic Knot"
+		|| style == "Starfish"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -1019,6 +1023,12 @@ function showMockup(style){
 			break;
 		case "Art Deco Rectangle":
 			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/artDecoRectangleShape.html");
+			break;
+		case "Celtic Knot":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/celticKnotShape.html");
+			break;
+		case "Starfish":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starfishShape.html");
 			break;
 	}
 }
