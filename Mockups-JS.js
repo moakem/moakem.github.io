@@ -578,6 +578,9 @@ function getParameters() {
     if(type == "FlowerStud"){
     	type = "Flower Stud";
     }
+    if(type == "ArtDecoRectangle"){
+    	type = "Art Deco Rectangle";
+    } 
     return type;
     
 }
@@ -692,7 +695,7 @@ function menuOrNot(style) {
 		|| style == "Bindi" || style == "Triple Triangle" || style == "Bow" || style == "Antigua"
 		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree" 
 		|| style == "Tree of Life" || style == "Star Stud" || style == "Elsie" || style == "Dasher" 
-		|| style == "Flower Stud"){
+		|| style == "Flower Stud" || style == "Art Deco Rectangle"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -1013,6 +1016,9 @@ function showMockup(style){
 			break;
 		case "Flower Stud":
 			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/flowerStudShape.html");
+			break;
+		case "Art Deco Rectangle":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/artDecoRectangleShape.html");
 			break;
 	}
 }
