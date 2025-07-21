@@ -584,6 +584,9 @@ function getParameters() {
     if(type == "CelticKnot"){
     	type = "Celtic Knot";
     } 
+    if(type == "PawPrint"){
+    	type = "Paw Print";
+    } 
     return type;
     
 }
@@ -699,7 +702,7 @@ function menuOrNot(style) {
 		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree" 
 		|| style == "Tree of Life" || style == "Star Stud" || style == "Elsie" || style == "Dasher" 
 		|| style == "Flower Stud" || style == "Art Deco Rectangle" || style == "Celtic Knot"
-		|| style == "Starfish"){
+		|| style == "Starfish" || style == "Paw Print"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -1029,6 +1032,9 @@ function showMockup(style){
 			break;
 		case "Starfish":
 			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/starfishShape.html");
+			break;
+		case "Paw Print":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/pawPrintShape.html");
 			break;
 	}
 }
