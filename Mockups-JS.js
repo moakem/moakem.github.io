@@ -1317,6 +1317,9 @@ let admin1 = getCookie("admin");
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "ember", name: "Ember - Christmas in July Promo" });
     colors.Leathers.push({className: "promo", value: "sunsetLover", name: "Sunset Lover - Christmas in July Promo"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "reversedEmber", name: "Reversed Ember - Christmas in July Promo" });
+    colors.Leathers.push({className: "promo", value: "agedBrandy", name: "Aged Brandy - Christmas in July Promo"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pistachio", name: "Pistachio - Christmas in July Promo" });
+
 
 
 
