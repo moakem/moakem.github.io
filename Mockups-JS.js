@@ -587,6 +587,9 @@ function getParameters() {
     if(type == "PawPrint"){
     	type = "Paw Print";
     } 
+    if(type == "MusicNote2"){
+	type = "Music Notes";
+    } 
     return type;
     
 }
@@ -702,7 +705,7 @@ function menuOrNot(style) {
 		|| style == "Aponi" || style == "Hoshi" || style == "Gemma" || style == "Filigree" 
 		|| style == "Tree of Life" || style == "Star Stud" || style == "Elsie" || style == "Dasher" 
 		|| style == "Flower Stud" || style == "Art Deco Rectangle" || style == "Celtic Knot"
-		|| style == "Starfish" || style == "Paw Print"){
+		|| style == "Starfish" || style == "Paw Print" || style == "Music Notes"){
 		document.getElementById("navigation").style.display = "none";
 		document.getElementById("large").style.display = "block";
 	}
@@ -1035,6 +1038,9 @@ function showMockup(style){
 			break;
 		case "Paw Print":
 			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/pawPrintShape.html");
+			break;
+		case "Music Notes":
+			document.getElementById("mockup").setAttribute("w3-include-html", "Shapes/musicNoteShape2.html");
 			break;
 	}
 }
