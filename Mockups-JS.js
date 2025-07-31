@@ -1319,7 +1319,7 @@ let admin1 = getCookie("admin");
 //Christmas in July
     colors.Leathers.push({className: "promo", value: "agedBrandy", name: "Aged Brandy - Christmas in July Promo"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "pistachio", name: "Pistachio - Christmas in July Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "Mocha", name: "Mocha - Christmas in July Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "mocha", name: "Mocha - Christmas in July Promo" });
     colors.Leathers.push({className: "promo", value: "sunflowers", name: "Sunflowers - Christmas in July Promo"});
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "reversedMocha", name: "Reversed Mocha - Christmas in July Promo" });
 
