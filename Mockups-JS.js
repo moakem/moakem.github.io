@@ -1300,6 +1300,9 @@ let admin1 = getCookie("admin");
     colors.Leathers.push({className: "promo cork", value: "talia", name: "Talia - July Promo"});
     colors.Leathers.push({className: "promo cork", value: "cressida", name: "Cressida - July Promo"});
     colors.Leathers.push({className: "promo", value: "rosyGecko", name: "Rosy Gecko - July Promo"});
+    colors.Leathers.push({className: "promo", value: "darcy", name: "Darcy - August Promo"});
+    colors.Leathers.push({className: "promo", value: "pumpkinPalmLeaves", name: "Pumpkin Palm Leaves - August Promo"});
+    colors.Leathers.push({className: "promo", value: "roisin", name: "Roisin - August Promo"});
 	
 //Continued Promo Acrylics and Hardwoods
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "rubyGlitter", name: "Ruby Glitter - Promo"});
@@ -1308,6 +1311,12 @@ let admin1 = getCookie("admin");
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "phosphorescentPink", name: "Phosphorescent Pink (glows in the dark!) - June/July Promo" });        
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "phosphorescentGreen", name: "Phosphorescent Green (glows in the dark!) - June/July Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "phosphorescentBlue", name: "Phosphorescent Blue (glows in the dark!) - June/July Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "goldenGlitz", name: "Golden Glitz - August Promo"});
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "lavenderMirror", name: "Lavender Mirror - August Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "maroonGlitter", name: "Maroon Glitter - August Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteOlive", name: "Matte Olive - August Promo" });
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "snowLeopard", name: "Snow Leopard - August Promo" });
+
 
     //New Monthly Acylics
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "verity", name: "Verity - July Promo" });
@@ -1331,3 +1340,4 @@ let admin1 = getCookie("admin");
 //else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 //} 
+
