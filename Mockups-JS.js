@@ -1290,9 +1290,6 @@ let user1 = getCookie("counsultantUsername");
 let admin1 = getCookie("admin");
 
 //Continued Promo Leathers
-    colors.Leathers.push({className: "promo cork", value: "talia", name: "Talia - July/August Promo"});
-    colors.Leathers.push({className: "promo cork", value: "cressida", name: "Cressida - July/August Promo"});
-    colors.Leathers.push({className: "promo", value: "rosyGecko", name: "Rosy Gecko - July/August Promo"});
     colors.Leathers.push({className: "promo", value: "darcy", name: "Darcy - August/September Promo"});
     colors.Leathers.push({className: "promo", value: "pumpkinPalmLeaves", name: "Pumpkin Palm Leaves - August/September Promo"});
     colors.Leathers.push({className: "promo", value: "roisin", name: "Roisin - August/September Promo"});
@@ -1312,8 +1309,6 @@ let admin1 = getCookie("admin");
 
 
     //New Monthly Acylics
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "verity", name: "Verity - July/August Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "naida", name: "Naida - July/August Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteDandelion", name: "Matte Dandelion - July/August Promo" });    
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "bonfire", name: "Bonfire - September Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteNavy", name: "Matte Navy - September Promo" });
@@ -1329,6 +1324,7 @@ let admin1 = getCookie("admin");
 //else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 //} 
+
 
 
 
