@@ -1298,7 +1298,7 @@ let admin1 = getCookie("admin");
     colors.Leathers.push({className: "promo", value: "roisin", name: "Roisin - August/September Promo"});
     
     //New Monthly Leathers
-    colors.Leathers.push({className: "promo", value: "belladona", name: "Belladonna - September Promo"});
+    colors.Leathers.push({className: "promo", value: "belladonna", name: "Belladonna - September Promo"});
     colors.Leathers.push({className: "promo", value: "nutmeg", name: "Nutmeg - September Promo"});
     colors.Leathers.push({className: "promo", value: "venetian", name: "Venetian - September Promo"});
 	
@@ -1329,5 +1329,6 @@ let admin1 = getCookie("admin");
 //else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 //} 
+
 
 
