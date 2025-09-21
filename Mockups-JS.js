@@ -1305,7 +1305,7 @@ let admin1 = getCookie("admin");
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "maroonGlitter", name: "Maroon Glitter - August/September Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteOlive", name: "Matte Olive - August/September Promo" });
     colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "snowLeopard", name: "Snow Leopard - August/September Promo" });
-    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteDandelion" name: "Matte Dandelion - July/August/September Promo" });    
+    colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "matteDandelion", name: "Matte Dandelion - July/August/September Promo" });    
 
 
     //New Monthly Acylics    
@@ -1324,6 +1324,7 @@ let admin1 = getCookie("admin");
 //else if (user1 != "") {
 	//colors.AcrylicsAndHardwoods.push({className: "acrylic promo", value: "cackle", name: "Cackle - Fan Favorite"});
 //} 
+
 
 
 
